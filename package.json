@@ -1,0 +1,10 @@
+{
+  "name": "agile-coach",
+  "version": "0.1.0",
+  "description": "Agile Coach Interactive Learning Hub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}

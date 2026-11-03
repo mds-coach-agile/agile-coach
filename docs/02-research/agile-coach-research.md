@@ -1,6 +1,6 @@
 # Research: the Agile Coach role
 
-Issue #6 · Sprint 0 · Author: Christian Byemba · Reviewed by: _[name]_
+Issue #6 · Sprint 0 · Author: Christian Byemba
 
 This document gathers what we know about the Agile Coach role and where it comes from. It is the content base for the website modules (coaching principles, facilitation, team dynamics, conflict resolution, continuous improvement) and for the BOTSchool.ai chatbot. Every section names its sources; the full list is at the end.
 
@@ -128,4 +128,4 @@ Free online sources are marked **[free]**; the others are books, available in li
 
 ## AI usage
 
-This document was drafted with Claude (Anthropic) and checked by the team against the sources above. _[Reviewer: confirm each section against its source before closing issue #6.]_
+This document was drafted with Claude (Anthropic) from the sources above. The team reviews it against these sources in pull request #8 before it is merged.

@@ -4,14 +4,616 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agile Coach Learning Hub</title>
-  <meta name="description" content="An interactive hub for learning about Agile coaching.">
+  <meta name="description" content="Learn what an Agile Coach does: the four coaching stances, facilitation, team dynamics, conflict resolution and continuous improvement.">
+  <meta name="theme-color" content="#0b5cad">
   <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  <main id="main" class="container">
-    <h1>Agile Coach Learning Hub</h1>
-    <p>Learn about Agile coaching, facilitation, team dynamics, and continuous improvement.</p>
-    <!-- Navigation, modules, and quiz are added in Stories 2–5. -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Icon sprite: each icon is drawn once and reused with <use>. -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+    <symbol id="icon-scale" viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 6a3 3 0 006 0zM19 7l-3 6a3 3 0 006 0z"/></symbol>
+    <symbol id="icon-stances" viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></symbol>
+    <symbol id="icon-diamond" viewBox="0 0 24 24"><path d="M12 2.5l9.5 9.5-9.5 9.5L2.5 12z"/><path d="M7 7.5c2 1.3 3.2 2.8 5 4.5s3 3.2 5 4.5"/></symbol>
+    <symbol id="icon-team" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16.5 14.1A5 5 0 0122 19"/></symbol>
+    <symbol id="icon-conversation" viewBox="0 0 24 24"><path d="M4 4h9a2 2 0 012 2v5a2 2 0 01-2 2H9l-4 3v-3H4a2 2 0 01-2-2V6a2 2 0 012-2z"/><path d="M18 8h2a2 2 0 012 2v5a2 2 0 01-2 2h-1v3l-4-3h-3a2 2 0 01-2-2v-1"/></symbol>
+    <symbol id="icon-loop" viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 11-2.5-6"/><path d="M20.5 3.5V8H16"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M2.5 5H9a3 3 0 013 3v12a2 2 0 00-2-2H2.5zM21.5 5H15a3 3 0 00-3 3v12a2 2 0 012-2h7.5z"/></symbol>
+    <symbol id="icon-sprout" viewBox="0 0 24 24"><path d="M12 21v-8"/><path d="M12 13c0-4.4 3-7.5 8-7.5 0 4.4-3 7.5-8 7.5z"/><path d="M12 15.5c0-3.3-2.5-6-7-6 0 3.3 2.5 6 7 6z"/></symbol>
+    <symbol id="icon-question" viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 01-12.3 7.6L3 21l1.4-5.4A8.5 8.5 0 1121 12z"/><path d="M9.6 9.6a2.5 2.5 0 114.1 1.9c-.9.7-1.7 1.2-1.7 2.2"/><path d="M12 16.6v.1"/></symbol>
+    <symbol id="icon-pulse" viewBox="0 0 24 24"><path d="M2.5 12h4l3-7.5 5 15 3-7.5h4"/></symbol>
+    <symbol id="icon-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4.5L17 13H5"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><circle cx="16" cy="9" r="4"/><circle cx="8" cy="21" r="4"/><circle cx="24" cy="21" r="4"/><path d="M13.5 12.5l-3 5M18.5 12.5l3 5M12 21h8"/></svg>
+        </span>
+        <span class="brand__name">Agile Coach <span class="brand__accent">Learning Hub</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <svg class="icon nav-toggle__open" aria-hidden="true"><use href="#icon-menu"/></svg>
+        <svg class="icon nav-toggle__close" aria-hidden="true"><use href="#icon-close"/></svg>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#home" aria-current="location">Home</a></li>
+          <li><a class="site-nav__link" href="#modules">Learn</a></li>
+          <li><a class="site-nav__link" href="#role-comparison">Role Comparison</a></li>
+          <li><a class="site-nav__link" href="#stances">Coaching Stances</a></li>
+          <li><a class="site-nav__link" href="#scenarios">Practical Scenarios</a></li>
+          <li><a class="site-nav__link" href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- A. Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">A learning hub for students of Agile</p>
+          <h1 class="hero__title" id="hero-title">Understand Agile Coaching. <span class="hero__title-accent">Learn to Empower Teams.</span></h1>
+          <p class="hero__lead">Discover what Agile Coaches do, explore practical coaching techniques, and learn how to help Agile teams collaborate, overcome challenges, and continuously improve.</p>
+          <p class="hero__note">Every topic is based on established Agile coaching literature, from the Scrum Guide to Lyssa Adkins' <cite>Coaching Agile Teams</cite>.</p>
+          <div class="btn-group">
+            <a class="btn btn--primary" href="#what-is">
+              Start Learning
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+            </a>
+            <a class="btn btn--secondary" href="#stances">Explore Coaching Stances</a>
+          </div>
+          <ul class="hero__facts" aria-label="What you will find here">
+            <li><strong>7</strong> learning topics</li>
+            <li><strong>4</strong> coaching stances</li>
+            <li><strong>4</strong> real team situations</li>
+          </ul>
+        </div>
+
+        <figure class="hero__visual" aria-hidden="true">
+          <svg viewBox="0 0 440 380" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <symbol id="hero-person" viewBox="0 0 48 48"><circle cx="24" cy="15" r="9"/><path d="M7 46c0-10 7.6-17 17-17s17 7 17 17z"/></symbol>
+              <marker id="hero-arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0l10 5-10 5z" fill="#0b5cad"/></marker>
+            </defs>
+            <rect class="hv-bg" x="10" y="10" width="420" height="360" rx="28"/>
+            <circle class="hv-ring" cx="220" cy="190" r="150"/>
+            <path class="hv-loop" d="M 345 107 A 150 150 0 0 1 362 238" marker-end="url(#hero-arrowhead)"/>
+            <g class="hv-links">
+              <path d="M220 70L334 153L290 287L150 287L106 153Z"/>
+              <path d="M220 70L290 287M220 70L150 287M334 153L106 153M334 153L150 287M106 153L290 287"/>
+            </g>
+            <g class="hv-people">
+              <use href="#hero-person" x="196" y="44" width="48" height="48" class="hv-p1"/>
+              <use href="#hero-person" x="310" y="127" width="48" height="48" class="hv-p2"/>
+              <use href="#hero-person" x="266" y="261" width="48" height="48" class="hv-p3"/>
+              <use href="#hero-person" x="126" y="261" width="48" height="48" class="hv-p4"/>
+              <use href="#hero-person" x="82" y="127" width="48" height="48" class="hv-p5"/>
+            </g>
+            <g class="hv-bubble">
+              <path d="M180 160h80a14 14 0 0114 14v26a14 14 0 01-14 14h-30l-14 14v-14h-36a14 14 0 01-14-14v-26a14 14 0 0114-14z"/>
+              <text x="220" y="196" text-anchor="middle">?</text>
+            </g>
+            <g class="hv-chip"><rect x="28" y="30" width="92" height="28" rx="14"/><text x="74" y="49" text-anchor="middle">Teacher</text></g>
+            <g class="hv-chip"><rect x="320" y="30" width="92" height="28" rx="14"/><text x="366" y="49" text-anchor="middle">Mentor</text></g>
+            <g class="hv-chip"><rect x="22" y="322" width="104" height="28" rx="14"/><text x="74" y="341" text-anchor="middle">Facilitator</text></g>
+            <g class="hv-chip"><rect x="320" y="322" width="92" height="28" rx="14"/><text x="366" y="341" text-anchor="middle">Coach</text></g>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- C. What is Agile coaching? -->
+    <section class="section" id="what-is" aria-labelledby="what-is-title">
+      <div class="container split">
+        <div class="split__intro">
+          <p class="eyebrow">Discover</p>
+          <h2 class="section__title" id="what-is-title">What is Agile coaching?</h2>
+          <p class="section__lead">An Agile Coach helps teams and organisations work in an agile way and keep improving <em>on their own</em>.</p>
+          <p>The coach helps people find better ways of working, then steps back so the team becomes autonomous. Lyssa Adkins describes the aim as a team that no longer needs its coach.</p>
+
+          <div class="callout">
+            <h3 class="callout__title">What an Agile Coach is not</h3>
+            <ul class="mark-list">
+              <li><svg class="icon mark-list__icon mark-list__icon--no" aria-hidden="true"><use href="#icon-x"/></svg><span><strong>Not the team's boss.</strong> The coach has no hierarchical authority over people: they influence and support.</span></li>
+              <li><svg class="icon mark-list__icon mark-list__icon--no" aria-hidden="true"><use href="#icon-x"/></svg><span><strong>Not an extra team member doing the work.</strong> The coach works alongside the team, without taking over its work.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="split__body">
+          <h3 class="list-heading">What an Agile Coach does</h3>
+          <ul class="activity-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg><span><strong>Teaches</strong> agile principles and practices such as Scrum, Kanban and XP when the team does not know them yet.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-diamond"/></svg><span><strong>Facilitates</strong> events and workshops so the group reaches its own decisions.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-sprout"/></svg><span><strong>Mentors</strong> Scrum Masters, Product Owners and managers who are learning their role.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-question"/></svg><span><strong>Coaches</strong> by asking open questions so people find their own answers.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-pulse"/></svg><span><strong>Observes</strong> the team and gives feedback.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#icon-flag"/></svg><span><strong>Works with leaders</strong> to remove obstacles outside the team's control.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. Learning modules -->
+    <section class="section section--alt" id="modules" aria-labelledby="modules-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Learn</p>
+          <h2 class="section__title" id="modules-title">Learning modules</h2>
+          <p class="section__lead">Seven topics that together describe how an Agile Coach supports teams. Open any card for the key ideas; full modules are being added sprint by sprint.</p>
+        </div>
+
+        <ol class="card-grid card-grid--modules">
+          <li class="card module-card" id="module-understanding">
+            <div class="card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-compass"/></svg></span>
+              <span class="card__kicker">Module 1</span>
+            </div>
+            <h3 class="card__title">Understanding Agile coaching</h3>
+            <p class="card__text">What an Agile Coach does, why the role exists, and why the goal is a team that no longer needs its coach.</p>
+            <details class="card__more">
+              <summary>Learn more<span class="visually-hidden"> about understanding Agile coaching</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <ul>
+                <li>The coach helps a team adopt and improve agile practices by working alongside it, not by imposing them.</li>
+                <li>Activities include teaching, facilitating, mentoring, coaching, observing and removing obstacles.</li>
+              </ul>
+              <a class="text-link" href="#what-is">Read the introduction <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </details>
+          </li>
+
+          <li class="card module-card" id="module-roles">
+            <div class="card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-scale"/></svg></span>
+              <span class="card__kicker">Module 2</span>
+            </div>
+            <h3 class="card__title">Agile Coach vs Scrum Master vs Manager</h3>
+            <p class="card__text">Three roles that are often confused, compared by scope, framework, authority and main goal.</p>
+            <details class="card__more">
+              <summary>Learn more<span class="visually-hidden"> about the role comparison</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <ul>
+                <li>The Scrum Master is a Scrum accountability for one Scrum Team.</li>
+                <li>The Agile Coach works with any agile approach, often across several teams.</li>
+                <li>Only the manager has hierarchical authority over people.</li>
+              </ul>
+              <a class="text-link" href="#role-comparison">See the comparison <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </details>
+          </li>
+
+          <li class="card module-card" id="module-stances">
+            <div class="card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-stances"/></svg></span>
+              <span class="card__kicker">Module 3</span>
+            </div>
+            <h3 class="card__title">The four coaching stances</h3>
+            <p class="card__text">Teacher, mentor, facilitator and professional coach: the coach chooses the stance that fits the situation.</p>
+            <details class="card__more">
+              <summary>Learn more<span class="visually-hidden"> about the four coaching stances</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <ul>
+                <li>The stances come from the Agile Coaching Competency Framework (Spayd &amp; Adkins, 2011).</li>
+                <li>Each stance helps in some situations and becomes a risk when overused.</li>
+              </ul>
+              <a class="text-link" href="#stances">Explore the stances <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            </details>
+          </li>
+
+          <li class="card module-card" id="module-facilitation">
+            <div class="card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-diamond"/></svg></span>
+              <span class="card__kicker">Module 4</span>
+            </div>
+            <h3 class="card__title">Facilitation</h3>
+            <p class="card__text">Help a group think and decide together while staying neutral on the content.</p>
+            <details class="card__more">
+              <summary>Learn more<span class="visually-hidden"> about facilitation</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <ul>
+                <li><strong>Participatory decision-making:</strong> a divergent phase, a "groan zone" and a convergent phase. The facilitator helps the group through the groan zone instead of skipping it (Kaner et al., 2014).</li>
+                <li><strong>Effective retrospectives</strong> follow five stages: set the stage, gather data, generate insights, decide what to do, close (Derby &amp; Larsen, 2006).</li>
+              </ul>
+            </details>
+          </li>
+
+          <li class="card module-card" id="module-team-dynamics">
+            <div class="card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-team"/></svg></span>
+              <span class="card__kicker">Module 5</span>
+            </div>
+            <h3 class="card__title">Team dynamics</h3>
+            <p class="card__text">How teams develop, why psychological safety matters, and how teams grow into self-management.</p>
+            <details class="card__more">
+              <summary>Learn more<span class="visually-hidden"> about team dynamics</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <ul>
+                <li><strong>Forming, storming, norming, performing:</strong> Tuckman's stages of group development (1965).</li>
+                <li><strong>Psychological safety:</strong> a shared belief that the team is safe for interpersonal risk-taking (Edmondson, 1999).</li>
+                <li><strong>Self-management:</strong> the team decides who does what, when and how (Scrum Guide, 2020).</li>
+              </ul>
+            </details>
+          </li>
+
+          <li class="card module-card" id="module-conflict">
+            <div class="card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-conversation"/></svg></span>
+              <span class="card__kicker">Module 6</span>
+            </div>
+            <h3 class="card__title">Conflict resolution</h3>
+            <p class="card__text">Judge how serious a conflict is with five levels, then help the team resolve it itself.</p>
+            <details class="card__more">
+              <summary>Learn more<span class="visually-hidden"> about conflict resolution</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <ol class="level-list">
+                <li>Problem to solve</li>
+                <li>Disagreement</li>
+                <li>Contest</li>
+                <li>Crusade</li>
+                <li>World war</li>
+              </ol>
+              <p>Speed Leas' five levels of conflict, as used by Adkins (2010).</p>
+            </details>
+          </li>
+
+          <li class="card module-card" id="module-improvement">
+            <div class="card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-loop"/></svg></span>
+              <span class="card__kicker">Module 7</span>
+            </div>
+            <h3 class="card__title">Continuous improvement</h3>
+            <p class="card__text">Retrospectives, small experiments and the inspect-and-adapt loop at the heart of Scrum.</p>
+            <details class="card__more">
+              <summary>Learn more<span class="visually-hidden"> about continuous improvement</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <ul>
+                <li>The Sprint Retrospective plans ways to increase quality and effectiveness.</li>
+                <li>Try one change for one sprint, look at the result, then keep it or drop it.</li>
+                <li>Metrics help only when they serve the team: velocity should not be used to rank teams (Cohn, 2005).</li>
+              </ul>
+            </details>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Role comparison at a glance (full module: US-03) -->
+    <section class="section" id="role-comparison" aria-labelledby="roles-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Role comparison</p>
+          <h2 class="section__title" id="roles-title">Agile Coach, Scrum Master and manager at a glance</h2>
+          <p class="section__lead">A Scrum Master often uses coaching skills, which is why the roles are easily confused. Their scope, framework and authority are different.</p>
+        </div>
+
+        <div class="table-wrap" role="region" aria-labelledby="roles-caption" tabindex="0">
+          <table class="compare-table">
+            <caption id="roles-caption" class="visually-hidden">Comparison of the Agile Coach, Scrum Master and manager roles</caption>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col" class="compare-table__coach">Agile Coach</th>
+                <th scope="col">Scrum Master</th>
+                <th scope="col">Manager</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Scope</th>
+                <td class="compare-table__coach">One or several teams, sometimes the organisation</td>
+                <td>One Scrum Team</td>
+                <td>A team or a department</td>
+              </tr>
+              <tr>
+                <th scope="row">Framework</th>
+                <td class="compare-table__coach">Any agile approach</td>
+                <td>Scrum</td>
+                <td>Not tied to a framework</td>
+              </tr>
+              <tr>
+                <th scope="row">Authority over people</th>
+                <td class="compare-table__coach">None: influences and supports</td>
+                <td>None: serves the team</td>
+                <td>Hierarchical</td>
+              </tr>
+              <tr>
+                <th scope="row">Main goal</th>
+                <td class="compare-table__coach">Teams that improve on their own</td>
+                <td>Scrum working well, team effectiveness</td>
+                <td>Results and people management</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footnote"><strong>Good to know:</strong> the Scrum Guide 2020 does not define an "Agile Coach" role. It is a role from practice and from coaching frameworks, not from Scrum itself.</p>
+      </div>
+    </section>
+
+    <!-- E. The four coaching stances -->
+    <section class="section section--feature" id="stances" aria-labelledby="stances-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow eyebrow--light">Coaching stances</p>
+          <h2 class="section__title" id="stances-title">The four coaching stances</h2>
+          <p class="section__lead">An Agile Coach moves between four stances and chooses the one that fits the situation (Spayd &amp; Adkins, 2011).</p>
+        </div>
+
+        <ul class="card-grid card-grid--stances">
+          <li class="card stance-card stance-card--teacher">
+            <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+            <h3 class="card__title">Teacher</h3>
+            <p class="card__text">Shares knowledge the team does not have yet.</p>
+            <dl class="stance-card__facts">
+              <dt>Use it when</dt><dd>The team is new to a practice.</dd>
+              <dt>Risk if overused</dt><dd>The team waits to be told.</dd>
+            </dl>
+          </li>
+          <li class="card stance-card stance-card--mentor">
+            <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-sprout"/></svg></span>
+            <h3 class="card__title">Mentor</h3>
+            <p class="card__text">Shares their own experience to help someone grow in a role.</p>
+            <dl class="stance-card__facts">
+              <dt>Use it when</dt><dd>Someone is learning a role the coach knows.</dd>
+              <dt>Risk if overused</dt><dd>The person copies instead of finding their own style.</dd>
+            </dl>
+          </li>
+          <li class="card stance-card stance-card--facilitator">
+            <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-diamond"/></svg></span>
+            <h3 class="card__title">Facilitator</h3>
+            <p class="card__text">Guides a meeting so the group decides, while staying neutral on the content.</p>
+            <dl class="stance-card__facts">
+              <dt>Use it when</dt><dd>Planning, retrospectives, team decisions.</dd>
+              <dt>Risk if overused</dt><dd>The team never learns to facilitate.</dd>
+            </dl>
+          </li>
+          <li class="card stance-card stance-card--coach">
+            <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#icon-question"/></svg></span>
+            <h3 class="card__title">Professional coach</h3>
+            <p class="card__text">Asks powerful questions so the person finds their own answer.</p>
+            <dl class="stance-card__facts">
+              <dt>Use it when</dt><dd>The person has the knowledge but is stuck.</dd>
+              <dt>Risk if overused</dt><dd>Feels like a guessing game for beginners.</dd>
+            </dl>
+          </li>
+        </ul>
+
+        <div class="stance-notes">
+          <div class="stance-note">
+            <h3 class="stance-note__title">The stance follows the team</h3>
+            <p>A coach adapts to the team's stage: more teaching while a team is forming, more facilitation of conflict while it is storming, and more coaching once it performs.</p>
+          </div>
+          <div class="stance-note">
+            <h3 class="stance-note__title">Powerful questions</h3>
+            <p>Open, curious and free of hidden advice or blame, for example:</p>
+            <p class="stance-note__quotes"><q>What options do you see?</q> <q>What could we try next sprint?</q></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. Learning journey -->
+    <section class="section" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <p class="eyebrow">Your learning journey</p>
+          <h2 class="section__title" id="journey-title">Five steps from first ideas to practice</h2>
+        </div>
+
+        <ol class="journey">
+          <li class="journey__step">
+            <span class="journey__num" aria-hidden="true">1</span>
+            <h3 class="journey__title">Discover</h3>
+            <p>Understand what Agile coaching is.</p>
+            <a class="text-link" href="#what-is">Start here<span class="visually-hidden">: what is Agile coaching</span></a>
+          </li>
+          <li class="journey__step">
+            <span class="journey__num" aria-hidden="true">2</span>
+            <h3 class="journey__title">Explore</h3>
+            <p>Learn the role and the coaching stances.</p>
+            <a class="text-link" href="#stances">Coaching stances</a>
+          </li>
+          <li class="journey__step">
+            <span class="journey__num" aria-hidden="true">3</span>
+            <h3 class="journey__title">Understand</h3>
+            <p>Explore facilitation, team dynamics and conflict resolution.</p>
+            <a class="text-link" href="#module-facilitation">Learning modules</a>
+          </li>
+          <li class="journey__step">
+            <span class="journey__num" aria-hidden="true">4</span>
+            <h3 class="journey__title">Practise</h3>
+            <p>Apply the concepts to realistic team situations.</p>
+            <a class="text-link" href="#scenarios">Explore Practical Scenarios</a>
+          </li>
+          <li class="journey__step">
+            <span class="journey__num" aria-hidden="true">5</span>
+            <h3 class="journey__title">Improve</h3>
+            <p>Check your understanding and keep learning.</p>
+            <span class="tag">Quiz coming soon</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- G. Practical learning preview -->
+    <section class="section section--alt" id="scenarios" aria-labelledby="scenarios-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Practise</p>
+          <h2 class="section__title" id="scenarios-title">Practical scenarios</h2>
+          <p class="section__lead">Real situations a coach meets in Agile teams. Think about how you would respond, then open the hint to check which stances fit.</p>
+        </div>
+
+        <ul class="card-grid card-grid--scenarios">
+          <li class="card scenario-card">
+            <span class="tag tag--accent">Facilitation</span>
+            <h3 class="card__title">The Daily Scrum lasts 40 minutes</h3>
+            <p class="card__text">Who should redesign the event: you or the team?</p>
+            <details class="card__more">
+              <summary>Show hint<span class="visually-hidden">: Daily Scrum lasts 40 minutes</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <p><strong>Stances that fit:</strong> facilitator, teacher.</p>
+            </details>
+          </li>
+          <li class="card scenario-card">
+            <span class="tag tag--accent">Conflict</span>
+            <h3 class="card__title">Two developers clash over code reviews</h3>
+            <p class="card__text">Where would you talk to each developer first?</p>
+            <details class="card__more">
+              <summary>Show hint<span class="visually-hidden">: developers clash over code reviews</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <p><strong>Stances that fit:</strong> facilitator, professional coach.</p>
+            </details>
+          </li>
+          <li class="card scenario-card">
+            <span class="tag tag--accent">Self-management</span>
+            <h3 class="card__title">The Product Owner tells developers how to work</h3>
+            <p class="card__text">What might the Product Owner be worried about?</p>
+            <details class="card__more">
+              <summary>Show hint<span class="visually-hidden">: Product Owner tells developers how to work</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <p><strong>Stances that fit:</strong> mentor, professional coach.</p>
+            </details>
+          </li>
+          <li class="card scenario-card">
+            <span class="tag tag--accent">Metrics</span>
+            <h3 class="card__title">A manager wants to rank teams by velocity</h3>
+            <p class="card__text">What does the manager actually need to know?</p>
+            <details class="card__more">
+              <summary>Show hint<span class="visually-hidden">: manager wants to rank teams by velocity</span><svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <p><strong>Stances that fit:</strong> teacher, professional coach.</p>
+            </details>
+          </li>
+        </ul>
+        <p class="footnote footnote--center">Full step-by-step scenarios with model responses are planned for a later sprint.</p>
+      </div>
+    </section>
+
+    <!-- H. Why learn Agile coaching? -->
+    <section class="section" id="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Why it matters</p>
+          <h2 class="section__title" id="benefits-title">Why learn Agile coaching?</h2>
+        </div>
+
+        <ul class="benefit-grid">
+          <li class="benefit">
+            <span class="icon-badge icon-badge--sm"><svg class="icon" aria-hidden="true"><use href="#icon-team"/></svg></span>
+            <div><h3 class="benefit__title">Improve team collaboration</h3><p>Help a group think and decide together instead of deciding for it.</p></div>
+          </li>
+          <li class="benefit">
+            <span class="icon-badge icon-badge--sm"><svg class="icon" aria-hidden="true"><use href="#icon-diamond"/></svg></span>
+            <div><h3 class="benefit__title">Develop facilitation skills</h3><p>Guide retrospectives and workshops through the groan zone to a decision.</p></div>
+          </li>
+          <li class="benefit">
+            <span class="icon-badge icon-badge--sm"><svg class="icon" aria-hidden="true"><use href="#icon-pulse"/></svg></span>
+            <div><h3 class="benefit__title">Understand team dynamics</h3><p>Recognise the stages teams move through and adapt your stance.</p></div>
+          </li>
+          <li class="benefit">
+            <span class="icon-badge icon-badge--sm"><svg class="icon" aria-hidden="true"><use href="#icon-conversation"/></svg></span>
+            <div><h3 class="benefit__title">Handle disagreements constructively</h3><p>Judge the level of a conflict and move it towards a working agreement.</p></div>
+          </li>
+          <li class="benefit">
+            <span class="icon-badge icon-badge--sm"><svg class="icon" aria-hidden="true"><use href="#icon-flag"/></svg></span>
+            <div><h3 class="benefit__title">Support team self-management</h3><p>Help teams decide who does what, when and how.</p></div>
+          </li>
+          <li class="benefit">
+            <span class="icon-badge icon-badge--sm"><svg class="icon" aria-hidden="true"><use href="#icon-loop"/></svg></span>
+            <div><h3 class="benefit__title">Encourage continuous improvement</h3><p>Run small experiments, inspect the result and keep what works.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- I. Final call to action -->
+    <section class="section section--tight" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-panel">
+          <h2 class="cta-panel__title" id="cta-title">Ready to understand Agile coaching?</h2>
+          <p>Start exploring the principles, practices and real-world situations that help Agile teams become more effective and autonomous.</p>
+          <a class="btn btn--light" href="#modules">
+            Start Learning
+            <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="split__intro">
+          <p class="eyebrow">About</p>
+          <h2 class="section__title" id="about-title">About this project</h2>
+          <p>Agile Coach Learning Hub is an educational website built by a student team of three. It explains the Agile Coach role. It is not a project management or task-tracking tool.</p>
+          <p>Product Owner: Bator Eshizhamsoev. Scrum Master: Javed Iqbal. Developers: Bator Eshizhamsoev, Christian Byemba and Javed Iqbal.</p>
+          <p><a class="text-link" href="https://github.com/mds-coach-agile/agile-coach/blob/main/docs/02-research/agile-coach-research.md">Read our full research document <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></p>
+        </div>
+        <div class="split__body">
+          <h3 class="list-heading">Main sources</h3>
+          <ul class="source-list">
+            <li>Adkins, L. (2010). <cite>Coaching Agile Teams</cite>. Addison-Wesley.</li>
+            <li>Spayd, M. K. &amp; Adkins, L. (2011). <cite>Developing Great Agile Coaches</cite>. Agile Coaching Institute.</li>
+            <li>Schwaber, K. &amp; Sutherland, J. (2020). <a href="https://scrumguides.org/scrum-guide.html"><cite>The Scrum Guide</cite></a>.</li>
+            <li>Kaner, S. et al. (2014). <cite>Facilitator's Guide to Participatory Decision-Making</cite>. Jossey-Bass.</li>
+            <li>Derby, E. &amp; Larsen, D. (2006). <cite>Agile Retrospectives</cite>. The Pragmatic Bookshelf.</li>
+            <li>Tuckman, B. W. (1965). Developmental sequence in small groups. <cite>Psychological Bulletin</cite>.</li>
+            <li>Edmondson, A. (1999). Psychological safety and learning behavior in work teams. <cite>Administrative Science Quarterly</cite>.</li>
+            <li>Cohn, M. (2005). <cite>Agile Estimating and Planning</cite>. Prentice Hall.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- J. Footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <p class="site-footer__name">Agile Coach Learning Hub</p>
+        <p>An educational website about the Agile Coach role: coaching stances, facilitation, team dynamics, conflict resolution and continuous improvement.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2 class="site-footer__heading">Navigate</h2>
+        <ul class="site-footer__list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#modules">Learn</a></li>
+          <li><a href="#role-comparison">Role Comparison</a></li>
+          <li><a href="#stances">Coaching Stances</a></li>
+          <li><a href="#scenarios">Practical Scenarios</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="site-footer__heading">Modules</h2>
+        <ul class="site-footer__list">
+          <li><a href="#module-understanding">Understanding Agile coaching</a></li>
+          <li><a href="#module-roles">Coach vs Scrum Master vs Manager</a></li>
+          <li><a href="#module-stances">The four coaching stances</a></li>
+          <li><a href="#module-facilitation">Facilitation</a></li>
+          <li><a href="#module-team-dynamics">Team dynamics</a></li>
+          <li><a href="#module-conflict">Conflict resolution</a></li>
+          <li><a href="#module-improvement">Continuous improvement</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="site-footer__heading">Project</h2>
+        <ul class="site-footer__list">
+          <li><a href="https://github.com/mds-coach-agile/agile-coach">Source code on GitHub</a></li>
+          <li><a href="#about">Team and sources</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>Student project, 2026. Content based on the sources listed in <a href="#about">About</a>.</p>
+    </div>
+  </footer>
 </body>
 </html>

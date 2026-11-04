@@ -40,5 +40,5 @@ tests/            Automated tests
 
 Never commit API keys or tokens. `.env` files are ignored by Git.
 
-🚀 **Live Demo:** [agile-coach-project.netlify.app](https://netlify.app)
+🚀 **Live Demo:** [mds-agile-coach.netlify.app](https://mds-agile-coach.netlify.app/)
 

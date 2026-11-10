@@ -14,13 +14,13 @@ test('home page has a title', () => {
 });
 
 test('home page has a responsive viewport meta tag', () => {
-  assert.match(html, /<meta name="viewport" content="width=device-width, initial-scale=1">/);
+  assert.match(html, /<meta name="viewport" content="width=device-width, initial-scale=1(\.0)?"/);
 });
 
-test('home page links the shared stylesheet', () => {
-  assert.match(html, /<link rel="stylesheet" href="css\/styles.css">/);
+test('home page has the root element React renders into', () => {
+  assert.match(html, /<div id="root"><\/div>/);
 });
 
-test('home page has exactly one h1', () => {
-  assert.equal(html.match(/<h1[\s>]/g)?.length, 1);
+test('home page loads the React entry point', () => {
+  assert.match(html, /<script type="module" src="\/src\/main.tsx"><\/script>/);
 });

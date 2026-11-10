@@ -63,10 +63,10 @@ Section 3
 - Does Scrum have an agile coach role?
 - Where does the agile coach role come from?
 - Which roles does the Scrum Guide define?
-- Is "agile coach" an official Scrum accountability?
+- Who are the members of a Scrum Team?
 
 **Answer**
-The Scrum Guide 2020 defines three accountabilities: Product Owner, Scrum Master and Developers. It does not define an Agile Coach. The Agile Coach role comes from practice and from coaching frameworks such as the Agile Coaching Institute's competency framework (Spayd & Adkins, 2011).
+The Scrum Guide 2020 defines three accountabilities: Product Owner, Scrum Master and Developers. It does not define an Agile Coach. The Agile Coach role comes from practice and from coaching frameworks, for example the Agile Coaching Institute's work (Spayd & Adkins, 2011).
 
 ---
 
@@ -204,7 +204,7 @@ Section 6
 Edmondson defines team psychological safety as a shared belief that the team is safe for interpersonal risk-taking, and links it to team learning (Edmondson, 1999). Retrospectives and experiments only work if people feel safe to speak.
 
 ### `self_management`
-Section 6
+Section 6, 9
 
 **Example phrases**
 - What does self-managing team mean?
@@ -253,10 +253,10 @@ Section 8
 - What is inspect and adapt?
 
 **Answer**
-The Sprint Retrospective exists to plan ways to increase quality and effectiveness; the team picks the most helpful changes and may add them to the next Sprint Backlog (Schwaber & Sutherland, 2020). Improvement works best as small experiments: try one change for one sprint, look at the result, keep or drop it.
+The Sprint Retrospective exists to plan ways to increase quality and effectiveness; the team picks the most helpful changes and may add them to the next Sprint Backlog (Schwaber & Sutherland, 2020). Improvement works best as small experiments: try one change for one sprint, look at the result, keep or drop it. This is the inspect-and-adapt loop at the heart of Scrum's empiricism (Schwaber & Sutherland, 2020).
 
 ### `metrics_velocity`
-Section 8, 9
+Section 8, 9, 10
 
 **Example phrases**
 - My manager wants to compare teams by velocity, is that a good idea?
@@ -264,7 +264,7 @@ Section 8, 9
 - Which metrics should an agile team use?
 
 **Answer**
-Velocity depends on each team's own estimation scale, so it should not be used to compare or rank teams; it is a planning tool for one team (Cohn, 2005). A coach asks the manager what they need to know and proposes outcome or flow metrics instead.
+Velocity depends on each team's own estimation scale, so it should not be used to compare or rank teams (Cohn, 2005). It is a planning tool for one team, not a measure of performance. A coach asks the manager what they need to know and proposes outcome or flow metrics instead.
 
 ---
 
@@ -279,7 +279,7 @@ Velocity depends on each team's own estimation scale, so it should not be used t
 - Who are you?
 
 **Answer**
-Hi! I'm the Agile Coach Learning Hub assistant. I can answer questions about the Agile Coach role, the difference with a Scrum Master and a manager, coaching stances, facilitation, team dynamics, conflict resolution and continuous improvement. What would you like to know?
+Hi! I'm the Agile Coach Learning Hub assistant. I can answer questions about the Agile Coach role, the difference between an Agile Coach, a Scrum Master and a manager, coaching stances, facilitation, team dynamics, conflict resolution and continuous improvement. What would you like to know?
 
 ### `sources`
 
@@ -289,7 +289,7 @@ Hi! I'm the Agile Coach Learning Hub assistant. I can answer questions about the
 - Give me your sources
 
 **Answer**
-The content is based on: Adkins (2010) *Coaching Agile Teams*; Spayd & Adkins (2011) Agile Coaching Competency Framework; Schwaber & Sutherland (2020) *The Scrum Guide* (free at scrumguides.org); Derby & Larsen (2006) *Agile Retrospectives*; Kaner et al. (2014) *Facilitator's Guide to Participatory Decision-Making*; Tuckman (1965); Edmondson (1999); Cohn (2005) *Agile Estimating and Planning*; Davies & Sedley (2009) *Agile Coaching*.
+The content is based on: Adkins (2010) *Coaching Agile Teams*; Spayd & Adkins (2011) *Developing Great Agile Coaches* (Agile Coaching Institute); Schwaber & Sutherland (2020) *The Scrum Guide* (free at scrumguides.org); Derby & Larsen (2006) *Agile Retrospectives*; Kaner et al. (2014) *Facilitator's Guide to Participatory Decision-Making*; Tuckman (1965) and Tuckman & Jensen (1977); Edmondson (1999); Cohn (2005) *Agile Estimating and Planning*; Davies & Sedley (2009) *Agile Coaching*.
 
 ### `fallback` (out of scope)
 

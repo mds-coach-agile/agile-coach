@@ -13,11 +13,25 @@
 
 | # | Date | Sprint / session | Status |
 |---|---|---|---|
+| 0 | 27 Oct 2026 | Sprint 0 / Pre-game | No Daily Scrum (planning session) |
 | 1 | 03 Nov 2026 | Sprint 1, Session 1 | Written up 10 Nov; awaiting team approval |
 | 2 | ____ 2026 | Sprint 1, Session 2 | To add |
 | 3 | ____ 2026 | Sprint 1, Session 3 | To add |
 | 4 | ____ 2026 | Sprint 2, Session 2 | To fill in during the meeting |
 | 5 | ____ 2026 | Sprint 2, Session 3 | To fill in during the meeting |
+
+---
+
+## 0. 27 Oct 2026 — Sprint 0 / Pre-game (no Daily Scrum)
+
+No Daily Scrum was held. This session was Sprint 0 / Pre-game: Design Thinking, Release Planning and Sprint 1 Planning (see `meeting-minutes.md`, section 1). The Daily Scrum starts once a Sprint is running; the first one was on 3 Nov 2026.
+
+**Open items carried into Sprint 1:**
+
+| Item | Owner | Status |
+|---|---|---|
+| Set up tools (Netlify, BOTSchool.ai, Lovable.dev) | Christian | BOTSchool.ai blocked on 3 Nov — needs a credit card (#9) |
+| Templates for meeting minutes and Daily Scrum logs | Javed | Done (10 Nov) — `meeting-minutes.md` and `daily-scrum-log.md` |
 
 ---
 

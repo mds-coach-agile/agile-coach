@@ -277,6 +277,16 @@ Sprint 1, Session 2 — ____ 2026 (Sprint 1 ends 10 November 2026)
 
 ---
 
+**Approved by the team:**
+
+| Name | Role | Approved |
+|---|---|---|
+| Bator Eshizhamsoev | Product Owner | ☐ |
+| Christian Byemba | Developer | ☐ |
+| Javed Iqbal | Scrum Master | ☐ |
+
+---
+
 ## 3. ____ 2026 — Sprint 1, Session 2
 
 *To add.*

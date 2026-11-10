@@ -7,14 +7,14 @@
 
 > **How this file works:** meetings are listed in date order; new meetings are added at the bottom.
 > Past minutes are not edited silently — corrections are added as a dated note, e.g. *"Correction (10 Nov): …"*.
-> The Daily Scrum log is kept separately in `daily-scrum-log-sprint-2.md`.
+> All Daily Scrums (every sprint) are logged in one file: `daily-scrum-log.md`.
 
 ## Contents
 
 | # | Date | Meeting | Status |
 |---|---|---|---|
 | 1 | 27 Oct 2026 | Sprint 0 / Pre-game: Design Thinking, Release Planning, Sprint 1 Planning | Written up 10 Nov; awaiting team approval |
-| 2 | 03 Nov 2026 | Sprint 1, Session 1 | To add |
+| 2 | 03 Nov 2026 | Sprint 1, Session 1 | Written up 10 Nov; awaiting team approval |
 | 3 | ____ 2026 | Sprint 1, Session 2 | To add |
 | 4 | ____ 2026 | Sprint 1, Session 3 | To add |
 | 5 | 10 Nov 2026 | Sprint 1 Review | To fill in during the meeting |
@@ -224,7 +224,56 @@ Sprint 1, Session 1 — Tuesday, 3 November 2026, in class
 
 ## 2. 03 Nov 2026 — Sprint 1, Session 1
 
-*To add. Paste the team's notes for this session.*
+| | |
+|---|---|
+| **Project** | Agile Coach Learning Hub |
+| **Meeting** | Sprint 1, Session 1 (working session + Daily Scrum) |
+| **Date** | Tuesday, 3 November 2026 |
+| **Time** | 20:30 – 22:30 |
+| **Sprint** | Sprint 1 (27 October – 10 November 2026) |
+| **Location** | In class, ISEC (Christian joined remotely) |
+| **Duration** | 2 hours |
+| **Attendees** | ☑ Bator Eshizhamsoev (Product Owner / Developer) ☑ Christian Byemba (Developer, remote) ☑ Javed Iqbal (Scrum Master / Developer) — all 3 team members present |
+| **Minutes recorded by** | Javed Iqbal (Scrum Master) |
+
+> **Note:** These minutes were written up on 10 November 2026 from the team's notes and the GitHub history for 3 November (commits, pull requests and issues). Work committed before 20:30 was done before the class session. GitHub user `boolishta` is Bator Eshizhamsoev.
+
+---
+
+### 1. Daily Scrum
+
+The team (Bator, Christian, Javed) agreed to start working on the user stories of Sprint 1. Impediment raised: BOTSchool.ai asks for a credit card before enabling web integration (#9). Full entry: `daily-scrum-log.md`, entry 1.
+
+### 2. Work recorded on GitHub on 3 November
+
+| Time | Work | By | Result |
+|---|---|---|---|
+| 11:15 – 11:31 | Definition of Done created (`docs/definition-of-done.md`) | Bator | Merged — PR #10 |
+| 14:26 – 16:41 | Agile Coach research document finalised (`docs/research/agile-coach-research.md`) | Christian | Merged — PR #8 |
+| 16:47 – 17:24 | Design Thinking session plan — user paths (#5) | Javed | Merged — PR #16 |
+| 18:11 | First home page and navigation (plain HTML, with tests) on branch `feature/issue-11-home-navigation` (#11) | Javed | Not merged (later replaced by the React site in PR #30) |
+| 18:44 | Sprint 1 planning record on branch `docs/sprint-1-planning` | Javed | Not merged |
+| 21:13 – 21:21 | Repository folders renamed | Javed | Merged — PR #23 |
+| 22:34 | Release plan (#20) | Javed | Merged later — PR #24 (9 Nov) |
+| During the day | User stories entered on GitHub as issues #11–#14 (home page, Agile Coach role, quiz, chatbot); #11 assigned to Javed | Bator | Open |
+| During the day | Christian asked the teacher whether academic access to BOTSchool.ai is available (#9) | Christian | Waiting for answer |
+
+### 3. Discussion and decisions
+
+| # | Topic / decision | Decided by |
+|---|---|---|
+| 1 | The team refined the project requirements and the user stories. | Team |
+| 2 | The team planned the work for Sprint 1. | Team |
+
+### 4. Action items for the next session
+
+| # | Action | Owner | Due |
+|---|---|---|---|
+| 1 | Start working on the Sprint 1 user stories | Developers (Bator, Christian, Javed) | Next session |
+
+### 5. Next meeting
+
+Sprint 1, Session 2 — ____ 2026 (Sprint 1 ends 10 November 2026)
 
 ---
 
@@ -556,13 +605,13 @@ Not applicable — this is the first Retrospective.
 
 ## 8. ____ 2026 — Sprint 2, Session 2
 
-Daily Scrum and mid-sprint check: see `daily-scrum-log-sprint-2.md`. Record here any decisions taken (e.g. scope changes by the PO).
+Daily Scrum and mid-sprint check: see `daily-scrum-log.md`. Record here any decisions taken (e.g. scope changes by the PO).
 
 ---
 
 ## 9. ____ 2026 — Sprint 2, Session 3
 
-Daily Scrum and demo rehearsal: see `daily-scrum-log-sprint-2.md`. Record here any decisions taken.
+Daily Scrum and demo rehearsal: see `daily-scrum-log.md`. Record here any decisions taken.
 
 ---
 

@@ -1,0 +1,6 @@
+{
+  "name": "Agile Coach Learning Hub",
+  "description": "An interactive, minimalist educational hub exploring the role of an Agile Coach, role comparisons, coaching stances, and scenario-based reactive knowledge checks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

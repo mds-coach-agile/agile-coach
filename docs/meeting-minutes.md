@@ -7,7 +7,7 @@
 
 > **How this file works:** meetings are listed in date order; new meetings are added at the bottom.
 > Past minutes are not edited silently — corrections are added as a dated note, e.g. *"Correction (10 Nov): …"*.
-> The Daily Scrum log is kept separately in `daily-scrum-log-sprint-2.md`.
+> All Daily Scrums (every sprint) are logged in one file: `daily-scrum-log.md`.
 
 ## Contents
 
@@ -242,11 +242,7 @@ Sprint 1, Session 1 — Tuesday, 3 November 2026, in class
 
 ### 1. Daily Scrum
 
-The team (Bator, Christian, Javed) agreed to start working on the user stories of Sprint 1.
-
-| Impediment | Raised by |
-|---|---|
-| BOTSchool.ai asks for a credit card before enabling web integration (#9) | Christian |
+The team (Bator, Christian, Javed) agreed to start working on the user stories of Sprint 1. Impediment raised: BOTSchool.ai asks for a credit card before enabling web integration (#9). Full entry: `daily-scrum-log.md`, entry 1.
 
 ### 2. Work recorded on GitHub on 3 November
 
@@ -609,13 +605,13 @@ Not applicable — this is the first Retrospective.
 
 ## 8. ____ 2026 — Sprint 2, Session 2
 
-Daily Scrum and mid-sprint check: see `daily-scrum-log-sprint-2.md`. Record here any decisions taken (e.g. scope changes by the PO).
+Daily Scrum and mid-sprint check: see `daily-scrum-log.md`. Record here any decisions taken (e.g. scope changes by the PO).
 
 ---
 
 ## 9. ____ 2026 — Sprint 2, Session 3
 
-Daily Scrum and demo rehearsal: see `daily-scrum-log-sprint-2.md`. Record here any decisions taken.
+Daily Scrum and demo rehearsal: see `daily-scrum-log.md`. Record here any decisions taken.
 
 ---
 

@@ -37,7 +37,7 @@
 | **Date** | Tuesday, 27 October 2026 |
 | **Location** | In class, ISEC |
 | **Duration** | 2 hours |
-| **Attendees** | ☐ Bator Eshizhamsoev (Product Owner / Developer) ☐ Christian Byemba (Developer) ☐ Javed Iqbal (Scrum Master / Developer) |
+| **Attendees** | ☑ Bator Eshizhamsoev (Product Owner / Developer) ☑ Christian Byemba (Developer) ☑ Javed Iqbal (Scrum Master / Developer) — all 3 team members present |
 | **Minutes recorded by** | Javed Iqbal (Scrum Master) |
 
 > **Note:** These minutes were written up on 10 November 2026 from the team's notes of the meeting. Minutes are recorded during each session from Sprint 2 onward.
@@ -101,14 +101,16 @@ The team discussed the product to be built: the **Agile Coach Learning Hub**, an
 
 #### 3.1 User stories reviewed
 
-| ID | User story | Estimate |
-|---|---|---|
-| US-02 | As a student, I want a clear home page and navigation menu, so that I can find each learning module quickly. | ____ |
-| US-03 | As a student, I want to understand what an Agile Coach does and how the role differs from a Scrum Master and a manager, so that I stop confusing the three roles. | ____ |
-| US-04 | As a student, I want to answer a short quiz and see my score, so that I can test my understanding. | ____ |
-| US-05 | As a student, I want to ask an AI chatbot questions about the Agile Coach role, so that I get instant answers when the pages aren't enough. | ____ |
+| ID | User story | Priority | Acceptance criteria |
+|---|---|---|---|
+| US-01 | As a learner, I want a clear introduction to Agile coaching so that I understand the purpose of the role. | Must | The page explains the role in plain language and includes at least one practical example. |
+| US-02 | As a learner, I want to compare an Agile Coach, Scrum Master, and manager so that I can distinguish their responsibilities. | Must | The comparison presents meaningful differences in focus and responsibilities. |
+| US-03 | As a learner, I want to explore coaching stances so that I can recognise different ways a coach supports a team. | Should | Each included stance has an explanation and an example of when it may be useful. |
+| US-04 | As a learner, I want to respond to a realistic team scenario so that I can practise applying coaching concepts. | Should | The learner can choose a response and receives an explanation of the outcome or reasoning. |
+| US-05 | As a learner, I want to complete a knowledge check so that I can assess my understanding. | Should | The learner receives clear feedback and can review the relevant learning content. |
+| US-06 | As a learner, I want to navigate between topics easily so that I can follow the learning path or revisit concepts. | Must | Topic navigation is visible, understandable, and works across the learning pages. |
 
-*The user stories were written and refined during Sprint 0 and entered on GitHub on 3 November (issues #11–#14).*
+*Priorities are indicative and set by the Product Owner. The AI chatbot (BOTSchool.ai) was discussed as a possible feature but was not written as a user story for Sprint 1, because access had not been confirmed.*
 
 #### 3.2 Release plan
 
@@ -129,11 +131,40 @@ The team agreed to define a Definition of Done. It was documented in `docs/defin
 
 ### 4. Sprint 1 Planning (30 min)
 
-**Sprint 1 Goal:** ______________________________________________
+The team planned Sprint 1 (27 Oct – 10 Nov; 3 working sessions of 2 hours, the first in class on 3 Nov).
 
-*(Write the goal the team agreed. If no goal was formally agreed, write "No formal Sprint Goal was agreed.")*
+#### 4.1 Sprint Goal (Why)
 
-**Sprint 1 Backlog (selected user stories):** ☐ US-02 ☐ US-03 ☐ US-04 ☐ US-05
+**Sprint 1 Goal:** Build the first version of the Agile Coach Learning Hub, so that a learner can navigate between topics, understand what an Agile Coach does, and tell the role apart from a Scrum Master and a manager.
+
+#### 4.2 Sprint Backlog (What)
+
+All six user stories from the release plan were selected for Sprint 1:
+
+| Order | User story | Priority |
+|---|---|---|
+| 1 | US-01 Introduction to Agile coaching | Must |
+| 2 | US-02 Agile Coach vs Scrum Master vs manager | Must |
+| 3 | US-06 Navigation between topics | Must |
+| 4 | US-03 Coaching stances | Should |
+| 5 | US-04 Realistic team scenario | Should |
+| 6 | US-05 Knowledge check | Should |
+
+**Owners:** not assigned in advance. The Developers pull the next available story in priority order whenever they are free (self-management).
+
+#### 4.3 Plan (How)
+
+| Session | Planned work |
+|---|---|
+| Session 1 — 03 Nov (in class) |  |
+| Session 2 — ____ |  |
+| Session 3 — ____ |  |
+
+#### 4.4 Risks identified
+
+| Risk | Response |
+|---|---|
+| BOTSchool.ai access for the chatbot is not confirmed | Keep the chatbot out of the Sprint 1 Backlog; check access during Sprint 0 and ask the instructor if needed |
 
 ---
 
@@ -154,8 +185,10 @@ The team agreed to define a Definition of Done. It was documented in `docs/defin
 |---|---|
 | 1 | The team will build the Agile Coach Learning Hub as an interactive educational website for students learning Agile. |
 | 2 | The product goals and specifications above form the starting point for the Product Backlog. |
-| 3 | Team roles are assigned as listed in section 5. |
-| 4 | The Sprint 1 Goal and backlog are as recorded in section 4. |
+| 3 | The team will use **Scrum** as the project methodology. |
+| 4 | The team will use **GitHub** for the project (code, documentation and backlog). |
+| 5 | Team roles are assigned as listed in section 5. |
+| 6 | The Sprint 1 Goal and backlog are as recorded in section 4. |
 
 ---
 
@@ -231,9 +264,7 @@ Inspect the outcome of Sprint 1 (27 Oct – 10 Nov), collect feedback, and updat
 
 ### 2. Sprint 1 Goal (2 min)
 
-**Agreed Sprint 1 Goal:** ______________________________________________
-
-*(If no goal was formally agreed on 27 Oct, record this honestly: "No Sprint Goal was formally confirmed. The proposed goal in PR #22 was: home page, 'What is an Agile Coach' page, and quiz.")*
+**Agreed Sprint 1 Goal:** Build the first version of the Agile Coach Learning Hub, so that a learner can navigate between topics, understand what an Agile Coach does, and tell the role apart from a Scrum Master and a manager. *(See meeting 1, section 4.1.)*
 
 **Was the Sprint Goal met?** ☐ Yes ☐ Partly ☐ No ☐ No goal agreed
 
@@ -245,18 +276,31 @@ Inspect the outcome of Sprint 1 (27 Oct – 10 Nov), collect feedback, and updat
 | #5 | Design Thinking session — user paths | `docs/design-thinking/design-thinking-session-user-paths.md` | Javed | ☐ |
 | #2 | Definition of Done | `docs/definition-of-done.md` | Bator | ☐ |
 | #3 | Roles assigned | Release plan, section 9 | Bator | ☐ |
-| #4 | Meeting minutes / Daily Scrum templates | `docs/meetings/templates/` | Javed | ☐ |
+| #4 | Meeting minutes / Daily Scrum templates | `docs/meeting-minutes.md` | Javed | ☐ |
 | #6, #8 | Agile Coach research | `docs/research/agile-coach-research.md` | Christian | ☐ |
 | #7 | Accounts & environments (Netlify, BOTSchool, Lovable) | mds-agile-coach.netlify.app | Christian | ☐ |
 | #20 | Release plan | `docs/release-plan/release-plan.md` | Javed | ☐ |
+
+#### 3a. Website pages merged on 10 Nov — PR #30 (decide at the Review)
+
+PR #30 (`agile-coach-pages`, committed by Bator at 10:40, merged to `main` by Javed at 11:03 on 10 Nov) added the first version of the website (React + Vite, one page with sections). The team decides at the Review whether each item meets the Definition of Done (e.g. deployed to Netlify, reviewed, content checked, PO approval).
+
+| Issue | User story | What PR #30 added | Meets DoD? | Accepted by PO? |
+|---|---|---|---|---|
+| #11 / #26 | US-06 Navigation between topics | Navbar, hero (home) section, learning paths overview, footer | ☐ Yes ☐ No | ☐ |
+| #12 / #27 | US-01 Introduction · US-02 Coach vs Scrum Master vs manager | Role comparison section | ☐ Yes ☐ No | ☐ |
+| — | US-03 Coaching stances | Coaching stances section | ☐ Yes ☐ No | ☐ |
+| — | (not in backlog) | Conflict levels section | ☐ Yes ☐ No | ☐ |
+| #13 / #28 | US-05 Knowledge check | Interactive quiz widget and full assessment | ☐ Yes ☐ No | ☐ |
+
+**Deployed to Netlify?** ☐ Yes ☐ No — **Reviewed by a second developer before merging?** ☐ Yes ☐ No
 
 ### 4. Work not Done (5 min)
 
 | Issue | Item | Status | Reason | Back to Product Backlog? |
 |---|---|---|---|---|
-| #11 / #26 | Home page and navigation | Built on branch, no PR, not merged | __________ | ☐ |
-| #12 / #27 | What is an Agile Coach | Not started | __________ | ☐ |
-| #13 / #28 | Knowledge quiz | Not started | __________ | ☐ |
+| — | US-04 Realistic team scenario | Not started | __________ | ☐ |
+| | Any PR #30 item not accepted as Done in 3a | | __________ | ☐ |
 | #9 | BOTSchool web integration access | Blocked since 3 Nov (credit card) | Waiting for teacher | ☐ |
 
 ### 5. Feedback from the teacher / stakeholders (10 min)
@@ -434,6 +478,8 @@ Not applicable — this is the first Retrospective.
 
 *Proposed wording for discussion (not yet agreed):* "A student can visit the live site, learn what an Agile Coach is and how the role differs from a Scrum Master and a manager, and test their knowledge with a quiz."
 
+*Note:* first versions of these pages and the quiz were merged in PR #30 on 10 Nov. If the Review accepts them as Done, the Sprint 2 Goal could focus on what is still missing, e.g. live Netlify deployment, content accuracy, the realistic team scenario (US-04) and the chatbot.
+
 **Agreed by:** ☐ Bator ☐ Christian ☐ Javed
 
 ### 3. Definition of Done
@@ -451,15 +497,17 @@ Not applicable — this is the first Retrospective.
 
 **Duplicates resolved:** keep ☐ #26–#29 ☐ #11–#14
 
+> **Update (10 Nov, 11:03):** PR #30 merged first versions of #26, #27 and #28 into `main` (see meeting 5, section 3a). The options and estimates below were prepared before that merge, so the team should re-estimate only the **remaining** work on these items.
+
 **Scope option chosen by the PO:**
 ☐ **A — class time only (~12 h):** #26, #27 (extend home page section), #28. Chatbot not in sprint.
 ☐ **B — class + outside work (~25 h):** #26, #27, #28, #29 (or chatbot fallback).
 
 | Priority | Issue | Item | Points | Selected? | Notes |
 |---|---|---|---|---|---|
-| 1 | #26 | Home Page and Navigation | 3 | ☐ | Built on branch; needs PR |
-| 2 | #27 | What is an Agile Coach | 5 | ☐ | Overlap with home page: scope decision ________ |
-| 3 | #28 | Interactive Knowledge Quiz | 5 | ☐ | |
+| 1 | #26 | Home Page and Navigation | 3 | ☐ | First version merged in PR #30. Remaining work: ________ |
+| 2 | #27 | What is an Agile Coach | 5 | ☐ | Role comparison section merged in PR #30. Remaining work: ________ |
+| 3 | #28 | Interactive Knowledge Quiz | 5 | ☐ | Quiz and full assessment merged in PR #30. Remaining work: ________ |
 | 4 | #29 | BOTSchool Chatbot Test Set | 5 | ☐ | Depends on #9 |
 | — | #9 | BOTSchool web access | — | ☐ | Blocked |
 | | | **Total selected** | | | |

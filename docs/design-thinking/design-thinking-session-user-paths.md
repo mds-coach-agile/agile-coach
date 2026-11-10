@@ -281,4 +281,3 @@ This issue's work can be considered complete when:
 - The workshop notes and journey map are committed to the project documentation.
 
 **Important:** The agenda and journey map in this document are prepared as workshop material. Complete the session record, validate the hypotheses, and replace placeholders with actual outcomes before marking the activity as conducted.
-//

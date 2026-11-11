@@ -617,6 +617,19 @@ Not applicable — this is the first Retrospective.
 
 Daily Scrum and mid-sprint check: see `daily-scrum-log.md`. Record here any decisions taken (e.g. scope changes by the PO).
 
+### Work recorded on GitHub since Sprint 2 Planning (10 – 11 Nov)
+
+> **Note (11 Nov):** compiled from the GitHub history and the working tree on 11 November 2026, as input for the next Daily Scrum. It records work only, not decisions. GitHub user `jvd8888` is Javed Iqbal.
+
+| Date / time | Work | By | Branch | Result |
+|---|---|---|---|---|
+| 10 Nov 20:55 | Tests and README updated for the React site | Christian | `fix/tests-and-readme-for-react-site` | Pushed; no PR merged yet |
+| 10 Nov 21:09 – 21:42 | Chatbot test set with expected answers, training intents from the research, review fixes (#29) | Christian | `feature/issue-29-chatbot-test-set` | Pushed; no PR merged yet |
+| 11 Nov 17:53 – 18:09 | "What is an Agile Coach" page content, with story, source and AI-usage header, and a content draft (#27) | Javed | `docs/agile-coach-role-content` | Pushed; no PR merged yet |
+| 11 Nov 18:21 | Four core articles in `content/articles/` (#31): 01 The Agile Coach Identity · 02 Triad of Roles: Coach, SM & PM · 03 The 4 Coaching Stances · 04 Conflict & Team Facilitation (≈ 1,150–1,300 words each, sources listed in each file) | Javed | `feature/issue-31-core-articles` | In progress — not yet committed |
+
+**Still open:** #9 BOTSchool.ai web access (blocked since 3 Nov); US-04 Realistic team scenario (not started).
+
 ---
 
 ## 9. ____ 2026 — Sprint 2, Session 3

@@ -76,6 +76,8 @@ Full minutes of this session: `meeting-minutes.md`, section 2.
 | **Attendees** | ☐ Bator ☐ Christian ☐ Javed |
 | **Recorded by** | |
 
+> **Input (11 Nov):** work recorded on GitHub since Sprint 2 Planning is listed in `meeting-minutes.md`, section 8 (#27 role page content, #29 chatbot test set, #31 core articles, tests/README update). Use it as a prompt for "What did I do since the last session?" — the answers below are still each member's own.
+
 | Member | What did I do since the last session? | What will I do this session? | Any impediments? |
 |---|---|---|---|
 | Bator | | | |
@@ -84,6 +86,7 @@ Full minutes of this session: `meeting-minutes.md`, section 2.
 
 | Impediment | Raised by | Owner | Status |
 |---|---|---|---|
+| #9 BOTSchool.ai web access (carried over from 3 Nov) | Christian | Christian | ☐ Open ☐ Resolved |
 | | | | |
 
 **Mid-sprint check (last 10 min):** on track for the Sprint Goal? ☐ Yes ☐ No — if no, what changes:

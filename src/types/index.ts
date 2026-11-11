@@ -63,6 +63,9 @@ export interface QuizQuestion {
   question: string;
   options: QuizOption[];
   coachingTakeaway: string;
+  relatedArticleId: string;
+  relatedArticleTitle: string;
+  recommendedReadingHint?: string;
 }
 
 export interface QuizContextValue {
@@ -87,4 +90,16 @@ export interface QuizContextValue {
   // Modal gateway to full assessment
   isFullAssessmentModalOpen: boolean;
   setFullAssessmentModalOpen: (open: boolean) => void;
+}
+
+export interface ProgressContextValue {
+  completedArticles: string[];
+  isArticleCompleted: (articleId: string) => boolean;
+  markArticleCompleted: (articleId: string) => void;
+  unmarkArticleCompleted: (articleId: string) => void;
+  toggleArticleCompleted: (articleId: string) => void;
+  resetProgress: () => void;
+  completedCount: number;
+  totalArticlesCount: number;
+  progressPercentage: number;
 }

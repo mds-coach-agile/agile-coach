@@ -1,5 +1,13 @@
 # What is an Agile Coach?
 
+> **User story (issue #27):** As a student, I want to understand what an Agile Coach does and how the role differs from a Scrum Master and a Manager, so that I stop confusing these roles.
+>
+> Content source: [docs/research/agile-coach-research.md](../research/agile-coach-research.md), sections 2, 3 and 10, plus the sources below. Text in "quotation marks" is quoted word for word; everything else is a paraphrase with its source in brackets. Scrum Guide quotes were checked against scrumguides.org (November 2020 version) on 11 Nov 2026.
+>
+> AI usage: drafted with Claude (Anthropic) from the team's research document and the cited sources; the team reviews it against those sources before publishing.
+
+---
+
 An **Agile Coach** helps teams and organisations learn to work in an agile way, and then to keep improving **on their own**. The coach works alongside the team, not above it. They don't manage people, assign work or do the team's job (Adkins, 2010; Davies & Sedley, 2009).
 
 ICAgile, one of the main agile certification bodies, describes the role like this: "An agile team coach guides individuals and teams to reach high performance." The coach does this by combining "skills from professional facilitation, professional coaching, mentoring, and teaching" (ICAgile, n.d.).

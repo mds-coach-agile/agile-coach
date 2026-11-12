@@ -170,7 +170,7 @@
 | Content check (proofreading) | Not finished |
 
 **Teacher feedback:**
-1. **Website improvements:** improve the user interface by adding slide-like transitions and movable elements to enhance the user experience.
+1. **Website improvements:** Make the website simpler, more user-friendly, and easier to understand and navigate.
 2. **Velocity and estimation:** discussed the importance of story point estimation and team velocity in project planning and sprint management.
 
 ## 5. 11 Nov 2026 — Sprint 1 Retrospective

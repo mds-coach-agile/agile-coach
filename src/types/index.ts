@@ -69,6 +69,8 @@ export interface ConflictScenario {
   coachChallenge: string;
   options: ConflictScenarioOption[];
   articleId: string;
+  reflectionQuestion?: string;
+  reviewTopics?: string;
 }
 
 export interface QuizOption {

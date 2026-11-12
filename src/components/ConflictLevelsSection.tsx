@@ -278,12 +278,38 @@ export const ConflictLevelsSection: React.FC = () => {
                 </p>
 
                 {/* Coaching Takeaway */}
-                <div className="p-3.5 bg-white/90 border border-slate-200/80 rounded-lg mb-5 text-xs text-slate-800 leading-relaxed">
+                <div className="p-3.5 bg-white/90 border border-slate-200/80 rounded-lg mb-4 text-xs text-slate-800 leading-relaxed">
                   <span className="font-bold text-slate-900 block mb-0.5">
                     Coaching Takeaway:
                   </span>
                   {selectedOption.coachingTakeaway}
                 </div>
+
+                {/* Reflection & Review Guidance */}
+                {(currentScenario.reflectionQuestion || currentScenario.reviewTopics) && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5 text-xs">
+                    {currentScenario.reflectionQuestion && (
+                      <div className="p-3 bg-white/80 border border-slate-200/80 rounded-lg">
+                        <span className="font-bold text-slate-900 block mb-0.5">
+                          Reflect:
+                        </span>
+                        <p className="text-slate-700 italic">
+                          "{currentScenario.reflectionQuestion}"
+                        </p>
+                      </div>
+                    )}
+                    {currentScenario.reviewTopics && (
+                      <div className="p-3 bg-white/80 border border-slate-200/80 rounded-lg">
+                        <span className="font-bold text-slate-900 block mb-0.5">
+                          Review Topics:
+                        </span>
+                        <p className="text-slate-700">
+                          {currentScenario.reviewTopics}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )}
 
                 {/* Action Controls */}
                 <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-200/80">

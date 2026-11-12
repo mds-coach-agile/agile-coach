@@ -3,212 +3,238 @@
 **Course:** Software Development Methodologies — ISEC
 **Team:** Bator Eshizhamsoev (Product Owner / Developer) · Christian Byemba (Developer) · Javed Iqbal (Scrum Master / Developer)
 **Client:** Course teacher
-**Maintained by:** Javed Iqbal (Scrum Master)
+**Minutes recorded by:** Javed Iqbal (Scrum Master)
 
-> **How this file works:** meetings are listed in date order; new meetings are added at the bottom.
-> Past minutes are not edited silently — corrections are added as a dated note, e.g. *"Correction (10 Nov): …"*.
-> All Daily Scrums (every sprint) are logged in one file: `daily-scrum-log.md`.
+> **Draft.** Fill in the blanks (____) and change anything the team did not actually say.
 
-## Contents
-
-| # | Date | Meeting | Status |
-|---|---|---|---|
-| 1 | 27 Oct 2026 | Sprint 0 / Pre-game: Design Thinking, Release Planning, Sprint 1 Planning | Written up 10 Nov; awaiting team approval |
-| 2 | 03 Nov 2026 | Sprint 1, Session 1 | Written up 10 Nov; awaiting team approval |
-| 3 | ____ 2026 | Sprint 1, Session 2 | To add |
-| 4 | ____ 2026 | Sprint 1, Session 3 | To add |
-| 5 | 10 Nov 2026 | Sprint 1 Review | To fill in during the meeting |
-| 6 | 10 Nov 2026 | Sprint 1 Retrospective | To fill in during the meeting |
-| 7 | 10 Nov 2026 | Sprint 2 Planning | To fill in during the meeting |
-| 8 | ____ 2026 | Sprint 2, Session 2 (Daily Scrum + mid-sprint check) | Log in the Daily Scrum file |
-| 9 | ____ 2026 | Sprint 2, Session 3 | Log in the Daily Scrum file |
-| 10 | 17 Nov 2026 | Sprint 2 Review (final presentation) and final Retrospective | To add |
+| Sprint | Dates | Main result |
+|---|---|---|
+| Sprint 0 | 27 Oct – 3 Nov 2026 | Product idea, plan, research and team setup |
+| Sprint 1 | 3 Nov – 11 Nov 2026 | First version of the website, role content and articles |
+| Sprint 2 | 12 Nov – 17 Nov 2026 | Final product, deployment and presentation |
 
 ---
 
-## 1. 27 Oct 2026 — Sprint 0 / Pre-game
+# Sprint 0 — 27 Oct to 3 Nov 2026
 
+## 1. 27 Oct 2026 — Sprint 0 Kick-off
 
 | | |
 |---|---|
-| **Project** | Agile Coach Learning Hub |
-| **Course** | Software Development Methodologies — ISEC |
-| **Meeting** | Sprint 0 / Pre-game: Design Thinking, Release Planning, Sprint 1 Planning |
-| **Date** | Tuesday, 27 October 2026 |
 | **Location** | In class, ISEC |
 | **Duration** | 2 hours |
-| **Attendees** | ☑ Bator Eshizhamsoev (Product Owner / Developer) ☑ Christian Byemba (Developer) ☑ Javed Iqbal (Scrum Master / Developer) — all 3 team members present |
-| **Minutes recorded by** | Javed Iqbal (Scrum Master) |
+| **Attendees** | Bator, Christian, Javed |
 
-> **Note:** These minutes were written up on 10 November 2026 from the team's notes of the meeting. Minutes are recorded during each session from Sprint 2 onward.
->
-> **About Sprint 0 / Pre-game:** this is a course adaptation, not part of the official Scrum Guide. It is a setup phase before the first Sprint, used to understand the client's needs, plan the release and plan Sprint 1.
+**Agenda:**
+1. Design Thinking: understand the client's needs (60 min)
+2. Release Planning: user stories and release plan (30 min)
+3. Plan the next steps (30 min)
 
----
+**Discussed:**
+- **Product:** the **Agile Coach Learning Hub**, an interactive website that teaches students what an Agile Coach does.
+- **Users:** university students and beginners learning Agile. They want to:
+  - understand the Agile Coach role
+  - stop confusing the Agile Coach with the Scrum Master and the manager
+  - practise with real team situations
+  - test what they learned
+- **Product goals:** a responsive website, accurate content, simple navigation, a quiz, an AI chatbot (if possible), and deployment to Netlify by 17 Nov.
+- **Out of scope:** login, user accounts, analytics.
 
-### 1. Agenda
+**User stories written:**
 
-| # | Item | Timebox |
+| ID | User story | Priority |
 |---|---|---|
-| 1 | Design Thinking: understand the client's needs and possible solutions | 60 min |
-| 2 | Release Planning: review user stories, estimate, create the release plan, define the Definition of Done | 30 min |
-| 3 | Sprint 1 Planning: Sprint Goal and plan | 30 min |
+| US-01 | Introduction to Agile coaching | Must |
+| US-02 | Agile Coach vs Scrum Master vs Manager | Must |
+| US-03 | Coaching stances | Should |
+| US-04 | Realistic team scenario | Should |
+| US-05 | Knowledge check (quiz) | Should |
+| US-06 | Navigation between topics | Must |
 
----
-
-### 2. Design Thinking (60 min)
-
-#### 2.1 The product
-
-The team discussed the product to be built: the **Agile Coach Learning Hub**, an interactive educational website that helps students understand the role of an Agile Coach and how Agile coaches support teams.
-
-#### 2.2 Target users
-
-**Primary users:** university students and beginners studying Agile and software development methodologies.
-
-**Their needs:**
-- Understand what an Agile Coach does and why the role exists.
-- Stop confusing the Agile Coach with the Scrum Master and the manager.
-- Learn practical coaching techniques through realistic team situations.
-- Check their understanding quickly.
-
-**Client:** the course teacher, who gives feedback and accepts the final product.
-
-#### 2.3 Product goals
-
-1. Deliver a working, responsive and accessible educational website.
-2. Present accurate, research-based content about Agile coaching.
-3. Organise the content into clear topics with simple navigation.
-4. Let learners check their understanding through an interactive activity.
-5. Provide an AI chatbot, if access and time allow.
-6. Deploy the final product to Netlify by **17 November 2026**.
-
-#### 2.4 Product specifications (possible solution)
-
-| Area | Specification |
-|---|---|
-| Home and navigation | A home page that introduces the hub and guides learners to the topics |
-| Learning content | What an Agile Coach is and how the role differs from a Scrum Master and a manager; coaching stances, facilitation, team dynamics, conflict resolution and continuous improvement |
-| Interactive learning | At least one interactive activity, such as a quiz, self-assessment or practical scenario |
-| AI chatbot | A BOTSchool.ai chatbot that answers questions about the Agile Coach role, depending on access |
-| Technology | Responsive website, hosted on Netlify, code managed on GitHub |
-
-**Out of scope:** user accounts, login, learner profiles, analytics dashboards, and project-management features.
-
----
-
-### 3. Release Planning (30 min)
-
-#### 3.1 User stories reviewed
-
-| ID | User story | Priority | Acceptance criteria |
-|---|---|---|---|
-| US-01 | As a learner, I want a clear introduction to Agile coaching so that I understand the purpose of the role. | Must | The page explains the role in plain language and includes at least one practical example. |
-| US-02 | As a learner, I want to compare an Agile Coach, Scrum Master, and manager so that I can distinguish their responsibilities. | Must | The comparison presents meaningful differences in focus and responsibilities. |
-| US-03 | As a learner, I want to explore coaching stances so that I can recognise different ways a coach supports a team. | Should | Each included stance has an explanation and an example of when it may be useful. |
-| US-04 | As a learner, I want to respond to a realistic team scenario so that I can practise applying coaching concepts. | Should | The learner can choose a response and receives an explanation of the outcome or reasoning. |
-| US-05 | As a learner, I want to complete a knowledge check so that I can assess my understanding. | Should | The learner receives clear feedback and can review the relevant learning content. |
-| US-06 | As a learner, I want to navigate between topics easily so that I can follow the learning path or revisit concepts. | Must | Topic navigation is visible, understandable, and works across the learning pages. |
-
-*Priorities are indicative and set by the Product Owner. The AI chatbot (BOTSchool.ai) was discussed as a possible feature but was not written as a user story for Sprint 1, because access had not been confirmed.*
-
-#### 3.2 Release plan
+**Release plan:**
 
 | Milestone | Date |
 |---|---|
-| Sprint 0 / Pre-game (in class) | 27 Oct 2026 |
-| Sprint 0 / Pre-game (out of class): refine goals, requirements, tools and user stories | from 27 Oct 2026 |
-| Sprint 1: 3 sessions × 2 h, first session in class on 3 Nov | 27 Oct – 10 Nov 2026 |
-| Sprint 1 Review, Retrospective, Sprint 2 Planning | 10 Nov 2026 |
-| Sprint 2: 3 sessions × 2 h, first session in class on 10 Nov | 10 – 17 Nov 2026 |
-| Final presentation and submission | 17 Nov 2026 |
+| Sprint 0 | 27 Oct – 3 Nov |
+| Sprint 1 | 3 – 11 Nov |
+| Sprint 2 | 12 – 17 Nov |
+| Final presentation | 17 Nov |
 
-#### 3.3 Definition of Done
+**Decisions:**
+1. Build the Agile Coach Learning Hub.
+2. Use Scrum as the method and GitHub for code, documents and backlog.
+3. Roles: Bator = Product Owner, Javed = Scrum Master, all three = Developers.
+4. Write a Definition of Done.
 
-The team agreed to define a Definition of Done. It was documented in `docs/definition-of-done.md` and covers: responsive and accessible pages, Netlify deployment, code review through a pull request, accurate content, no critical bugs, and Product Owner approval.
+**Tasks:**
+
+| # | Task | Owner | Due |
+|---|---|---|---|
+| 1 | Write the Definition of Done | Bator | 3 Nov |
+| 2 | Put user stories on GitHub | Bator | 3 Nov |
+| 3 | Research the Agile Coach role | Christian | 3 Nov |
+| 4 | Set up tools (Netlify, BOTSchool.ai, Lovable.dev) | Christian | 3 Nov |
+| 5 | Design Thinking plan and release plan | Javed | 3 Nov |
+| 6 | Meeting minutes and Daily Scrum templates | Javed | 3 Nov |
+
+## 2. 3 Nov 2026 — Sprint 0 Review
+
+**Attendees:** Bator, Christian (online), Javed
+
+**Done:**
+
+| Work | By | Pull request / evidence |
+|---|---|---|
+| Definition of Done | Bator | PR #10: checklist for "done" (responsive pages, code review, Netlify deployment, content check, PO approval) |
+| Agile Coach research | Christian | PR #8: the coach role, Coach vs SM vs Manager, four coaching stances, facilitation, conflict, sample situations, references |
+| Design Thinking plan (user paths) | Javed | PR #16: session plan with learner journey map, main user paths, user-flow diagram and candidate user stories |
+| Release plan | Javed | PR #24: product vision, goals, scope, milestones, risks and roles for the release |
+| User stories on GitHub | Bator | Issues #11–#14: home page, Agile Coach role, quiz, chatbot |
+| Netlify set up | Christian | Site created: mds-agile-coach.netlify.app |
+
+**Not done:**
+
+| Item | Reason |
+|---|---|
+| BOTSchool.ai chatbot set up | Needs a credit card (#9). Christian asked the teacher for academic access. |
+| Meeting templates | Finished later, on 10 Nov |
 
 ---
 
-### 4. Sprint 1 Planning (30 min)
+# Sprint 1 — 3 Nov to 11 Nov 2026
 
-The team planned Sprint 1 (27 Oct – 10 Nov; 3 working sessions of 2 hours, the first in class on 3 Nov).
+## 3. 3 Nov 2026 — Sprint 1 Planning
 
-#### 4.1 Sprint Goal (Why)
+| | |
+|---|---|
+| **Location** | In class, ISEC (Christian online) |
+| **Time** | 20:30 – 22:30 |
+| **Attendees** | Bator, Christian, Javed |
 
-**Sprint 1 Goal:** Build the first version of the Agile Coach Learning Hub, so that a learner can navigate between topics, understand what an Agile Coach does, and tell the role apart from a Scrum Master and a manager.
+**Sprint Goal:** A learner can navigate topics, understand what an Agile Coach does, and tell the role apart from a Scrum Master and a manager.
 
-#### 4.2 Sprint Backlog (What)
+**Sprint Backlog (in priority order):**
 
-All six user stories from the release plan were selected for Sprint 1:
-
-| Order | User story | Priority |
+| # | User story | Priority |
 |---|---|---|
 | 1 | US-01 Introduction to Agile coaching | Must |
-| 2 | US-02 Agile Coach vs Scrum Master vs manager | Must |
-| 3 | US-06 Navigation between topics | Must |
+| 2 | US-02 Coach vs Scrum Master vs Manager | Must |
+| 3 | US-06 Navigation | Must |
 | 4 | US-03 Coaching stances | Should |
-| 5 | US-04 Realistic team scenario | Should |
-| 6 | US-05 Knowledge check | Should |
+| 5 | US-04 Team scenario | Should |
+| 6 | US-05 Quiz | Should |
 
-**Owners:** not assigned in advance. The Developers pull the next available story in priority order whenever they are free (self-management).
+**How we work:** no fixed owners. Each developer takes the next story in the list when free.
 
-#### 4.3 Plan (How)
+**Risk:** the chatbot (BOTSchool.ai) may not be available. It is kept out of Sprint 1.
 
-| Session | Planned work |
+## 4. 11 Nov 2026 — Sprint 1 Review
+
+| | |
 |---|---|
-| Session 1 — 03 Nov (in class) |  |
-| Session 2 — ____ |  |
-| Session 3 — ____ |  |
+| **Location** | Remote |
+| **Attendees** | Bator, Christian, Javed, Teacher |
 
-#### 4.4 Risks identified
+**Sprint Goal met?** Partly. The website and content cover the goal, but most of it was merged in the last two days and is not yet deployed or fully checked against the Definition of Done.
 
-| Risk | Response |
+**Done:**
+
+| Work | By | Pull request / evidence |
+|---|---|---|
+| Website first version | Bator | PR #30 (10 Nov): React + Vite site with home page, navigation, learning paths, role comparison, coaching stances, conflict levels, quiz and full assessment |
+| Design Thinking v2 | Javed | Commit on 9 Nov: updated Design Thinking document |
+| Meeting minutes and Daily Scrum log | Javed | PRs #36, #37: minutes for Sprint 0 and Sprint 1, one Daily Scrum log for all sprints |
+| Agile Coach role page content | Javed | PR #43 (11 Nov): text for the role page (responsibilities, team autonomy, Coach vs SM vs Manager, what the Scrum Guide says) |
+| Four core articles | Javed | PR #46 (11 Nov): articles on coach identity, triad of roles, coaching stances, and conflict and facilitation |
+| Articles in the website | Bator | PR #47 (11 Nov): articles catalog and article pages, learning progress tracking, navbar and quiz updates |
+| Tests and README for the React site | Christian | PR #38 (written 10 Nov, merged 12 Nov 00:01): updated tests and README for the new website |
+| Chatbot test set and training intents | Christian | PR #41 (written 10 Nov, merged 12 Nov 00:12): test questions with expected answers and training intents from the research (#29) |
+| Research update on velocity | Christian | PR #48 (11 Nov): why velocity cannot be used to compare teams |
+
+**User stories:**
+
+| User story | Status |
 |---|---|
-| BOTSchool.ai access for the chatbot is not confirmed | Keep the chatbot out of the Sprint 1 Backlog; check access during Sprint 0 and ask the instructor if needed |
+| US-01 Introduction | First version done |
+| US-02 Coach vs SM vs Manager | First version done |
+| US-03 Coaching stances | First version done |
+| US-04 Team scenario | Not started |
+| US-05 Quiz | First version done |
+| US-06 Navigation | First version done |
 
----
+**Not done (moved to Sprint 2):**
 
-### 5. Roles
-
-| Role | Member |
+| Item | Reason |
 |---|---|
-| Product Owner | Bator Eshizhamsoev |
-| Scrum Master | Javed Iqbal |
-| Developers | Bator Eshizhamsoev, Christian Byemba, Javed Iqbal |
-| Client | Course teacher |
+| US-04 Team scenario | No time |
+| Chatbot | Still blocked (credit card, #9) |
+| Netlify deployment of the new website | Not finished |
+| Content check (proofreading) | Not finished |
 
----
+**Teacher feedback:**
+1. ____
+2. ____
 
-### 6. Decisions
+## 5. 11 Nov 2026 — Sprint 1 Retrospective
 
-| # | Decision |
-|---|---|
-| 1 | The team will build the Agile Coach Learning Hub as an interactive educational website for students learning Agile. |
-| 2 | The product goals and specifications above form the starting point for the Product Backlog. |
-| 3 | The team will use **Scrum** as the project methodology. |
-| 4 | The team will use **GitHub** for the project (code, documentation and backlog). |
-| 5 | Team roles are assigned as listed in section 5. |
-| 6 | The Sprint 1 Goal and backlog are as recorded in section 4. |
+**Attendees:** Bator, Christian, Javed
 
----
+**What went well 👍**
+- Sprint 0 documents (DoD, research, release plan) were finished on time.
+- Roles and tools were agreed quickly.
+- The website covers most of the user stories.
 
-### 7. Action items (Sprint 0 / Pre-game, out of class)
+**What didn't go well 👎**
+- Little work was done between 4 and 8 Nov.
+- Most work was merged on 10 and 11 Nov, so there was no time to test or deploy it.
+- The chatbot blocker stayed open for the whole sprint.
+- Minutes were written after the meetings, not during them.
 
-| # | Action | Owner | Due |
+**Actions for Sprint 2:**
+
+| # | Action | Owner | How we check |
 |---|---|---|---|
-| 1 | Set up the GitHub Projects board (backlog) and choose the burndown chart format | Bator (PO) | Before 3 Nov |
-| 2 | Write and refine the user stories | Bator (PO), with the team | Before 3 Nov |
-| 3 | Write up the Definition of Done | Bator | Before 3 Nov |
-| 4 | Research the Agile Coach role and gather reference materials | Christian | Before 3 Nov |
-| 5 | Set up tools and environments (Netlify, BOTSchool.ai, Lovable.dev) | Christian | Before 3 Nov |
-| 6 | Create templates for meeting minutes and Daily Scrum logs | Javed | Before 3 Nov |
-| 7 | Ask the instructor for clarifications if needed | Javed (SM) | As needed |
+| 1 | Open a pull request in the same session you start a task | Everyone | SM checks open PRs at each Daily Scrum |
+| 2 | Raise any blocker with the teacher the same day | Javed (SM) | Blocker list in the Daily Scrum log |
 
 ---
 
-### 8. Next meeting
+# Sprint 2 — 12 Nov to 17 Nov 2026
 
-Sprint 1, Session 1 — Tuesday, 3 November 2026, in class
+## 6. 12 Nov 2026 — Sprint 2 Planning
+
+**Attendees:** Bator, Christian, Javed
+
+**Sprint Goal:** ____
+*(Suggestion: "A student can use the live website to learn about the Agile Coach role, practise with a team scenario and test their knowledge with a quiz.")*
+
+**Sprint Backlog:**
+
+| # | Item | Owner |
+|---|---|---|
+| 1 | Deploy the website to Netlify and test it | ____ |
+| 2 | Content check (proofread role page and articles) | ____ |
+| 3 | US-04 Team scenario | ____ |
+| 4 | Fix bugs found in testing | ____ |
+| 5 | Chatbot (only if #9 is solved) | Christian |
+| 6 | Final presentation | Everyone |
+
+**Rules for this sprint:**
+- Open a pull request early (Retro action 1).
+- Raise blockers the same day (Retro action 2).
+- No new features in the last session, only fixes and the demo rehearsal.
+
+## 7. ____ Nov 2026 — Sprint 2 Session
+
+*To add.*
+
+## 8. 17 Nov 2026 — Sprint 2 Review (final presentation)
+
+*To add.*
+
+## 9. 17 Nov 2026 — Sprint 2 Retrospective
+
+*To add.*
 
 ---
 
@@ -219,412 +245,3 @@ Sprint 1, Session 1 — Tuesday, 3 November 2026, in class
 | Bator Eshizhamsoev | Product Owner | ☐ |
 | Christian Byemba | Developer | ☐ |
 | Javed Iqbal | Scrum Master | ☐ |
-
----
-
-## 2. 03 Nov 2026 — Sprint 1, Session 1
-
-| | |
-|---|---|
-| **Project** | Agile Coach Learning Hub |
-| **Meeting** | Sprint 1, Session 1 (working session + Daily Scrum) |
-| **Date** | Tuesday, 3 November 2026 |
-| **Time** | 20:30 – 22:30 |
-| **Sprint** | Sprint 1 (27 October – 10 November 2026) |
-| **Location** | In class, ISEC (Christian joined remotely) |
-| **Duration** | 2 hours |
-| **Attendees** | ☑ Bator Eshizhamsoev (Product Owner / Developer) ☑ Christian Byemba (Developer, remote) ☑ Javed Iqbal (Scrum Master / Developer) — all 3 team members present |
-| **Minutes recorded by** | Javed Iqbal (Scrum Master) |
-
-> **Note:** These minutes were written up on 10 November 2026 from the team's notes and the GitHub history for 3 November (commits, pull requests and issues). Work committed before 20:30 was done before the class session. GitHub user `boolishta` is Bator Eshizhamsoev.
-
----
-
-### 1. Daily Scrum
-
-The team (Bator, Christian, Javed) agreed to start working on the user stories of Sprint 1. Impediment raised: BOTSchool.ai asks for a credit card before enabling web integration (#9). Full entry: `daily-scrum-log.md`, entry 1.
-
-### 2. Work recorded on GitHub on 3 November
-
-| Time | Work | By | Result |
-|---|---|---|---|
-| 11:15 – 11:31 | Definition of Done created (`docs/definition-of-done.md`) | Bator | Merged — PR #10 |
-| 14:26 – 16:41 | Agile Coach research document finalised (`docs/research/agile-coach-research.md`) | Christian | Merged — PR #8 |
-| 16:47 – 17:24 | Design Thinking session plan — user paths (#5) | Javed | Merged — PR #16 |
-| 18:11 | First home page and navigation (plain HTML, with tests) on branch `feature/issue-11-home-navigation` (#11) | Javed | Not merged (later replaced by the React site in PR #30) |
-| 18:44 | Sprint 1 planning record on branch `docs/sprint-1-planning` | Javed | Not merged |
-| 21:13 – 21:21 | Repository folders renamed | Javed | Merged — PR #23 |
-| 22:34 | Release plan (#20) | Javed | Merged later — PR #24 (9 Nov) |
-| During the day | User stories entered on GitHub as issues #11–#14 (home page, Agile Coach role, quiz, chatbot); #11 assigned to Javed | Bator | Open |
-| During the day | Christian asked the teacher whether academic access to BOTSchool.ai is available (#9) | Christian | Waiting for answer |
-
-### 3. Discussion and decisions
-
-| # | Topic / decision | Decided by |
-|---|---|---|
-| 1 | The team refined the project requirements and the user stories. | Team |
-| 2 | The team planned the work for Sprint 1. | Team |
-
-### 4. Action items for the next session
-
-| # | Action | Owner | Due |
-|---|---|---|---|
-| 1 | Start working on the Sprint 1 user stories | Developers (Bator, Christian, Javed) | Next session |
-
-### 5. Next meeting
-
-Sprint 1, Session 2 — ____ 2026 (Sprint 1 ends 10 November 2026)
-
----
-
-**Approved by the team:**
-
-| Name | Role | Approved |
-|---|---|---|
-| Bator Eshizhamsoev | Product Owner | ☐ |
-| Christian Byemba | Developer | ☐ |
-| Javed Iqbal | Scrum Master | ☐ |
-
----
-
-## 3. ____ 2026 — Sprint 1, Session 2
-
-*To add.*
-
----
-
-## 4. ____ 2026 — Sprint 1, Session 3
-
-*To add.*
-
----
-
-## 5. 10 Nov 2026 — Sprint 1 Review
-
-
-| | |
-|---|---|
-| **Project** | Agile Coach Learning Hub |
-| **Date** | 10 November 2026 |
-| **Time** | ____:____ – ____:____ (timebox: 20 min, start of Session 1) |
-| **Location** | ____________ (in person / online) |
-| **Facilitator** | Javed Iqbal (Scrum Master) |
-| **Note-taker** | ____________ |
-| **Attendees** | ☐ Bator Eshizhamsoev (PO) ☐ Christian Byemba (Dev) ☐ Javed Iqbal (SM) ☐ Teacher (client) |
-| **Absent** | ____________ |
-
-> Fill in during the meeting. Write only what was actually said and decided.
-
----
-
-### 1. Purpose (SM reads out, 1 min)
-
-Inspect the outcome of Sprint 1 (27 Oct – 10 Nov), collect feedback, and update the Product Backlog for Sprint 2.
-
-### 2. Sprint 1 Goal (2 min)
-
-**Agreed Sprint 1 Goal:** Build the first version of the Agile Coach Learning Hub, so that a learner can navigate between topics, understand what an Agile Coach does, and tell the role apart from a Scrum Master and a manager. *(See meeting 1, section 4.1.)*
-
-**Was the Sprint Goal met?** ☐ Yes ☐ Partly ☐ No ☐ No goal agreed
-
-### 3. Work completed — Done (10 min)
-
-| Issue | Item | Evidence | Shown / explained by | Accepted by PO? |
-|---|---|---|---|---|
-| #1 | Design Thinking | `docs/design-thinking/` | Javed | ☐ |
-| #5 | Design Thinking session — user paths | `docs/design-thinking/design-thinking-session-user-paths.md` | Javed | ☐ |
-| #2 | Definition of Done | `docs/definition-of-done.md` | Bator | ☐ |
-| #3 | Roles assigned | Release plan, section 9 | Bator | ☐ |
-| #4 | Meeting minutes / Daily Scrum templates | `docs/meeting-minutes.md` | Javed | ☐ |
-| #6, #8 | Agile Coach research | `docs/research/agile-coach-research.md` | Christian | ☐ |
-| #7 | Accounts & environments (Netlify, BOTSchool, Lovable) | mds-agile-coach.netlify.app | Christian | ☐ |
-| #20 | Release plan | `docs/release-plan/release-plan.md` | Javed | ☐ |
-
-#### 3a. Website pages merged on 10 Nov — PR #30 (decide at the Review)
-
-PR #30 (`agile-coach-pages`, committed by Bator at 10:40, merged to `main` by Javed at 11:03 on 10 Nov) added the first version of the website (React + Vite, one page with sections). The team decides at the Review whether each item meets the Definition of Done (e.g. deployed to Netlify, reviewed, content checked, PO approval).
-
-| Issue | User story | What PR #30 added | Meets DoD? | Accepted by PO? |
-|---|---|---|---|---|
-| #11 / #26 | US-06 Navigation between topics | Navbar, hero (home) section, learning paths overview, footer | ☐ Yes ☐ No | ☐ |
-| #12 / #27 | US-01 Introduction · US-02 Coach vs Scrum Master vs manager | Role comparison section | ☐ Yes ☐ No | ☐ |
-| — | US-03 Coaching stances | Coaching stances section | ☐ Yes ☐ No | ☐ |
-| — | (not in backlog) | Conflict levels section | ☐ Yes ☐ No | ☐ |
-| #13 / #28 | US-05 Knowledge check | Interactive quiz widget and full assessment | ☐ Yes ☐ No | ☐ |
-
-**Deployed to Netlify?** ☐ Yes ☐ No — **Reviewed by a second developer before merging?** ☐ Yes ☐ No
-
-### 4. Work not Done (5 min)
-
-| Issue | Item | Status | Reason | Back to Product Backlog? |
-|---|---|---|---|---|
-| — | US-04 Realistic team scenario | Not started | __________ | ☐ |
-| | Any PR #30 item not accepted as Done in 3a | | __________ | ☐ |
-| #9 | BOTSchool web integration access | Blocked since 3 Nov (credit card) | Waiting for teacher | ☐ |
-
-### 5. Feedback from the teacher / stakeholders (10 min)
-
-| # | Feedback | Given by | Action / Backlog impact |
-|---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-
-**Questions to the teacher:**
-
-| Question | Answer |
-|---|---|
-| BOTSchool: is academic access available, or is a linked/recorded chatbot acceptable? |  |
-| What are the dates of Sprint 2 Sessions 2 and 3? |  |
-| Is the 17 Nov presentation Session 3, or a separate event? |  |
-| Is work outside the sessions expected or allowed? |  |
-
-### 6. Product Backlog updates (PO, 2 min)
-
-- ☐ Duplicates resolved: keep ☐ #26–#29 ☐ #11–#14, close the other set
-- ☐ Priority order for Sprint 2 confirmed by the PO: 1. ______ 2. ______ 3. ______ 4. ______
-- ☐ Other changes: ______________________________________________
-
-### 7. Decisions
-
-| # | Decision | Decided by |
-|---|---|---|
-| 1 |  |  |
-| 2 |  |  |
-
-### 8. Action items
-
-| # | Action | Owner | Due |
-|---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-
----
-
-## 6. 10 Nov 2026 — Sprint 1 Retrospective
-
-
-| | |
-|---|---|
-| **Project** | Agile Coach Learning Hub |
-| **Date** | 10 November 2026 |
-| **Time** | ____:____ – ____:____ (timebox: 20 min, inside Session 1) |
-| **Facilitator** | Javed Iqbal (Scrum Master) |
-| **Attendees** | ☐ Bator Eshizhamsoev ☐ Christian Byemba ☐ Javed Iqbal |
-
-> The Retrospective is for the Scrum Team only (no teacher).
-> Focus on **how we worked**, not on blaming people. Write only what the team actually said.
-
----
-
-### Facilitator script (not part of the minutes)
-
-1. **Set the stage (1 min):** "We look at the process, not at people. Goal: leave with 1–2 actions that make Sprint 2 better."
-2. **Gather data (6 min):** each person writes 2 notes for each column below, then reads them out.
-3. **Generate insights (5 min):** group similar notes; each person gets 2 votes for the most important problem.
-4. **Decide actions (6 min):** for the top 1–2 problems, agree a concrete, small action with an owner.
-5. **Close (2 min):** read back the actions; each person says one word about the sprint.
-
-**Questions to prompt discussion if needed** (based on what GitHub shows):
-- "Our proposed Sprint 1 Goal was home page + role page + quiz. We delivered foundation work. What got in the way?"
-- "The home page was built on 3 Nov but had no PR for a week. How can we make work visible earlier?"
-- "BOTSchool has been blocked since 3 Nov. How should we handle blockers faster?"
-- "How did we communicate between our working sessions?"
-
----
-
-### 1. What went well? 👍
-
-| # | Item | Raised by |
-|---|---|---|
-| 1 |  |  |
-| 2 |  |  |
-| 3 |  |  |
-
-### 2. What did not go well? 👎
-
-| # | Item | Raised by |
-|---|---|---|
-| 1 |  |  |
-| 2 |  |  |
-| 3 |  |  |
-
-### 3. What can we improve? 💡
-
-| # | Idea | Votes |
-|---|---|---|
-| 1 |  |  |
-| 2 |  |  |
-| 3 |  |  |
-
-### 4. Improvement actions for Sprint 2 (max 2)
-
-Each action must be **specific, small, and checkable** within Sprint 2's three sessions.
-
-| # | Action | Owner | How we check it | Check date |
-|---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-
-*Example of a good action:* "Open a draft PR before the end of the session in which you start a card, so the board shows real progress. Owner: everyone. Check: SM looks at open PRs in each Daily Scrum."
-*Example of a bad action:* "Communicate better." (not specific, not checkable)
-
-### 5. Follow-up of previous actions
-
-Not applicable — this is the first Retrospective.
-
-### 6. Closing word from each member
-
-| Member | One word |
-|---|---|
-| Bator |  |
-| Christian |  |
-| Javed |  |
-
----
-
-## 7. 10 Nov 2026 — Sprint 2 Planning
-
-
-| | |
-|---|---|
-| **Project** | Agile Coach Learning Hub |
-| **Date** | 10 November 2026 |
-| **Time** | ____:____ – ____:____ (timebox: 35 min, inside Session 1) |
-| **Facilitator** | Javed Iqbal (Scrum Master) |
-| **Attendees** | ☐ Bator Eshizhamsoev (PO) ☐ Christian Byemba ☐ Javed Iqbal |
-| **Sprint period** | 10 – 17 November 2026 |
-| **Sprint format** | 3 working sessions × 2 hours (each session = one sprint "day") |
-| **Session dates** | 1: Tue 10 Nov (in class) · 2: ____________ · 3: ____________ |
-| **Sprint 2 Review / final presentation** | 17 November 2026 |
-
-> Write only what the team actually agrees. The task proposal in `sprint-2-task-plan.md` is input, not a decision.
-
----
-
-### Agenda (35 min)
-
-| Time | Topic | Led by |
-|---|---|---|
-| 0–3 min | Inputs: Review outcome, Retro actions, capacity | SM |
-| 3–10 min | **Topic 1 — Why:** agree the Sprint Goal | PO proposes, team agrees |
-| 10–15 min | Definition of Done check | Team |
-| 15–25 min | **Topic 2 — What:** scope option and backlog items | PO orders, Developers select |
-| 25–32 min | **Topic 3 — How:** tasks and owners for Session 1 and 2 | Developers |
-| 32–35 min | Read back decisions | SM |
-
----
-
-### 1. Inputs
-
-**Retro actions carried into this sprint:**
-1. ______________________________________________
-2. ______________________________________________
-
-**Team capacity:**
-
-| | Person-hours |
-|---|---|
-| Build time inside sessions (after Scrum events) | ≈ 12 |
-| Work outside sessions? ☐ No ☐ Yes: ____ h per person | ____ |
-| **Total capacity** | ____ |
-
-### 2. Sprint Goal (Why)
-
-**Agreed Sprint 2 Goal:**
-
-> ______________________________________________________________
-
-*Proposed wording for discussion (not yet agreed):* "A student can visit the live site, learn what an Agile Coach is and how the role differs from a Scrum Master and a manager, and test their knowledge with a quiz."
-
-*Note:* first versions of these pages and the quiz were merged in PR #30 on 10 Nov. If the Review accepts them as Done, the Sprint 2 Goal could focus on what is still missing, e.g. live Netlify deployment, content accuracy, the realistic team scenario (US-04) and the chatbot.
-
-**Agreed by:** ☐ Bator ☐ Christian ☐ Javed
-
-### 3. Definition of Done
-
-**Current issue:** the DoD includes product-level criteria ("at least one quiz works", "chatbot answers the test set") that a single item like the role page cannot meet.
-
-**Decision:** ☐ Keep DoD as is ☐ Update DoD (changes below)
-
-| Change | Agreed? |
-|---|---|
-| Move "interactive quiz works" and "chatbot answers test set" to release goals / acceptance criteria of #28 and #29 | ☐ |
-| Other: | ☐ |
-
-### 4. Sprint Backlog (What)
-
-**Duplicates resolved:** keep ☐ #26–#29 ☐ #11–#14
-
-> **Update (10 Nov, 11:03):** PR #30 merged first versions of #26, #27 and #28 into `main` (see meeting 5, section 3a). The options and estimates below were prepared before that merge, so the team should re-estimate only the **remaining** work on these items.
-
-**Scope option chosen by the PO:**
-☐ **A — class time only (~12 h):** #26, #27 (extend home page section), #28. Chatbot not in sprint.
-☐ **B — class + outside work (~25 h):** #26, #27, #28, #29 (or chatbot fallback).
-
-| Priority | Issue | Item | Points | Selected? | Notes |
-|---|---|---|---|---|---|
-| 1 | #26 | Home Page and Navigation | 3 | ☐ | First version merged in PR #30. Remaining work: ________ |
-| 2 | #27 | What is an Agile Coach | 5 | ☐ | Role comparison section merged in PR #30. Remaining work: ________ |
-| 3 | #28 | Interactive Knowledge Quiz | 5 | ☐ | Quiz and full assessment merged in PR #30. Remaining work: ________ |
-| 4 | #29 | BOTSchool Chatbot Test Set | 5 | ☐ | Depends on #9 |
-| — | #9 | BOTSchool web access | — | ☐ | Blocked |
-| | | **Total selected** | | | |
-
-**Chatbot decision (if in scope and #9 is not resolved by Session 2):** ______________________________________________
-
-### 5. Plan (How)
-
-| Item | Tasks (short) | Owner | Done by (session) |
-|---|---|---|---|
-| #26 |  |  | ☐ S1 ☐ S2 ☐ S3 |
-| #27 |  |  | ☐ S1 ☐ S2 ☐ S3 |
-| #28 |  |  | ☐ S1 ☐ S2 ☐ S3 |
-| #29 |  |  | ☐ S1 ☐ S2 ☐ S3 |
-| Docs |  |  | ☐ S1 ☐ S2 ☐ S3 |
-| Presentation |  |  | ☐ S1 ☐ S2 ☐ S3 |
-
-### 6. Working agreements for Sprint 2
-
-| Agreement | Agreed? |
-|---|---|
-| Daily Scrum: first 10 min of Sessions 2 and 3 | ☐ |
-| Every card in progress has a PR before the end of the session it was started in | ☐ |
-| PRs are reviewed by the next session at the latest | ☐ |
-| Mid-sprint check: last 10 min of Session 2 | ☐ |
-| No new features in Session 3, only finishing and fixes | ☐ |
-| Demo rehearsal in Session 3 (or end of Session 2 if 17 Nov is Session 3) | ☐ |
-
-### 7. Risks
-
-| Risk | Response | Owner |
-|---|---|---|
-| Only ~12 h of class build time | Scope option chosen; mid-sprint check in Session 2 | |
-| BOTSchool access (#9) | Chatbot kept out of the Sprint Goal; decision by Session 2 | |
-| Session 2/3 dates unknown | Confirm with the teacher today | |
-
-### 8. Decisions summary
-
-| # | Decision | Decided by |
-|---|---|---|
-| 1 |  |  |
-| 2 |  |  |
-| 3 |  |  |
-
----
-
-## 8. ____ 2026 — Sprint 2, Session 2
-
-Daily Scrum and mid-sprint check: see `daily-scrum-log.md`. Record here any decisions taken (e.g. scope changes by the PO).
-
----
-
-## 9. ____ 2026 — Sprint 2, Session 3
-
-Daily Scrum and demo rehearsal: see `daily-scrum-log.md`. Record here any decisions taken.
-
----
-
-## 10. 17 Nov 2026 — Sprint 2 Review (final presentation) and final Retrospective
-
-*To add after the presentation.*

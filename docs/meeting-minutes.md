@@ -7,15 +7,15 @@
 
 > **Draft.** Fill in the blanks (____) and change anything the team did not actually say.
 
-| Sprint | Dates | Main result |
-|---|---|---|
-| Sprint 0 | 27 Oct – 3 Nov 2026 | Product idea, plan, research and team setup |
-| Sprint 1 | 3 Nov – 11 Nov 2026 | First version of the website, role content and articles |
-| Sprint 2 | 12 Nov – 17 Nov 2026 | Final product, deployment and presentation |
+| Sprint | Dates | Main result | Status |
+|---|---|---|---|
+| Sprint 0 | 27 Oct – 3 Nov 2026 | Product idea, plan, research and team setup | ✅ Completed |
+| Sprint 1 | 3 Nov – 11 Nov 2026 | First version of the website, role content, articles and chatbot test set | ✅ Completed |
+| Sprint 2 | 12 Nov – 17 Nov 2026 | Final product, deployment and presentation | 🔄 In progress |
 
 ---
 
-# Sprint 0 — 27 Oct to 3 Nov 2026
+# Sprint 0 — 27 Oct to 3 Nov 2026 ✅ Completed
 
 ## 1. 27 Oct 2026 — Sprint 0 Kick-off
 
@@ -101,7 +101,7 @@
 
 ---
 
-# Sprint 1 — 3 Nov to 11 Nov 2026
+# Sprint 1 — 3 Nov to 11 Nov 2026 ✅ Completed
 
 ## 3. 3 Nov 2026 — Sprint 1 Planning
 

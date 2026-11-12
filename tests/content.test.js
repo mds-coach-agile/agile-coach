@@ -5,6 +5,7 @@ import {
   ROLES_DATA,
   COACHING_STANCES_DATA,
   CONFLICT_LEVELS_DATA,
+  CONFLICT_SCENARIOS_DATA,
   QUIZ_QUESTIONS,
 } from '../src/data/agileCoachData.ts';
 
@@ -35,6 +36,20 @@ test('every quiz answer explains why it is right or wrong', () => {
   for (const q of QUIZ_QUESTIONS) {
     for (const o of q.options) {
       assert.ok(o.rationale.trim().length > 0, `question ${q.id}, option ${o.id}`);
+    }
+  }
+});
+
+test('realistic team conflict scenarios are defined for US-04 practice', () => {
+  assert.ok(CONFLICT_SCENARIOS_DATA.length >= 3, 'should have at least 3 realistic scenarios');
+  for (const s of CONFLICT_SCENARIOS_DATA) {
+    assert.ok(s.initialLevel >= 1 && s.initialLevel <= 5, `scenario ${s.id} level out of range`);
+    assert.ok(s.options.length >= 3, `scenario ${s.id} needs at least 3 options`);
+    const optimalOptions = s.options.filter((o) => o.isOptimal);
+    assert.equal(optimalOptions.length, 1, `scenario ${s.id} must have exactly 1 optimal response`);
+    for (const opt of s.options) {
+      assert.ok(opt.explanation.trim().length > 0, `scenario ${s.id}, option ${opt.id} missing explanation`);
+      assert.ok(opt.coachingTakeaway.trim().length > 0, `scenario ${s.id}, option ${opt.id} missing takeaway`);
     }
   }
 });

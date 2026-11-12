@@ -87,7 +87,7 @@ At the lower levels the coach helps the team solve the conflict itself: listenin
 | The Daily Scrum lasts 40 minutes | Make it visible; let the team redesign it in the retrospective; recall the 15-minute timebox | Facilitator, teacher |
 | Two developers clash over code reviews | Talk to each privately, then facilitate a conversation towards a working agreement | Facilitator, coach |
 | The Product Owner tells developers how to work | One-to-one talk, start from the PO's concerns, explain self-management, propose a one-sprint experiment | Mentor, coach |
-| A manager wants to rank teams by velocity | Ask what the manager needs to know; explain why velocity is not comparable; propose outcome or flow metrics | Teacher, coach |
+| A manager wants to rank teams by velocity | Ask what the manager needs to know; explain that velocity depends on each team's own estimation scale, so it cannot be compared between teams (Cohn, 2005); propose outcome or flow metrics | Teacher, coach |
 | A new team does not know Scrum | Short training on the events and artifacts, then gradually step back | Teacher |
 
 ## 10. Common misconceptions to correct on the site
@@ -95,7 +95,7 @@ At the lower levels the coach helps the team solve the conflict itself: listenin
 - "The Agile Coach is the team's boss." No: no hierarchical authority.
 - "Agile Coach and Scrum Master are the same." No: different scope and origin (section 3).
 - "A coach gives answers." Only in the teacher and mentor stances; the professional-coach stance asks questions.
-- "Velocity measures performance." No: it is a planning tool for one team.
+- "Velocity measures performance." No: it is a planning tool for one team, and it depends on that team's own estimation scale, so it cannot be used to compare or rank teams (Cohn, 2005).
 
 ## 11. What this means for our backlog
 

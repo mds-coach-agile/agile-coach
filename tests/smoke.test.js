@@ -14,13 +14,14 @@ test('home page has a title', () => {
 });
 
 test('home page has a responsive viewport meta tag', () => {
-  assert.match(html, /<meta name="viewport" content="width=device-width, initial-scale=1(\.0)?"/);
+  assert.match(html, /<meta\s+name="viewport"\s+content="width=device-width,\s*initial-scale=1/);
 });
 
-test('home page has the root element React renders into', () => {
+test('home page mounts React application root', () => {
   assert.match(html, /<div id="root"><\/div>/);
+  assert.match(html, /<script type="module" src="\/src\/main\.tsx"><\/script>/);
 });
 
-test('home page loads the React entry point', () => {
-  assert.match(html, /<script type="module" src="\/src\/main.tsx"><\/script>/);
+test('home page defines meta description for accessibility and SEO', () => {
+  assert.match(html, /<meta\s+name="description"/);
 });

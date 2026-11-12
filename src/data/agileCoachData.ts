@@ -183,6 +183,9 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     id: 'q1',
     category: 'roles',
     categoryLabel: 'Role Boundaries',
+    relatedArticleId: 'role-boundaries',
+    relatedArticleTitle: 'Triad of Roles: Coach, SM & PM',
+    recommendedReadingHint: 'Section 2: The Comparison Matrix & Section 5: PO self-management',
     scenario:
       'A Product Owner insists on assigning specific Jira tasks to individual developers during Sprint Planning because "velocity is too slow and people need direct accountability."',
     question: 'How should an Agile Coach best respond to this situation?',
@@ -219,6 +222,9 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     id: 'q2',
     category: 'stances',
     categoryLabel: 'Coaching Stances',
+    relatedArticleId: 'stances',
+    relatedArticleTitle: 'The 4 Coaching Stances',
+    recommendedReadingHint: 'Section 2: The Four Stances at a Glance & Practical Example (quiet retro)',
     scenario:
       'A team is holding a retrospective. They are clearly demoralized after a painful release, but every time a developer raises an issue, the tech lead explains away why it was unavoidable. The room goes silent.',
     question: 'Which stance and response should the coach adopt here?',
@@ -255,6 +261,9 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     id: 'q3',
     category: 'roles',
     categoryLabel: 'Agile Coach vs Scrum Master',
+    relatedArticleId: 'role-boundaries',
+    relatedArticleTitle: 'Triad of Roles: Coach, SM & PM',
+    recommendedReadingHint: 'Section 2: Scope comparison (single team vs enterprise system)',
     scenario:
       'A company has 8 Scrum teams working on the same digital platform. Cross-team dependencies are causing severe release delays, and teams blame each other during quarterly syncs.',
     question: 'How do the roles of the Scrum Master and Agile Coach differ in addressing this?',
@@ -291,6 +300,9 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     id: 'q4',
     category: 'conflict',
     categoryLabel: 'Conflict Resolution',
+    relatedArticleId: 'conflict-dynamics',
+    relatedArticleTitle: 'Conflict & Team Facilitation',
+    recommendedReadingHint: 'Section 2: Speed Leas 5 Levels of Conflict & Practical Example (PR review warfare)',
     scenario:
       'In a sprint review, a QA engineer says: "The frontend devs don’t care about quality and never test their code before throwing it over the wall to us." A frontend dev snaps back: "QA just finds cosmetic nits to justify their existence."',
     question: 'What level of conflict (Speed Leas model) is this, and what is the best immediate coaching action?',
@@ -327,6 +339,9 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     id: 'q5',
     category: 'stances',
     categoryLabel: 'Powerful Questions',
+    relatedArticleId: 'stances',
+    relatedArticleTitle: 'The 4 Coaching Stances',
+    recommendedReadingHint: 'Section 5: Powerful Questions Matrix (open-ended vs disguised advice)',
     scenario:
       'A development team complains: "Our retro action items never get done because sprint deadlines always push them aside."',
     question: 'Which question below is a genuine "Powerful Coaching Question" rather than a disguised piece of advice?',

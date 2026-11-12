@@ -53,7 +53,7 @@
 | Member | Done | Today | Blockers |
 |---|---|---|---|
 | Bator | Articles in the website (PR #47) | CI fix (PR #49), US-04 conflict simulator (PR #52) | None |
-| Christian | Velocity update (PR #48), PRs #38 and #41 merged | Deploy to Netlify and test | BOTSchool.ai still blocked (#9) |
+| Christian | Velocity update (PR #48), PRs #38 and #41 merged, BOTSchool access solved (#9) | Chatbot test runs 1–3 (PR #55), research fix for Q1/Q3 (PR #56), deploy to Netlify and test | Chatbot answers for Q1 and Q3 vary between runs |
 | Javed | Role page content (PR #43), core articles (PR #46) | Meeting minutes (PR #54), Daily Scrum log, content check | None |
 
 ## ____ Nov 2026

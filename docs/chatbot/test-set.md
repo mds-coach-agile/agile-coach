@@ -47,34 +47,36 @@ Chatbot: agent *Agile Coach assistant* in the university BOTSchool workspace (IS
 
 - **Run 1 (11 Nov 2026):** all 14 checks.
 - **Run 2 (11 Nov 2026):** only the failed questions (Q3, Q10) and Q4 as a regression check, after adding instruction 9 (see *Fixes* below).
+- **Run 3 (12 Nov 2026):** all 14 checks again, after the knowledge collection was re-indexed with the #48 version.
 
-| ID | Run 1 | Run 2 | Notes |
-| --- | --- | --- | --- |
-| Q1 | Pass | | |
-| Q2 | Pass | | |
-| Q3 | Fail | Pass | Run 1 said "No" but not that the role comes from practice and coaching frameworks |
-| Q4 | Pass | Pass | Run 2 cited the document name instead of the author (format only) |
-| Q5 | Pass | | |
-| Q6 | Pass | | |
-| Q7 | Pass | | |
-| Q8 | Pass | | |
-| Q9 | Pass | | |
-| Q10 | Fail | Fail | Says "No" but not *why* (each team's own estimation scale). Fixed in the knowledge base by #48; retest pending |
-| Q11 | Pass | | |
-| Q12 | Pass | | |
-| O1 | Pass | | Declines and suggests an Agile coaching question |
-| O2 | Pass | | Declines and suggests an Agile coaching question |
-| **Total** | **12 / 14** | **13 / 14** (latest result per question) | Tested by: Christian Byemba on 11 Nov 2026 |
+| ID | Run 1 | Run 2 | Run 3 | Notes |
+| --- | --- | --- | --- | --- |
+| Q1 | Pass | | Fail | Run 3 only said the coach works "rather than imposing solutions", not that the coach has no authority over people (borderline) |
+| Q2 | Pass | | Pass | |
+| Q3 | Fail | Pass | Fail | Runs 1 and 3 said "No" but not that the role comes from practice and coaching frameworks |
+| Q4 | Pass | Pass | Pass | Runs 2 and 3 cited the document name instead of the author (format only) |
+| Q5 | Pass | | Pass | |
+| Q6 | Pass | | Pass | |
+| Q7 | Pass | | Pass | |
+| Q8 | Pass | | Pass | |
+| Q9 | Pass | | Pass | |
+| Q10 | Fail | Fail | Pass | Runs 1–2 said "No" but not *why*; passes in run 3 after #48 (each team's own estimation scale, Cohn 2005) |
+| Q11 | Pass | | Pass | |
+| Q12 | Pass | | Pass | |
+| O1 | Pass | | Pass | Declines and suggests an Agile coaching question |
+| O2 | Pass | | Pass | Declines and suggests an Agile coaching question |
+| **Total** | **12 / 14** | **13 / 14** (latest result per question) | **12 / 14** | Tested by: Christian Byemba on 11 and 12 Nov 2026 |
 
 ### Fixes after the failures
 
 | Failure | Cause | Fix |
 | --- | --- | --- |
 | Q3, Q10: correct "No" without the reason | The bot stopped at the conclusion | Instruction 9 added to the agent: for a yes/no answer, always give the reason from the knowledge base, with its source |
-| Q10 still failing after instruction 9 | The research lines the bot retrieves (sections 9 and 10) said velocity is "not comparable" but not why; the reason was only in section 8 | #48 adds the reason (Cohn, 2005) to sections 9 and 10. The collection is being re-indexed with this version |
+| Q10 still failing after instruction 9 | The research lines the bot retrieves (sections 9 and 10) said velocity is "not comparable" but not why; the reason was only in section 8 | #48 adds the reason (Cohn, 2005) to sections 9 and 10. The collection was re-indexed with this version on 12 Nov |
 | Q4: citation "(Research: the Agile Coach role, §3)" | The bot cited the knowledge document instead of the author | To do: update instruction 4 to cite author and year, never the document name |
+| Q1, Q3 fail in run 3 after passing before | The answers vary between runs. Q1 retrieved section 2, which did not mention authority; Q3's origin was only stated once, in section 3 | Research update (separate PR): say in section 2 that the coach has no authority over people, and in section 10 where the role comes from. To retest in run 4 |
 
-> **Status (12 Nov 2026):** BOTSchool access is solved (#9 closed). 13/14 checks pass. Next: retest Q10 once the collection is re-indexed, then a full run 3 with the final configuration before publishing the agent and embedding the widget on the site.
+> **Status (12 Nov 2026):** BOTSchool access is solved (#9 closed). Run 3: 12/14. Q10 is fixed, but Q1 and Q3 failed again after passing in earlier runs, so the answers are not yet stable. Next: research update for Q1 and Q3, instruction 4, then a full run 4 with the final configuration before publishing the agent and embedding the widget on the site.
 
 ## AI usage
 

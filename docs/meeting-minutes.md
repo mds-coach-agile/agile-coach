@@ -224,15 +224,21 @@
 - Raise blockers the same day (Retro action 2).
 - No new features in the last session, only fixes and the demo rehearsal.
 
-## 7. ____ Nov 2026 — Sprint 2 Session
+## 7. 12 Nov 2026 — Sprint 2 Work Done
+
+| Work | By | Pull request / evidence |
+|---|---|---|
+| Automatic tests on GitHub (CI) and navigation test fix | Bator | PR #49 (12 Nov): GitHub Actions workflow tests, type-checks and builds the site on every pull request and push to main; fixed the page-title (h1) navigation test |
+
+## 8. ____ Nov 2026 — Sprint 2 Session
 
 *To add.*
 
-## 8. 17 Nov 2026 — Sprint 2 Review (final presentation)
+## 9. 17 Nov 2026 — Sprint 2 Review (final presentation)
 
 *To add.*
 
-## 9. 17 Nov 2026 — Sprint 2 Retrospective
+## 10. 17 Nov 2026 — Sprint 2 Retrospective
 
 *To add.*
 

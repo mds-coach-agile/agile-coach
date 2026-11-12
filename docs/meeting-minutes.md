@@ -5,8 +5,6 @@
 **Client:** Course teacher
 **Minutes recorded by:** Javed Iqbal (Scrum Master)
 
-> **Draft.** Fill in the blanks (____) and change anything the team did not actually say.
-
 | Sprint | Dates | Main result | Status |
 |---|---|---|---|
 | Sprint 0 | 27 Oct – 3 Nov 2026 | Product idea, plan, research and team setup | ✅ Completed |
@@ -172,8 +170,8 @@
 | Content check (proofreading) | Not finished |
 
 **Teacher feedback:**
-1. ____
-2. ____
+1. **Website improvements:** improve the user interface by adding slide-like transitions and movable elements to enhance the user experience.
+2. **Velocity and estimation:** discussed the importance of story point estimation and team velocity in project planning and sprint management.
 
 ## 5. 11 Nov 2026 — Sprint 1 Retrospective
 

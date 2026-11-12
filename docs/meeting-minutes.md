@@ -221,7 +221,7 @@
 | 2 | Content check (proofread role page and articles) | Javed |
 | 3 | US-04 Team scenario (#39) | Bator |
 | 4 | Fix bugs found in testing | Bator |
-| 5 | Chatbot (only if #9 is solved) | Christian |
+| 5 | Chatbot: run the test set and fix weak answers (#9 solved on 11 Nov) | Christian |
 | 6 | Final presentation | Everyone |
 
 **Rules for this sprint:**

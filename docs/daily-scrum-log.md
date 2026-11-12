@@ -2,111 +2,120 @@
 
 **Course:** Software Development Methodologies — ISEC
 **Team:** Bator Eshizhamsoev (Product Owner / Developer) · Christian Byemba (Developer) · Javed Iqbal (Scrum Master / Developer)
-**Maintained by:** Javed Iqbal (Scrum Master)
+**Recorded by:** Javed Iqbal (Scrum Master)
 
-> **How this file works:** one file for every Daily Scrum of the project, in date order; new entries are added at the bottom.
-> The Daily Scrum is time-boxed to 15 minutes. Each member answers the three questions, and impediments are recorded with an owner.
-> Decisions taken outside the Daily Scrum (e.g. scope changes by the PO) go in `meeting-minutes.md`.
-> Past entries are not edited silently — corrections are added as a dated note, e.g. *"Correction (10 Nov): …"*.
+> **Note (12 Nov):** the Sprint 1 entries were written up on 12 Nov from the team's notes and the GitHub history. From Sprint 2 onward, the log is filled in during each session (Sprint 1 Retrospective, action 2).
 
-## Contents
+**Rules:**
+- 15 minutes maximum, at the start of each working session.
+- Each person answers 3 questions: *What did I do? What will I do? Any blockers?*
+- Every blocker gets an owner.
 
-| # | Date | Sprint / session | Status |
+| Sprint | Dates | Daily Scrums | Status |
 |---|---|---|---|
-| 0 | 27 Oct 2026 | Sprint 0 / Pre-game | No Daily Scrum (planning session) |
-| 1 | 03 Nov 2026 | Sprint 1, Session 1 | Written up 10 Nov; awaiting team approval |
-| 2 | ____ 2026 | Sprint 1, Session 2 | To add |
-| 3 | ____ 2026 | Sprint 1, Session 3 | To add |
-| 4 | ____ 2026 | Sprint 2, Session 2 | To fill in during the meeting |
-| 5 | ____ 2026 | Sprint 2, Session 3 | To fill in during the meeting |
+| Sprint 0 | 27 Oct – 3 Nov 2026 | None (setup phase) | ✅ Completed |
+| Sprint 1 | 3 Nov – 11 Nov 2026 | 3 Nov · 10 Nov · 11 Nov | ✅ Completed |
+| Sprint 2 | 12 Nov – 17 Nov 2026 | 12 Nov · ____ · ____ | 🔄 In progress |
 
 ---
 
-## 0. 27 Oct 2026 — Sprint 0 / Pre-game (no Daily Scrum)
+## Format (copy for each new entry)
 
-No Daily Scrum was held. This session was Sprint 0 / Pre-game: Design Thinking, Release Planning and Sprint 1 Planning (see `meeting-minutes.md`, section 1). The Daily Scrum starts once a Sprint is running; the first one was on 3 Nov 2026.
+```markdown
+## __. __ Nov 2026 — Sprint __
 
-**Open items carried into Sprint 1:**
+**Attendees:** ☐ Bator ☐ Christian ☐ Javed
 
-| Item | Owner | Status |
+| Member | Done since last time | Will do today | Blockers |
+|---|---|---|---|
+| Bator | | | |
+| Christian | | | |
+| Javed | | | |
+
+| Blocker | Owner | Status |
 |---|---|---|
-| Set up tools (Netlify, BOTSchool.ai, Lovable.dev) | Christian | BOTSchool.ai blocked on 3 Nov — needs a credit card (#9) |
-| Templates for meeting minutes and Daily Scrum logs | Javed | Done (10 Nov) — `meeting-minutes.md` and `daily-scrum-log.md` |
+| | | |
+```
 
 ---
 
-## 1. 03 Nov 2026 — Sprint 1, Session 1
+# Sprint 0 — 27 Oct to 3 Nov 2026 ✅ Completed
 
-| | |
-|---|---|
-| **Sprint** | Sprint 1 (27 October – 10 November 2026) |
-| **Attendees** | ☑ Bator ☑ Christian (remote) ☑ Javed |
-| **Recorded by** | Javed Iqbal (Scrum Master) |
-
-> **Note:** written up on 10 November 2026 from the team's notes. Individual answers were not recorded for this session; only the team outcome and impediments are listed.
-
-**Outcome:** the team agreed to start working on the user stories of Sprint 1.
-
-| Impediment | Raised by | Owner | Status |
-|---|---|---|---|
-| BOTSchool.ai asks for a credit card before enabling web integration (#9) | Christian | Christian | Open — asked the teacher about academic access |
-
-Full minutes of this session: `meeting-minutes.md`, section 2.
+No Daily Scrum. Sprint 0 was a setup phase: product idea, user stories, release plan and roles (see `meeting-minutes.md`, sections 1 and 2).
 
 ---
 
-## 2. ____ 2026 — Sprint 1, Session 2
+# Sprint 1 — 3 Nov to 11 Nov 2026 ✅ Completed
 
-*To add.*
+**Sprint Goal:** A learner can navigate topics, understand what an Agile Coach does, and tell the role apart from a Scrum Master and a manager.
+
+## 1. 3 Nov 2026 — Sprint 1
+
+**Attendees:** ☑ Bator ☑ Christian (online) ☑ Javed
+
+| Member | Done since last time | Will do today | Blockers |
+|---|---|---|---|
+| Bator | Definition of Done (PR #10) | Put user stories on GitHub (#11–#14) | None |
+| Christian | Agile Coach research (PR #8) | Set up tools (Netlify, BOTSchool.ai) | BOTSchool.ai needs a credit card |
+| Javed | Project skeleton and doc templates | Design Thinking plan (PR #16), release plan (PR #24) | None |
+
+| Blocker | Owner | Status |
+|---|---|---|
+| BOTSchool.ai needs a credit card for web integration (#9) | Christian | Open. Asked the teacher for academic access |
+
+## 2. 10 Nov 2026 — Sprint 1
+
+**Attendees:** ☐ Bator ☐ Christian ☐ Javed
+
+| Member | Done since last time | Will do today | Blockers |
+|---|---|---|---|
+| Bator | ____ | First website version in React (PR #30) | ____ |
+| Christian | ____ | Tests and README for the React site (PR #38), chatbot test set and training intents (PR #41) | ____ |
+| Javed | Design Thinking v2 (9 Nov) | Meeting minutes and Daily Scrum log (PRs #36, #37) | ____ |
+
+| Blocker | Owner | Status |
+|---|---|---|
+| BOTSchool.ai credit card (#9) | Christian | Still open |
+
+## 3. 11 Nov 2026 — Sprint 1
+
+**Attendees:** ☐ Bator ☐ Christian ☐ Javed
+
+| Member | Done since last time | Will do today | Blockers |
+|---|---|---|---|
+| Bator | First website version (PR #30) | Articles in the website, progress tracking (PR #47) | ____ |
+| Christian | Tests, README and chatbot test set (PRs #38, #41, waiting for review) | Research update: why velocity cannot compare teams (PR #48) | ____ |
+| Javed | Meeting minutes and Daily Scrum log | Role page content (PR #43), four core articles (PR #46) | ____ |
+
+| Blocker | Owner | Status |
+|---|---|---|
+| BOTSchool.ai credit card (#9) | Christian | Still open |
+| Smoke tests broken after PR #30 | Christian | Fix in PR #38 |
 
 ---
 
-## 3. ____ 2026 — Sprint 1, Session 3
+# Sprint 2 — 12 Nov to 17 Nov 2026 🔄 In progress
 
-*To add.*
+**Sprint Goal:** ____
 
----
+## 4. 12 Nov 2026 — Sprint 2
 
-## 4. ____ 2026 — Sprint 2, Session 2
+**Attendees:** ☐ Bator ☐ Christian ☐ Javed
 
-| | |
-|---|---|
-| **Sprint** | Sprint 2 (10 – 17 November 2026) |
-| **Time** | First 10 min of the session |
-| **Attendees** | ☐ Bator ☐ Christian ☐ Javed |
-| **Recorded by** | |
-
-| Member | What did I do since the last session? | What will I do this session? | Any impediments? |
+| Member | Done since last time | Will do today | Blockers |
 |---|---|---|---|
-| Bator | | | |
-| Christian | | | |
-| Javed | | | |
+| Bator | Articles in the website (PR #47) | CI workflow and h1 test fix (PR #49); US-04 conflict scenario simulator (PR #52) | ____ |
+| Christian | Velocity research update (PR #48); merged PRs #38 and #41 | ____ | ____ |
+| Javed | Role page content (PR #43), four core articles (PR #46) | Meeting minutes update (#53), Daily Scrum log | ____ |
 
-| Impediment | Raised by | Owner | Status |
-|---|---|---|---|
-| | | | |
+| Blocker | Owner | Status |
+|---|---|---|
+| BOTSchool.ai credit card (#9) | Christian | ____ |
 
-**Mid-sprint check (last 10 min):** on track for the Sprint Goal? ☐ Yes ☐ No — if no, what changes:
+## 5. ____ Nov 2026 — Sprint 2
 
----
+*To add during the session (use the format above).*
 
-## 5. ____ 2026 — Sprint 2, Session 3
+## 6. ____ Nov 2026 — Sprint 2
 
-| | |
-|---|---|
-| **Sprint** | Sprint 2 (10 – 17 November 2026) |
-| **Time** | First 10 min of the session |
-| **Attendees** | ☐ Bator ☐ Christian ☐ Javed |
-| **Recorded by** | |
-
-| Member | What did I do since the last session? | What will I do this session? | Any impediments? |
-|---|---|---|---|
-| Bator | | | |
-| Christian | | | |
-| Javed | | | |
-
-| Impediment | Raised by | Owner | Status |
-|---|---|---|---|
-| | | | |
-
-**Demo rehearsal:** ☐ Done — notes:
+*To add during the session (use the format above).*

@@ -13,7 +13,7 @@ This document gathers what we know about the Agile Coach role and where it comes
 
 ## 2. What an Agile Coach is and does
 
-An Agile Coach helps people find better ways of working, then steps back so the team becomes autonomous. Adkins describes the aim as a team that no longer needs its coach (Adkins, 2010). Davies and Sedley present the coach as someone who helps a team adopt and improve agile practices by working alongside it, not by imposing them (Davies & Sedley, 2009).
+An Agile Coach helps people find better ways of working, then steps back so the team becomes autonomous. Adkins describes the aim as a team that no longer needs its coach; the coach has no authority over people and does not do the team's work (Adkins, 2010). Davies and Sedley present the coach as someone who helps a team adopt and improve agile practices by working alongside it, not by imposing them (Davies & Sedley, 2009).
 
 Typical activities:
 
@@ -93,7 +93,7 @@ At the lower levels the coach helps the team solve the conflict itself: listenin
 ## 10. Common misconceptions to correct on the site
 
 - "The Agile Coach is the team's boss." No: no hierarchical authority.
-- "Agile Coach and Scrum Master are the same." No: different scope and origin (section 3).
+- "Agile Coach and Scrum Master are the same." No: different scope and origin. The Scrum Master is defined by the Scrum Guide; the Agile Coach is not, because the role comes from practice and from coaching frameworks, not from Scrum (section 3).
 - "A coach gives answers." Only in the teacher and mentor stances; the professional-coach stance asks questions.
 - "Velocity measures performance." No: it is a planning tool for one team, and it depends on that team's own estimation scale, so it cannot be used to compare or rank teams (Cohn, 2005).
 

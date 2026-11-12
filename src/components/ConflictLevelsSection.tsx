@@ -124,14 +124,14 @@ export const ConflictLevelsSection: React.FC = () => {
         </div>
 
         {/* ========================================================================= */}
-        {/* US-04: Realistic Team Scenario Practice & Simulator                       */}
+        {/* Realistic Team Scenario Practice & Simulator                              */}
         {/* ========================================================================= */}
         <div className="mt-12 pt-10 border-t border-slate-200">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
             <div>
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 mb-2">
                 <Sparkles className="w-3.5 h-3.5" />
-                US-04 Scenario Simulator
+                Interactive Scenario Simulator
               </div>
               <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900">
                 Realistic Team Scenario: Conflict Resolution

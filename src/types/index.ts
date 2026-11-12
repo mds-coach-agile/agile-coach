@@ -48,6 +48,31 @@ export interface ConflictLevelItem {
   coachResponse: string;
 }
 
+export interface ConflictScenarioOption {
+  id: string;
+  actionText: string;
+  isOptimal: boolean;
+  escalationOutcome: 'de-escalated' | 'escalated' | 'ineffective';
+  feedbackTitle: string;
+  explanation: string;
+  coachingTakeaway: string;
+}
+
+export interface ConflictScenario {
+  id: string;
+  title: string;
+  tag: string;
+  initialLevel: number;
+  levelName: string;
+  situation: string;
+  context: string;
+  coachChallenge: string;
+  options: ConflictScenarioOption[];
+  articleId: string;
+  reflectionQuestion?: string;
+  reviewTopics?: string;
+}
+
 export interface QuizOption {
   id: string;
   text: string;

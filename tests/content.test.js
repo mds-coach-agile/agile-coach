@@ -5,6 +5,7 @@ import {
   ROLES_DATA,
   COACHING_STANCES_DATA,
   CONFLICT_LEVELS_DATA,
+  CONFLICT_SCENARIOS_DATA,
   QUIZ_QUESTIONS,
 } from '../src/data/agileCoachData.ts';
 
@@ -35,6 +36,21 @@ test('every quiz answer explains why it is right or wrong', () => {
   for (const q of QUIZ_QUESTIONS) {
     for (const o of q.options) {
       assert.ok(o.rationale.trim().length > 0, `question ${q.id}, option ${o.id}`);
+    }
+  }
+});
+
+test('realistic team conflict scenarios cover all 5 Speed Leas levels (US-04)', () => {
+  assert.equal(CONFLICT_SCENARIOS_DATA.length, 5, 'should have 5 realistic scenarios');
+  const levels = CONFLICT_SCENARIOS_DATA.map((s) => s.initialLevel);
+  assert.deepEqual(levels, [1, 2, 3, 4, 5], 'must cover levels 1 to 5');
+  for (const s of CONFLICT_SCENARIOS_DATA) {
+    assert.equal(s.options.length, 3, `scenario ${s.id} must have exactly 3 options (A, B, C)`);
+    const optimalOptions = s.options.filter((o) => o.isOptimal);
+    assert.equal(optimalOptions.length, 1, `scenario ${s.id} must have exactly 1 best response`);
+    for (const opt of s.options) {
+      assert.ok(opt.explanation.trim().length > 0, `scenario ${s.id}, option ${opt.id} missing explanation`);
+      assert.ok(opt.coachingTakeaway.trim().length > 0, `scenario ${s.id}, option ${opt.id} missing takeaway`);
     }
   }
 });

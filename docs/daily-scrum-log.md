@@ -96,7 +96,7 @@ No Daily Scrum. Sprint 0 was a setup phase: product idea, user stories, release 
 
 # Sprint 2 — 12 Nov to 17 Nov 2026 🔄 In progress
 
-**Sprint Goal:** ____
+**Sprint Goal:** A student can use the live website to learn about the Agile Coach role, practise with a team scenario and test their knowledge with a quiz.
 
 ## 4. 12 Nov 2026 — Sprint 2
 
@@ -104,9 +104,9 @@ No Daily Scrum. Sprint 0 was a setup phase: product idea, user stories, release 
 
 | Member | Done since last time | Will do today | Blockers |
 |---|---|---|---|
-| Bator | Articles in the website (PR #47) | CI workflow and h1 test fix (PR #49); US-04 conflict scenario simulator (PR #52) | ____ |
-| Christian | Velocity research update (PR #48); merged PRs #38 and #41 | ____ | ____ |
-| Javed | Role page content (PR #43), four core articles (PR #46) | Meeting minutes update (#53), Daily Scrum log | ____ |
+| Bator | Articles in the website (PR #47) | CI workflow and h1 test fix (PR #49); US-04 conflict scenario simulator (PR #52, fixes #39); backlog cleanup (#50, #51) | ____ |
+| Christian | Velocity research update (PR #48); merged PRs #38 and #41 | Deploy the website to Netlify and test it | ____ |
+| Javed | Role page content (PR #43), four core articles (PR #46) | Meeting minutes update (#53, PR #54), Daily Scrum log, content check | ____ |
 
 | Blocker | Owner | Status |
 |---|---|---|

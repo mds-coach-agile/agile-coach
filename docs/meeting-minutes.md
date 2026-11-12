@@ -177,25 +177,32 @@
 
 ## 5. 11 Nov 2026 — Sprint 1 Retrospective
 
-**Attendees:** Bator, Christian, Javed
+| | |
+|---|---|
+| **Team** | P1 – Tuesday |
+| **Facilitator** | Javed Iqbal (Scrum Master) |
+| **Attendees** | Javed Iqbal (Scrum Master / Developer), Bator Eshizhamsoev (Product Owner / Developer), Christian Byemba (Developer) |
 
-**What went well 👍**
-- Sprint 0 documents (DoD, research, release plan) were finished on time.
-- Roles and tools were agreed quickly.
-- The website covers most of the user stories.
+**1. What went well? 👍**
+- The team worked to complete their tasks.
+- Most of the tasks were completed early.
 
-**What didn't go well 👎**
-- Little work was done between 4 and 8 Nov.
-- Most work was merged on 10 and 11 Nov, so there was no time to test or deploy it.
-- The chatbot blocker stayed open for the whole sprint.
-- Minutes were written after the meetings, not during them.
+**2. What didn't go well? 👎**
+- **Large pull request and out-of-date tests.** User stories #26, #27 and #28 were merged together in one large pull request (PR #30). It replaced the first HTML skeleton with React and broke 3 of the 5 smoke tests (fixed later in PR #38). After the article pages were merged in PR #47, an `<h1>` count test failed (fixed in PR #49).
+- **GitHub Projects board and meeting logs updated late.** Early session minutes were written up in Markdown late. Process tasks and PRs were mixed with product stories on the board (no `is:issue` filter). PRs were linked in the Development field only at the end of the sprint.
 
-**Actions for Sprint 2:**
+**3. What should we improve? 💡**
+- Keep pull requests small and limited to a single issue.
+- Fill in `daily-scrum-log.md` during each session, not at the end of the sprint.
 
-| # | Action | Owner | How we check |
-|---|---|---|---|
-| 1 | Open a pull request in the same session you start a task | Everyone | SM checks open PRs at each Daily Scrum |
-| 2 | Raise any blocker with the teacher the same day | Javed (SM) | Blocker list in the Daily Scrum log |
+**4. Action items for Sprint 2:**
+
+| # | Action | Responsible person |
+|---|---|---|
+| 1 | Keep each pull request small and linked to one issue | Everyone |
+| 2 | Fill in the Daily Scrum log during each session | Javed (SM) |
+
+**5. Final team agreement:** the team agreed to apply both improvements in Sprint 2.
 
 ---
 
@@ -220,8 +227,8 @@
 | 6 | Final presentation | Everyone |
 
 **Rules for this sprint:**
-- Open a pull request early (Retro action 1).
-- Raise blockers the same day (Retro action 2).
+- Keep each pull request small and linked to one issue (Retro action 1).
+- Fill in the Daily Scrum log during each session (Retro action 2).
 - No new features in the last session, only fixes and the demo rehearsal.
 
 ## 7. 12 Nov 2026 — Sprint 2 Work Done

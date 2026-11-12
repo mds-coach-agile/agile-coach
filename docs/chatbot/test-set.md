@@ -43,26 +43,41 @@ The chatbot must not invent an answer. It should say the question is outside its
 
 ## Results
 
-| ID | Sprint 2 | Notes |
-| --- | --- | --- |
-| Q1 | | |
-| Q2 | | |
-| Q3 | | |
-| Q4 | | |
-| Q5 | | |
-| Q6 | | |
-| Q7 | | |
-| Q8 | | |
-| Q9 | | |
-| Q10 | | |
-| Q11 | | |
-| Q12 | | |
-| O1 | | |
-| O2 | | |
-| **Total** | __ / 14 | Tested by: ______ on ______ |
+Chatbot: agent *Agile Coach assistant* in the university BOTSchool workspace (ISEC-P1G5), tested in the AI Studio playground before publishing. Knowledge collection *Agile Coach research* = `docs/research/agile-coach-research.md`. Each question was asked in a new conversation.
 
-> **Status (10 Nov 2026):** the test set is ready but the chatbot cannot be tested yet: BOTSchool.ai web integration asks for a credit card (issue #9). The results stay empty until the team has access or agrees on an alternative.
+- **Run 1 (11 Nov 2026):** all 14 checks.
+- **Run 2 (11 Nov 2026):** only the failed questions (Q3, Q10) and Q4 as a regression check, after adding instruction 9 (see *Fixes* below).
+
+| ID | Run 1 | Run 2 | Notes |
+| --- | --- | --- | --- |
+| Q1 | Pass | | |
+| Q2 | Pass | | |
+| Q3 | Fail | Pass | Run 1 said "No" but not that the role comes from practice and coaching frameworks |
+| Q4 | Pass | Pass | Run 2 cited the document name instead of the author (format only) |
+| Q5 | Pass | | |
+| Q6 | Pass | | |
+| Q7 | Pass | | |
+| Q8 | Pass | | |
+| Q9 | Pass | | |
+| Q10 | Fail | Fail | Says "No" but not *why* (each team's own estimation scale). Fixed in the knowledge base by #48; retest pending |
+| Q11 | Pass | | |
+| Q12 | Pass | | |
+| O1 | Pass | | Declines and suggests an Agile coaching question |
+| O2 | Pass | | Declines and suggests an Agile coaching question |
+| **Total** | **12 / 14** | **13 / 14** (latest result per question) | Tested by: Christian Byemba on 11 Nov 2026 |
+
+### Fixes after the failures
+
+| Failure | Cause | Fix |
+| --- | --- | --- |
+| Q3, Q10: correct "No" without the reason | The bot stopped at the conclusion | Instruction 9 added to the agent: for a yes/no answer, always give the reason from the knowledge base, with its source |
+| Q10 still failing after instruction 9 | The research lines the bot retrieves (sections 9 and 10) said velocity is "not comparable" but not why; the reason was only in section 8 | #48 adds the reason (Cohn, 2005) to sections 9 and 10. The collection is being re-indexed with this version |
+| Q4: citation "(Research: the Agile Coach role, §3)" | The bot cited the knowledge document instead of the author | To do: update instruction 4 to cite author and year, never the document name |
+
+> **Status (12 Nov 2026):** BOTSchool access is solved (#9 closed). 13/14 checks pass. Next: retest Q10 once the collection is re-indexed, then a full run 3 with the final configuration before publishing the agent and embedding the widget on the site.
 
 ## AI usage
 
 Drafted with Claude (Anthropic) from the team's research document. The team reviews the questions and expected answers in the pull request.
+
+The test runs were carried out with Claude in Chrome (browser automation) following the procedure above; the grading was checked by Christian Byemba against the bold key points.

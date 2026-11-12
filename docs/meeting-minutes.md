@@ -185,7 +185,8 @@
 
 **1. What went well? 👍**
 - The team worked to complete their tasks.
-- Most of the tasks were completed early.
+- Delivered a full React + TypeScript + Tailwind single-page website with 4 core learning modules and an interactive quiz (PR #30, PR #47).
+- Checked all AI-assisted research and content against primary academic sources (PR #8, PR #41, PR #46, PR #48).
 
 **2. What didn't go well? 👎**
 - **Large pull request and out-of-date tests.** User stories #26, #27 and #28 were merged together in one large pull request (PR #30). It replaced the first HTML skeleton with React and broke 3 of the 5 smoke tests (fixed later in PR #38). After the article pages were merged in PR #47, an `<h1>` count test failed (fixed in PR #49).
@@ -212,17 +213,16 @@
 
 **Attendees:** Bator, Christian, Javed
 
-**Sprint Goal:** ____
-*(Suggestion: "A student can use the live website to learn about the Agile Coach role, practise with a team scenario and test their knowledge with a quiz.")*
+**Sprint Goal:** A student can use the live website to learn about the Agile Coach role, practise with a team scenario and test their knowledge with a quiz.
 
 **Sprint Backlog:**
 
 | # | Item | Owner |
 |---|---|---|
-| 1 | Deploy the website to Netlify and test it | ____ |
-| 2 | Content check (proofread role page and articles) | ____ |
-| 3 | US-04 Team scenario | ____ |
-| 4 | Fix bugs found in testing | ____ |
+| 1 | Deploy the website to Netlify and test it | Christian |
+| 2 | Content check (proofread role page and articles) | Javed |
+| 3 | US-04 Team scenario (#39) | Bator |
+| 4 | Fix bugs found in testing | Bator |
 | 5 | Chatbot (only if #9 is solved) | Christian |
 | 6 | Final presentation | Everyone |
 
@@ -236,6 +236,8 @@
 | Work | By | Pull request / evidence |
 |---|---|---|
 | Automatic tests on GitHub (CI) and navigation test fix | Bator | PR #49 (12 Nov): GitHub Actions workflow tests, type-checks and builds the site on every pull request and push to main; fixed the page-title (h1) navigation test |
+| US-04 Realistic team conflict resolution simulator | Bator | PR #52 (12 Nov, fixes #39): five team conflict scenarios as an interactive simulator on the home page, with content tests |
+| GitHub Projects backlog cleanup | Bator, Javed | Issues #50 (US-02 role comparison) and #51 (US-03 coaching stances) added and closed as done by Bator; #53 process issue for the meeting minutes opened by Javed |
 
 ## 8. ____ Nov 2026 — Sprint 2 Session
 

@@ -43,9 +43,11 @@ const AppContent: React.FC = () => {
         />
         <main className="flex-1">
           <PracticePage
+            subView={route.practiceSubView}
             initialAnchor={route.anchor}
             onNavigateHome={() => navigateToHome()}
             onNavigateArticles={navigateToArticles}
+            onNavigatePractice={navigateToPractice}
             onNavigateToArticle={navigateToArticle}
           />
         </main>

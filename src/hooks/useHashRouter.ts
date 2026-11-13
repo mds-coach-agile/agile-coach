@@ -1,9 +1,11 @@
 import { useState, useEffect, useCallback } from 'react';
 
 export type AppView = 'home' | 'articles' | 'article-detail' | 'practice';
+export type PracticeSubView = 'hub' | 'conflict' | 'quiz';
 
 export interface RouteState {
   view: AppView;
+  practiceSubView?: PracticeSubView;
   articleId?: string;
   fromQuiz?: boolean;
   questionId?: string;
@@ -39,10 +41,50 @@ const parseHash = (hash: string): RouteState => {
     return { view: 'articles', fromQuiz, anchor };
   }
 
-  if (parts[0] === 'practice' || parts[0] === 'quiz' || parts[0] === 'conflict') {
+  if (parts[0] === 'practice') {
+    const sub = parts[1];
+    if (sub === 'conflict' || anchor === 'conflict') {
+      return {
+        view: 'practice',
+        practiceSubView: 'conflict',
+        anchor: 'conflict',
+        fromQuiz,
+        questionId,
+      };
+    }
+    if (sub === 'quiz' || anchor === 'quiz') {
+      return {
+        view: 'practice',
+        practiceSubView: 'quiz',
+        anchor: 'quiz',
+        fromQuiz,
+        questionId,
+      };
+    }
     return {
       view: 'practice',
-      anchor: parts[0] === 'practice' ? (parts[1] || anchor) : parts[0],
+      practiceSubView: 'hub',
+      anchor,
+      fromQuiz,
+      questionId,
+    };
+  }
+
+  if (parts[0] === 'quiz') {
+    return {
+      view: 'practice',
+      practiceSubView: 'quiz',
+      anchor: 'quiz',
+      fromQuiz,
+      questionId,
+    };
+  }
+
+  if (parts[0] === 'conflict') {
+    return {
+      view: 'practice',
+      practiceSubView: 'conflict',
+      anchor: 'conflict',
       fromQuiz,
       questionId,
     };
@@ -91,9 +133,13 @@ export const useHashRouter = () => {
     window.location.hash = '#/articles';
   }, []);
 
-  const navigateToPractice = useCallback((targetAnchor?: string) => {
-    if (targetAnchor) {
-      window.location.hash = `#/practice#${targetAnchor}`;
+  const navigateToPractice = useCallback((subViewOrAnchor?: PracticeSubView | string) => {
+    if (subViewOrAnchor === 'conflict') {
+      window.location.hash = '#/practice/conflict';
+    } else if (subViewOrAnchor === 'quiz') {
+      window.location.hash = '#/practice/quiz';
+    } else if (subViewOrAnchor && subViewOrAnchor !== 'hub') {
+      window.location.hash = `#/practice#${subViewOrAnchor}`;
     } else {
       window.location.hash = '#/practice';
     }

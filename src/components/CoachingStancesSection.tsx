@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import { COACHING_STANCES_DATA } from '../data/agileCoachData';
 import { StanceType } from '../types';
-import { Sparkles, AlertTriangle, MessageSquare, Compass } from 'lucide-react';
+import { AlertTriangle, ArrowRight } from 'lucide-react';
 
-export const CoachingStancesSection: React.FC = () => {
+interface CoachingStancesSectionProps {
+  onNavigatePractice?: (anchor?: string) => void;
+}
+
+export const CoachingStancesSection: React.FC<CoachingStancesSectionProps> = ({
+  onNavigatePractice,
+}) => {
   const [activeStanceId, setActiveStanceId] = useState<StanceType>('coach');
 
   const currentStance =
@@ -129,6 +135,18 @@ export const CoachingStancesSection: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Step transition guide */}
+        <div className="mt-10 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <span>Ready to diagnose team conflicts using Speed Leas's framework?</span>
+          <a
+            href="#practice"
+            className="inline-flex items-center gap-1.5 font-semibold text-indigo-600 hover:text-indigo-700 transition-colors"
+          >
+            <span>Next: Speed Leas Conflict Simulator & Quiz Hub</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </a>
         </div>
       </div>
     </section>

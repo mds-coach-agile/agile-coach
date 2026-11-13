@@ -1,9 +1,11 @@
 import { useState, useEffect, useCallback } from 'react';
 
-export type AppView = 'home' | 'articles' | 'article-detail';
+export type AppView = 'home' | 'articles' | 'article-detail' | 'practice';
+export type PracticeSubView = 'hub' | 'conflict' | 'quiz';
 
 export interface RouteState {
   view: AppView;
+  practiceSubView?: PracticeSubView;
   articleId?: string;
   fromQuiz?: boolean;
   questionId?: string;
@@ -39,7 +41,56 @@ const parseHash = (hash: string): RouteState => {
     return { view: 'articles', fromQuiz, anchor };
   }
 
-  // Anchor on home, e.g. #quiz, #roles, #stances, etc.
+  if (parts[0] === 'practice') {
+    const sub = parts[1];
+    if (sub === 'conflict' || anchor === 'conflict') {
+      return {
+        view: 'practice',
+        practiceSubView: 'conflict',
+        anchor: 'conflict',
+        fromQuiz,
+        questionId,
+      };
+    }
+    if (sub === 'quiz' || anchor === 'quiz') {
+      return {
+        view: 'practice',
+        practiceSubView: 'quiz',
+        anchor: 'quiz',
+        fromQuiz,
+        questionId,
+      };
+    }
+    return {
+      view: 'practice',
+      practiceSubView: 'hub',
+      anchor,
+      fromQuiz,
+      questionId,
+    };
+  }
+
+  if (parts[0] === 'quiz') {
+    return {
+      view: 'practice',
+      practiceSubView: 'quiz',
+      anchor: 'quiz',
+      fromQuiz,
+      questionId,
+    };
+  }
+
+  if (parts[0] === 'conflict') {
+    return {
+      view: 'practice',
+      practiceSubView: 'conflict',
+      anchor: 'conflict',
+      fromQuiz,
+      questionId,
+    };
+  }
+
+  // Anchor on home, e.g. #roles, #stances, #overview, etc.
   return { view: 'home', anchor: parts[0] };
 };
 
@@ -82,6 +133,18 @@ export const useHashRouter = () => {
     window.location.hash = '#/articles';
   }, []);
 
+  const navigateToPractice = useCallback((subViewOrAnchor?: PracticeSubView | string) => {
+    if (subViewOrAnchor === 'conflict') {
+      window.location.hash = '#/practice/conflict';
+    } else if (subViewOrAnchor === 'quiz') {
+      window.location.hash = '#/practice/quiz';
+    } else if (subViewOrAnchor && subViewOrAnchor !== 'hub') {
+      window.location.hash = `#/practice#${subViewOrAnchor}`;
+    } else {
+      window.location.hash = '#/practice';
+    }
+  }, []);
+
   const navigateToArticle = useCallback((articleId: string, options?: { fromQuiz?: boolean; questionId?: string }) => {
     const query = new URLSearchParams();
     if (options?.fromQuiz) query.set('from', 'quiz');
@@ -92,17 +155,15 @@ export const useHashRouter = () => {
   }, []);
 
   const returnToQuiz = useCallback((questionId?: string) => {
-    window.location.hash = '#quiz';
-    const el = document.getElementById('quiz');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+    const query = questionId ? `?q=${questionId}` : '';
+    window.location.hash = `#/practice#quiz${query}`;
   }, []);
 
   return {
     route,
     navigateToHome,
     navigateToArticles,
+    navigateToPractice,
     navigateToArticle,
     returnToQuiz,
   };

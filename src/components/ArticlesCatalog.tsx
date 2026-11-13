@@ -35,7 +35,7 @@ export const ArticlesCatalog: React.FC<ArticlesCatalogProps> = ({
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 pb-20">
       {/* Top Navigation */}
-      <nav aria-label="Navigation" className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-2xs">
+      <nav aria-label="Navigation" className="bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
           <button
             onClick={onNavigateHome}
@@ -59,7 +59,7 @@ export const ArticlesCatalog: React.FC<ArticlesCatalogProps> = ({
         </div>
       </nav>
 
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-10">
         {/* Header with Progress Bar */}
         <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-8 shadow-xs">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
@@ -182,7 +182,7 @@ export const ArticlesCatalog: React.FC<ArticlesCatalogProps> = ({
             );
           })}
         </div>
-      </main>
+      </div>
     </div>
   );
 };

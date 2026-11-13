@@ -14,11 +14,11 @@ import { HeroSection } from './components/HeroSection';
 import { LearningPathsOverview } from './components/LearningPathsOverview';
 import { RoleComparisonSection } from './components/RoleComparisonSection';
 import { CoachingStancesSection } from './components/CoachingStancesSection';
-import { ConflictLevelsSection } from './components/ConflictLevelsSection';
-import { InteractiveQuizWidget } from './components/InteractiveQuizWidget';
+import { PracticeGatewaySection } from './components/PracticeGatewaySection';
 import { FullAssessmentModal } from './components/FullAssessmentModal';
 import { ArticlePage } from './components/ArticlePage';
 import { ArticlesCatalog } from './components/ArticlesCatalog';
+import { PracticePage } from './components/PracticePage';
 import { Footer } from './components/Footer';
 
 const AppContent: React.FC = () => {
@@ -26,9 +26,39 @@ const AppContent: React.FC = () => {
     route,
     navigateToHome,
     navigateToArticles,
+    navigateToPractice,
     navigateToArticle,
     returnToQuiz,
   } = useHashRouter();
+
+  // If on practice view
+  if (route.view === 'practice') {
+    return (
+      <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+        <Navbar
+          currentView="practice"
+          onNavigateHome={navigateToHome}
+          onNavigateArticles={navigateToArticles}
+          onNavigatePractice={navigateToPractice}
+        />
+        <main className="flex-1">
+          <PracticePage
+            subView={route.practiceSubView}
+            initialAnchor={route.anchor}
+            onNavigateHome={() => navigateToHome()}
+            onNavigateArticles={navigateToArticles}
+            onNavigatePractice={navigateToPractice}
+            onNavigateToArticle={navigateToArticle}
+          />
+        </main>
+        <Footer />
+        <FullAssessmentModal
+          onNavigateToArticle={navigateToArticle}
+          onNavigateArticles={navigateToArticles}
+        />
+      </div>
+    );
+  }
 
   // If on article details view
   if (route.view === 'article-detail' && route.articleId) {
@@ -40,6 +70,7 @@ const AppContent: React.FC = () => {
             currentView="article-detail"
             onNavigateHome={navigateToHome}
             onNavigateArticles={navigateToArticles}
+            onNavigatePractice={navigateToPractice}
           />
           <main className="flex-1">
             <ArticlePage
@@ -70,6 +101,7 @@ const AppContent: React.FC = () => {
           currentView="articles"
           onNavigateHome={navigateToHome}
           onNavigateArticles={navigateToArticles}
+          onNavigatePractice={navigateToPractice}
         />
         <main className="flex-1">
           <ArticlesCatalog
@@ -94,17 +126,17 @@ const AppContent: React.FC = () => {
         currentView="home"
         onNavigateHome={navigateToHome}
         onNavigateArticles={navigateToArticles}
+        onNavigatePractice={navigateToPractice}
       />
       <main className="flex-1">
-        <HeroSection />
+        <HeroSection onNavigatePractice={navigateToPractice} />
         <LearningPathsOverview
           onNavigateToArticle={navigateToArticle}
           onNavigateArticles={navigateToArticles}
         />
         <RoleComparisonSection />
-        <CoachingStancesSection />
-        <ConflictLevelsSection />
-        <InteractiveQuizWidget onNavigateToArticle={navigateToArticle} />
+        <CoachingStancesSection onNavigatePractice={navigateToPractice} />
+        <PracticeGatewaySection onNavigatePractice={navigateToPractice} />
       </main>
       <Footer />
       <FullAssessmentModal

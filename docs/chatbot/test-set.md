@@ -48,24 +48,26 @@ Chatbot: agent *Agile Coach assistant* in the university BOTSchool workspace (IS
 - **Run 1 (11 Nov 2026):** all 14 checks.
 - **Run 2 (11 Nov 2026):** only the failed questions (Q3, Q10) and Q4 as a regression check, after adding instruction 9 (see *Fixes* below).
 - **Run 3 (12 Nov 2026):** all 14 checks again, after the knowledge collection was re-indexed with the #48 version.
+- **Run 4 (13 Nov 2026):** all 14 checks, same configuration.
+- **Run 5 (13 Nov 2026):** all 14 checks, with the citation format noted for each answer. The collection held a single file, which turned out to be an older copy without the #56 changes (see *Fixes*).
 
-| ID | Run 1 | Run 2 | Run 3 | Notes |
-| --- | --- | --- | --- | --- |
-| Q1 | Pass | | Fail | Run 3 only said the coach works "rather than imposing solutions", not that the coach has no authority over people (borderline) |
-| Q2 | Pass | | Pass | |
-| Q3 | Fail | Pass | Fail | Runs 1 and 3 said "No" but not that the role comes from practice and coaching frameworks |
-| Q4 | Pass | Pass | Pass | Runs 2 and 3 cited the document name instead of the author (format only) |
-| Q5 | Pass | | Pass | |
-| Q6 | Pass | | Pass | |
-| Q7 | Pass | | Pass | |
-| Q8 | Pass | | Pass | |
-| Q9 | Pass | | Pass | |
-| Q10 | Fail | Fail | Pass | Runs 1–2 said "No" but not *why*; passes in run 3 after #48 (each team's own estimation scale, Cohn 2005) |
-| Q11 | Pass | | Pass | |
-| Q12 | Pass | | Pass | |
-| O1 | Pass | | Pass | Declines and suggests an Agile coaching question |
-| O2 | Pass | | Pass | Declines and suggests an Agile coaching question |
-| **Total** | **12 / 14** | **13 / 14** (latest result per question) | **12 / 14** | Tested by: Christian Byemba on 11 and 12 Nov 2026 |
+| ID | Run 1 | Run 2 | Run 3 | Run 4 | Run 5 | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Q1 | Pass | | Fail | Fail | Fail | Runs 3–5 only said the coach works "rather than imposing solutions" / "rather than directing its work", not that the coach has no authority over people (borderline). Run 5 used a copy of the research without #56 |
+| Q2 | Pass | | Pass | Pass | Pass | |
+| Q3 | Fail | Pass | Fail | Pass | Pass | Runs 1 and 3 said "No" but not that the role comes from practice and coaching frameworks; passes in runs 4 and 5 |
+| Q4 | Pass | Pass | Pass | Pass | Pass | Runs 2 and 3 cited the document name instead of the author; runs 4 and 5 gave no citation in the text (format only) |
+| Q5 | Pass | | Pass | Pass | Pass | |
+| Q6 | Pass | | Pass | Pass | Pass | |
+| Q7 | Pass | | Pass | Pass | Pass | |
+| Q8 | Pass | | Pass | Pass | Pass | |
+| Q9 | Pass | | Pass | Pass | Pass | |
+| Q10 | Fail | Fail | Pass | Pass | Pass | Runs 1–2 said "No" but not *why*; passes from run 3 after #48 (each team's own estimation scale, Cohn 2005) |
+| Q11 | Pass | | Pass | Pass | Pass | |
+| Q12 | Pass | | Pass | Pass | Pass | |
+| O1 | Pass | | Pass | Pass | Pass | Declines and suggests an Agile coaching question |
+| O2 | Pass | | Pass | Pass | Pass | Declines and suggests an Agile coaching question |
+| **Total** | **12 / 14** | **13 / 14** (latest result per question) | **12 / 14** | **13 / 14** | **13 / 14** | Tested by: Christian Byemba on 11, 12 and 13 Nov 2026 |
 
 ### Fixes after the failures
 
@@ -73,10 +75,11 @@ Chatbot: agent *Agile Coach assistant* in the university BOTSchool workspace (IS
 | --- | --- | --- |
 | Q3, Q10: correct "No" without the reason | The bot stopped at the conclusion | Instruction 9 added to the agent: for a yes/no answer, always give the reason from the knowledge base, with its source |
 | Q10 still failing after instruction 9 | The research lines the bot retrieves (sections 9 and 10) said velocity is "not comparable" but not why; the reason was only in section 8 | #48 adds the reason (Cohn, 2005) to sections 9 and 10. The collection was re-indexed with this version on 12 Nov |
-| Q4: citation "(Research: the Agile Coach role, §3)" | The bot cited the knowledge document instead of the author | To do: update instruction 4 to cite author and year, never the document name |
-| Q1, Q3 fail in run 3 after passing before | The answers vary between runs. Q1 retrieved section 2, which did not mention authority; Q3's origin was only stated once, in section 3 | Research update (separate PR): say in section 2 that the coach has no authority over people, and in section 10 where the role comes from. To retest in run 4 |
+| Q4: citation "(Research: the Agile Coach role, §3)" | The bot cited the knowledge document instead of the author | Instruction 4 updated: cite author and year, never the document name. Runs 4–5 no longer cite the document, but Q4 and Q6 give no citation in the text. To check in run 6 |
+| Q1, Q3 fail in run 3 after passing before | The answers vary between runs. Q1 retrieved section 2, which did not mention authority; Q3's origin was only stated once, in section 3 | #56: section 2 now says the coach has no authority over people, and section 10 says where the role comes from. Q3 passes in runs 4 and 5 |
+| Q1 still fails in runs 4 and 5 | The collection did not contain the #56 version. The web-address source (raw GitHub link) never finished indexing, so the bot kept using an older uploaded file | 13 Nov: the old sources were removed and the current `main` version was uploaded as a file (indexed, 36 segments). To retest in run 6. From now on, re-upload the file after every change to the research document |
 
-> **Status (12 Nov 2026):** BOTSchool access is solved (#9 closed). Run 3: 12/14. Q10 is fixed, but Q1 and Q3 failed again after passing in earlier runs, so the answers are not yet stable. Next: research update for Q1 and Q3, instruction 4, then a full run 4 with the final configuration before publishing the agent and embedding the widget on the site.
+> **Status (13 Nov 2026):** Runs 4 and 5: 13/14. Only Q1 is left, and the cause was an outdated file in the knowledge collection, now replaced. Run 6 (all 14 checks with the current file) could not be done: since about 19:20 on 13 Nov the AI Studio playground creates the test session but the bot sends no reply, not even the intro message, while AI Health reports "All checks passed". The same outage happened on 11 Nov. To report to BOTSchool support with the agent ID and times. Next: run 6 when the playground works again; if 14/14, publish version 1 of the agent and embed the widget on the site.
 
 ## AI usage
 

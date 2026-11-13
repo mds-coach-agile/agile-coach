@@ -63,10 +63,10 @@ export const InteractiveQuizWidget: React.FC<InteractiveQuizWidgetProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
             <div className="text-xs font-semibold uppercase tracking-wider text-indigo-600 mb-1">
-              Reactive Knowledge Check
+              Assessment & Practice
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
-              Interactive Scenario Practice
+              Knowledge Check & Assessment Quiz
             </h2>
           </div>
 

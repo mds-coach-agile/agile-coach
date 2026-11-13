@@ -164,6 +164,18 @@ export const LearningPathsOverview: React.FC<LearningPathsOverviewProps> = ({
             );
           })}
         </div>
+
+        {/* Step transition guide */}
+        <div className="mt-10 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <span>Completed the overview of foundational modules?</span>
+          <a
+            href="#roles"
+            className="inline-flex items-center gap-1.5 font-semibold text-indigo-600 hover:text-indigo-700 transition-colors"
+          >
+            <span>Next: Compare Roles in the Role Matrix</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
       </div>
     </section>
   );

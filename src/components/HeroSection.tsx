@@ -3,7 +3,7 @@ import { ArrowDown, HelpCircle, CheckCircle2 } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section id="overview" className="relative pt-16 pb-14 border-b border-slate-200/80 bg-white">
+    <section className="relative pt-16 pb-14 border-b border-slate-200/80 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Subtle, unboxed metadata */}
         <div className="flex items-center gap-2 text-xs font-medium text-slate-500 mb-4 tracking-wide uppercase">
@@ -26,21 +26,92 @@ export const HeroSection: React.FC = () => {
           instant explanatory feedback.
         </p>
 
+        {/* 3-Step Guided Learning Path */}
+        <div className="mt-8 p-4 sm:p-5 bg-slate-50 border border-slate-200/90 rounded-2xl max-w-3xl">
+          <div className="flex items-center justify-between gap-2 mb-3">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+              Recommended 3-Step Learning Path
+            </span>
+            <span className="text-[11px] text-indigo-600 font-semibold hidden sm:inline">
+              Self-paced · Interactive
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <a
+              href="#overview"
+              className="flex items-start gap-3 p-3 bg-white hover:bg-indigo-50/50 rounded-xl border border-slate-200/80 hover:border-indigo-300 transition-all group"
+            >
+              <span className="w-6 h-6 rounded-full bg-indigo-100 text-indigo-700 font-bold font-mono flex items-center justify-center shrink-0 text-xs group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                1
+              </span>
+              <div>
+                <div className="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                  Core Modules
+                </div>
+                <div className="text-slate-500 mt-0.5 leading-snug">
+                  4 foundational articles with academic sources
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#roles"
+              className="flex items-start gap-3 p-3 bg-white hover:bg-indigo-50/50 rounded-xl border border-slate-200/80 hover:border-indigo-300 transition-all group"
+            >
+              <span className="w-6 h-6 rounded-full bg-indigo-100 text-indigo-700 font-bold font-mono flex items-center justify-center shrink-0 text-xs group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                2
+              </span>
+              <div>
+                <div className="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                  Frameworks
+                </div>
+                <div className="text-slate-500 mt-0.5 leading-snug">
+                  Role matrix & 4 coaching stances
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#conflict"
+              className="flex items-start gap-3 p-3 bg-white hover:bg-indigo-50/50 rounded-xl border border-slate-200/80 hover:border-indigo-300 transition-all group"
+            >
+              <span className="w-6 h-6 rounded-full bg-indigo-100 text-indigo-700 font-bold font-mono flex items-center justify-center shrink-0 text-xs group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                3
+              </span>
+              <div>
+                <div className="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                  Simulator & Quiz
+                </div>
+                <div className="text-slate-500 mt-0.5 leading-snug">
+                  Speed Leas conflict scenarios & 5-question test
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         {/* Action controls */}
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
-            href="#quiz"
+            href="#overview"
             className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg transition-colors shadow-sm whitespace-nowrap"
           >
-            <span>Take Knowledge Check</span>
-            <HelpCircle className="w-4 h-4 opacity-80" />
+            <span>Start Learning (Modules 01–04)</span>
+            <ArrowDown className="w-4 h-4 opacity-80" />
           </a>
           <a
             href="#roles"
             className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors whitespace-nowrap"
           >
-            <span>Compare Roles</span>
-            <ArrowDown className="w-4 h-4 text-slate-500" />
+            <span>Role Matrix</span>
+          </a>
+          <a
+            href="#quiz"
+            className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors whitespace-nowrap"
+          >
+            <span>Knowledge Quiz</span>
+            <HelpCircle className="w-4 h-4 text-slate-500" />
           </a>
         </div>
 

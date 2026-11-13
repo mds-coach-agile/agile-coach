@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
-export type AppView = 'home' | 'articles' | 'article-detail';
+export type AppView = 'home' | 'articles' | 'article-detail' | 'practice';
 
 export interface RouteState {
   view: AppView;
@@ -39,7 +39,16 @@ const parseHash = (hash: string): RouteState => {
     return { view: 'articles', fromQuiz, anchor };
   }
 
-  // Anchor on home, e.g. #quiz, #roles, #stances, etc.
+  if (parts[0] === 'practice' || parts[0] === 'quiz' || parts[0] === 'conflict') {
+    return {
+      view: 'practice',
+      anchor: parts[0] === 'practice' ? (parts[1] || anchor) : parts[0],
+      fromQuiz,
+      questionId,
+    };
+  }
+
+  // Anchor on home, e.g. #roles, #stances, #overview, etc.
   return { view: 'home', anchor: parts[0] };
 };
 
@@ -82,6 +91,14 @@ export const useHashRouter = () => {
     window.location.hash = '#/articles';
   }, []);
 
+  const navigateToPractice = useCallback((targetAnchor?: string) => {
+    if (targetAnchor) {
+      window.location.hash = `#/practice#${targetAnchor}`;
+    } else {
+      window.location.hash = '#/practice';
+    }
+  }, []);
+
   const navigateToArticle = useCallback((articleId: string, options?: { fromQuiz?: boolean; questionId?: string }) => {
     const query = new URLSearchParams();
     if (options?.fromQuiz) query.set('from', 'quiz');
@@ -92,17 +109,15 @@ export const useHashRouter = () => {
   }, []);
 
   const returnToQuiz = useCallback((questionId?: string) => {
-    window.location.hash = '#quiz';
-    const el = document.getElementById('quiz');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+    const query = questionId ? `?q=${questionId}` : '';
+    window.location.hash = `#/practice#quiz${query}`;
   }, []);
 
   return {
     route,
     navigateToHome,
     navigateToArticles,
+    navigateToPractice,
     navigateToArticle,
     returnToQuiz,
   };

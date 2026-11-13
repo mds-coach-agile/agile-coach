@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { useProgress } from '../context/ProgressContext';
-import { Menu, X, BookOpen } from 'lucide-react';
+import { Menu, X, BookOpen, Sparkles } from 'lucide-react';
 
 interface NavbarProps {
   onNavigateHome?: (anchor?: string) => void;
   onNavigateArticles?: () => void;
+  onNavigatePractice?: (anchor?: string) => void;
   currentView?: string;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   onNavigateHome,
   onNavigateArticles,
+  onNavigatePractice,
   currentView = 'home',
 }) => {
   const { completedCount, totalArticlesCount, progressPercentage } = useProgress();
@@ -33,6 +35,17 @@ export const Navbar: React.FC<NavbarProps> = ({
       onNavigateArticles();
     } else {
       window.location.hash = '#/articles';
+    }
+  };
+
+  const handlePracticeClick = (anchor?: string) => {
+    setMobileMenuOpen(false);
+    if (onNavigatePractice) {
+      onNavigatePractice(anchor);
+    } else if (anchor) {
+      window.location.hash = `#/practice#${anchor}`;
+    } else {
+      window.location.hash = '#/practice';
     }
   };
 
@@ -131,16 +144,15 @@ export const Navbar: React.FC<NavbarProps> = ({
             Coaching Stances
           </button>
           <button
-            onClick={() => handleNavClick('conflict')}
-            className="hover:text-slate-900 transition-colors cursor-pointer"
+            onClick={() => handlePracticeClick()}
+            className={`flex items-center gap-1.5 cursor-pointer px-3 py-1 rounded-lg text-sm font-semibold transition-all ${
+              currentView === 'practice'
+                ? 'bg-indigo-600 text-white shadow-xs'
+                : 'text-indigo-600 hover:bg-indigo-50 border border-indigo-200'
+            }`}
           >
-            Conflict Model
-          </button>
-          <button
-            onClick={() => handleNavClick('quiz')}
-            className="hover:text-slate-900 transition-colors cursor-pointer"
-          >
-            Knowledge Check
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Practice & Quiz</span>
           </button>
         </nav>
       </div>
@@ -191,16 +203,15 @@ export const Navbar: React.FC<NavbarProps> = ({
               Coaching Stances
             </button>
             <button
-              onClick={() => handleNavClick('conflict')}
-              className="text-left py-1.5 hover:text-indigo-600 transition-colors"
+              onClick={() => handlePracticeClick()}
+              className={`text-left py-2 px-3 rounded-lg flex items-center gap-2 font-semibold transition-colors ${
+                currentView === 'practice'
+                  ? 'bg-indigo-600 text-white'
+                  : 'text-indigo-600 bg-indigo-50 border border-indigo-200'
+              }`}
             >
-              Conflict Model
-            </button>
-            <button
-              onClick={() => handleNavClick('quiz')}
-              className="text-left py-1.5 hover:text-indigo-600 transition-colors"
-            >
-              Knowledge Check
+              <Sparkles className="w-4 h-4" />
+              <span>Practice & Quiz</span>
             </button>
           </nav>
         </div>

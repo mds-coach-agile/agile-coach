@@ -1,7 +1,11 @@
 import React from 'react';
-import { ArrowDown, HelpCircle, CheckCircle2 } from 'lucide-react';
+import { ArrowDown, HelpCircle, CheckCircle2, Sparkles } from 'lucide-react';
 
-export const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  onNavigatePractice?: (anchor?: string) => void;
+}
+
+export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigatePractice }) => {
   return (
     <section className="relative pt-16 pb-14 border-b border-slate-200/80 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,7 +77,7 @@ export const HeroSection: React.FC = () => {
             </a>
 
             <a
-              href="#conflict"
+              href="#practice"
               className="flex items-start gap-3 p-3 bg-white hover:bg-indigo-50/50 rounded-xl border border-slate-200/80 hover:border-indigo-300 transition-all group"
             >
               <span className="w-6 h-6 rounded-full bg-indigo-100 text-indigo-700 font-bold font-mono flex items-center justify-center shrink-0 text-xs group-hover:bg-indigo-600 group-hover:text-white transition-colors">
@@ -106,13 +110,13 @@ export const HeroSection: React.FC = () => {
           >
             <span>Role Matrix</span>
           </a>
-          <a
-            href="#quiz"
-            className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors whitespace-nowrap"
+          <button
+            onClick={() => (onNavigatePractice ? onNavigatePractice() : (window.location.hash = '#/practice'))}
+            className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors whitespace-nowrap cursor-pointer"
           >
-            <span>Knowledge Quiz</span>
-            <HelpCircle className="w-4 h-4 text-slate-500" />
-          </a>
+            <span>Practice & Quiz</span>
+            <Sparkles className="w-4 h-4 text-indigo-600" />
+          </button>
         </div>
 
         {/* Quantitative Metrics Strip with Tabular Numerals */}

@@ -344,6 +344,18 @@ export const ConflictLevelsSection: React.FC = () => {
             )}
           </div>
         </div>
+
+        {/* Step transition guide */}
+        <div className="mt-10 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <span>Practised the conflict scenarios and ready to test your knowledge?</span>
+          <a
+            href="#quiz"
+            className="inline-flex items-center gap-1.5 font-semibold text-indigo-600 hover:text-indigo-700 transition-colors"
+          >
+            <span>Next: Take the Agile Coaching Knowledge Quiz</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
       </div>
     </section>
   );

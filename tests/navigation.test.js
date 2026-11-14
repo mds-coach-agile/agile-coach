@@ -26,13 +26,14 @@ test('every in-page link points to an existing section', () => {
 });
 
 test('the page has exactly one h1 per view', () => {
-  const articleViews = new Set(['ArticlesCatalog.tsx', 'ArticlePage.tsx']);
+  const nonHomeViews = new Set(['ArticlesCatalog.tsx', 'ArticlePage.tsx', 'PracticePage.tsx']);
   const homeSource = Object.entries(byFile)
-    .filter(([name]) => !articleViews.has(name))
+    .filter(([name]) => !nonHomeViews.has(name))
     .map(([, content]) => content)
     .join('\n');
 
   assert.equal(homeSource.match(/<h1[\s>]/g)?.length, 1);
   assert.equal(byFile['ArticlesCatalog.tsx']?.match(/<h1[\s>]/g)?.length, 1);
   assert.equal(byFile['ArticlePage.tsx']?.match(/<h1[\s>]/g)?.length, 1);
+  assert.equal(byFile['PracticePage.tsx']?.match(/<h1[\s>]/g)?.length, 1);
 });

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ROLES_DATA, ROLE_SCENARIOS } from '../data/agileCoachData';
-import { RoleType } from '../types';
-import { Layers, ShieldAlert, Compass } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export const RoleComparisonSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'matrix' | 'scenarios'>('matrix');
@@ -179,6 +178,18 @@ export const RoleComparisonSection: React.FC = () => {
             </div>
           </div>
         )}
+
+        {/* Step transition guide */}
+        <div className="mt-10 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <span>Understood the role boundaries and accountabilities?</span>
+          <a
+            href="#stances"
+            className="inline-flex items-center gap-1.5 font-semibold text-indigo-600 hover:text-indigo-700 transition-colors"
+          >
+            <span>Next: Explore the 4 Coaching Stances Framework</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
       </div>
     </section>
   );

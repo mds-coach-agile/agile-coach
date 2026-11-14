@@ -56,6 +56,14 @@
 | Christian | Velocity update (PR #48), PRs #38 and #41 merged, BOTSchool access solved (#9) | Chatbot test runs 1–3 (PR #55), research fix for Q1/Q3 (PR #56), deploy to Netlify and test | Chatbot answers for Q1 and Q3 vary between runs |
 | Javed | Role page content (PR #43), core articles (PR #46) | Meeting minutes (PR #54), Daily Scrum log, content check | None |
 
+## 13 Nov 2026
+
+| Member | Done | Today | Blockers |
+|---|---|---|---|
+| Bator | CI fix (PR #49), US-04 conflict simulator (PR #52) | Simplify the website and navigation after teacher feedback (#58): 3-step learning path on the home page, new Practice page with separate Conflict Simulator and Quiz subpages (branch `feature/issue-58-simplify-ui-and-navigation`) | None |
+| Christian | Chatbot test runs 1–3 (PR #55), research fix for Q1/Q3 (PR #56) | _To confirm_ | _To confirm_ |
+| Javed | Meeting minutes (PR #54), Daily Scrum log (PR #57) | Meeting minutes and Daily Scrum log for 13 Nov, _to confirm_ | _To confirm_ |
+
 ## ____ Nov 2026
 
 | Member | Done | Today | Blockers |

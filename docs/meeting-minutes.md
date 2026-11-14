@@ -236,10 +236,20 @@
 | Automatic tests on GitHub (CI) and navigation test fix | Bator | PR #49 (12 Nov): GitHub Actions workflow tests, type-checks and builds the site on every pull request and push to main; fixed the page-title (h1) navigation test |
 | US-04 Realistic team conflict resolution simulator | Bator | PR #52 (12 Nov, fixes #39): five team conflict scenarios as an interactive simulator on the home page, with content tests |
 | GitHub Projects backlog cleanup | Bator, Javed | Issues #50 (US-02 role comparison) and #51 (US-03 coaching stances) added and closed as done by Bator; #53 process issue for the meeting minutes opened by Javed |
+| Chatbot test runs 1–3 | Christian | PR #55 (12 Nov, refs #29): run 1 passed 12/14, run 2 13/14, run 3 12/14; Q10 fixed, Q1 and Q3 still vary between runs |
+| Research fix for chatbot Q1 and Q3 | Christian | PR #56 (12 Nov, refs #29): research now states that the Agile Coach has no formal authority (section 2) and where the role comes from (section 10) |
+| Meeting minutes and Daily Scrum log | Javed | PR #54 (12 Nov, refs #53): minutes for Sprint 0 to Sprint 2 Planning, teacher feedback and Sprint 1 Retrospective; PR #57 (12 Nov): Daily Scrum log filled in for 10–12 Nov |
 
-## 8. ____ Nov 2026 — Sprint 2 Session
+## 8. 13 Nov 2026 — Sprint 2 Work Done
 
-*To add.*
+| Work | By | Pull request / evidence |
+|---|---|---|
+| Simpler website UI and clearer navigation | Bator | Branch `feature/issue-58-simplify-ui-and-navigation` (fixes #58), PR not yet merged: 3-step learning path on the home page, fewer main buttons, "next step" links at the end of each learning section, clearer quiz heading, fixed duplicate navigation, nested `<main>` tags and duplicate `id` |
+| Practice page for the simulator and quiz | Bator | Same branch: conflict simulator and quiz moved off the home page to `#/practice`, with subpages `#/practice/conflict` and `#/practice/quiz`, breadcrumbs and a "Practice & Quiz" tab in the navbar |
+
+This answers teacher feedback 1 from the Sprint 1 Review (make the website simpler and easier to navigate).
+
+**Still open in the Sprint Backlog:** Netlify deployment and testing (Christian), content check (Javed), chatbot Q1 and Q3 (Christian), final presentation (everyone).
 
 ## 9. 17 Nov 2026 — Sprint 2 Review (final presentation)
 

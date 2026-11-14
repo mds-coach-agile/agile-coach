@@ -66,10 +66,10 @@ export const FullAssessmentModal: React.FC<FullAssessmentModalProps> = ({
               Assessment & Curriculum Hub
             </div>
             <h3 className="text-xl font-bold text-slate-900">
-              Full Agile Coach Certification Check
+              Full Agile Coach Knowledge Check
             </h3>
             <p className="text-xs text-slate-500 mt-1">
-              Comprehensive 20-scenario assessment with personalized coaching gap analysis.
+              Your quiz results, with suggested articles to review.
             </p>
           </div>
           <button

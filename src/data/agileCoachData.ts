@@ -24,13 +24,13 @@ export const ROLES_DATA: RoleComparisonData[] = [
     id: 'scrum-master',
     title: 'Scrum Master',
     tagline: 'Process champion & team impediment remover',
-    scope: '1–2 dedicated Scrum or Kanban teams',
+    scope: 'One Scrum Team, plus serving the wider organization',
     authorityStyle: 'Process leadership & servant leadership within the team boundary',
     primaryFocus: 'Delivery flow, sprint health, adherence to Scrum events & clearing blockers',
-    conflictResponse: 'Addresses dysfunctions within sprint ceremonies; protects team focus',
-    keyQuestion: 'What is blocking our sprint goal and how can we remove it today?',
-    successMetric: 'Consistent sprint velocity, predictable cadence & healthy team retrospectives',
-    keyDeliverable: 'Sprint burndowns, impediment backlog, ceremony facilitation notes',
+    conflictResponse: 'Addresses dysfunctions within Scrum events; protects team focus',
+    keyQuestion: 'What is blocking our Sprint Goal and how can we remove it today?',
+    successMetric: 'An effective Scrum Team, predictable cadence & healthy team retrospectives',
+    keyDeliverable: 'Sprint burndowns, impediment backlog, Scrum event facilitation notes',
   },
   {
     id: 'project-manager',
@@ -54,9 +54,9 @@ export const ROLE_SCENARIOS: RoleScenarioItem[] = [
     agileCoachAction:
       'Observes team interactions and retro dynamics; asks systemic questions about technical debt, psychological safety, and organizational pressure instead of diagnosing.',
     scrumMasterAction:
-      'Facilitates a focused retrospective on blockers, checks daily standup impediment logs, and helps the team right-size story estimates for the next sprint.',
+      'Facilitates a focused retrospective on blockers, checks impediments raised in the Daily Scrum, and helps the team right-size story estimates for the next sprint.',
     projectManagerAction:
-      'Analyses schedule variance, alerts stakeholders to potential milestone slip, and evaluates whether scope reduction or resource re-allocation is required.',
+      'Analyzes schedule variance, alerts stakeholders to potential milestone slip, and evaluates whether scope reduction or resource re-allocation is required.',
   },
   {
     id: 'architectural-dispute',
@@ -93,7 +93,7 @@ export const COACHING_STANCES_DATA: CoachingStanceItem[] = [
     antiPatternTrap: 'Remaining in Teacher mode too long, creating dependency where the team never thinks for themselves.',
     powerfulQuestions: [
       'What are the core principles behind this practice?',
-      'How does the Scrum Guide define this ceremony’s specific output?',
+      'How does the Scrum Guide define this event’s specific output?',
     ],
     realWorldExample: 'Running an interactive 30-minute workshop on Story Splitting techniques for junior developers.',
   },
@@ -208,7 +208,7 @@ export const CONFLICT_SCENARIOS_DATA: ConflictScenario[] = [
         isOptimal: true,
         escalationOutcome: 'de-escalated',
         feedbackTitle: 'Best choice · Constructive Disagreement (Level 1)',
-        explanation: 'This is level 1: information is shared freely and the words are clear and factual. It is "the level of constructive disagreement" (Adkins & Blake, 2009). The coach lets the team work. Asking afterwards what went well helps the team notice and repeat good behaviour.',
+        explanation: 'This is level 1: information is shared freely and the words are clear and factual. It is "the level of constructive disagreement" (Adkins & Blake, 2009). The coach lets the team work. Asking afterwards what went well helps the team notice and repeat good behavior.',
         coachingTakeaway: 'At Level 1, conflict is welcomed as a creative force. The coach observes, waits, and reinforces positive collaboration.',
       },
       {
@@ -232,7 +232,7 @@ export const CONFLICT_SCENARIOS_DATA: ConflictScenario[] = [
     context: 'In the Daily Scrum she says only: "Some stories are… let\'s say, not quite finished. But it\'s fine, whatever." The developers look away. After the meeting, Sofia complains about it privately to another tester. Nobody names the problem openly, and the mood has become careful and polite.',
     coachChallenge: 'What do you do as the Agile Coach?',
     articleId: 'conflict-dynamics',
-    reflectionQuestion: 'What signs in people\'s words or behaviour told you this was more than a level 1 problem?',
+    reflectionQuestion: 'What signs in people\'s words or behavior told you this was more than a level 1 problem?',
     reviewTopics: 'The five levels of conflict · Coaching stances – Facilitator · Retrospectives (continuous improvement)',
     options: [
       {
@@ -330,11 +330,11 @@ export const CONFLICT_SCENARIOS_DATA: ConflictScenario[] = [
       },
       {
         id: 's4-opt-b',
-        actionText: 'Meet Daniel and Priya separately to listen. Then bring them together in a structured, facilitated conversation with clear ground rules, focused on behaviour and facts, and aiming at a working agreement. If this does not help, involve the Scrum Master and, where needed, their manager or a professional mediator.',
+        actionText: 'Meet Daniel and Priya separately to listen. Then bring them together in a structured, facilitated conversation with clear ground rules, focused on behavior and facts, and aiming at a working agreement. If this does not help, involve the Scrum Master and, where needed, their manager or a professional mediator.',
         isOptimal: true,
         escalationOutcome: 'de-escalated',
         feedbackTitle: 'Best choice · Private Listening & Structured Ground Rules',
-        explanation: 'At level 4, people believe the others cannot change and may want them removed from the team (Adkins & Blake, 2009). The team is unlikely to de-escalate alone, so the coach adds more structure: private listening first, then a carefully facilitated conversation about facts and behaviour, not about who is "right". Bringing in more formal help when coaching is not enough is part of knowing the limits of the role.',
+        explanation: 'At level 4, people believe the others cannot change and may want them removed from the team (Adkins & Blake, 2009). The team is unlikely to de-escalate alone, so the coach adds more structure: private listening first, then a carefully facilitated conversation about facts and behavior, not about who is "right". Bringing in more formal help when coaching is not enough is part of knowing the limits of the role.',
         coachingTakeaway: 'At Level 4, structure is essential: private listening, strict ground rules, and knowing when to escalate to formal mediation.',
       },
       {
@@ -386,7 +386,7 @@ export const CONFLICT_SCENARIOS_DATA: ConflictScenario[] = [
         escalationOutcome: 'ineffective',
         feedbackTitle: 'Not the best choice · Neglecting Immediate Safety',
         explanation: 'Waiting leaves people in an unsafe situation, and a Retrospective is not designed to handle threats or intimidation.',
-        coachingTakeaway: 'Threats and intimidation demand immediate safety intervention, not standard sprint ceremonies.',
+        coachingTakeaway: 'Threats and intimidation demand immediate safety intervention, not standard Scrum events.',
       },
     ],
   },
@@ -412,7 +412,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
       },
       {
         id: 'opt2',
-        text: 'Coach the Product Owner on self-organization, and coach the developers on how to pull work collectively based on team capacity.',
+        text: 'Coach the Product Owner on self-management, and coach the developers on how to pull work collectively based on team capacity.',
         isCorrect: true,
         rationale: 'Correct! Agile coaches educate on principles (self-management) and guide both sides toward sustainable autonomous team dynamics.',
       },
@@ -438,7 +438,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     categoryLabel: 'Coaching Stances',
     relatedArticleId: 'stances',
     relatedArticleTitle: 'The 4 Coaching Stances',
-    recommendedReadingHint: 'Section 2: The Four Stances at a Glance & Practical Example (quiet retro)',
+    recommendedReadingHint: 'Section 2: The Four Stances at a Glance & Section 5: Powerful Questions Matrix',
     scenario:
       'A team is holding a retrospective. They are clearly demoralized after a painful release, but every time a developer raises an issue, the tech lead explains away why it was unavoidable. The room goes silent.',
     question: 'Which stance and response should the coach adopt here?',
@@ -484,7 +484,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     options: [
       {
         id: 'opt1',
-        text: 'The Scrum Master resolves company-wide dependency architecture, while the Agile Coach facilitates individual daily standups.',
+        text: 'The Scrum Master resolves company-wide dependency architecture, while the Agile Coach facilitates each team’s Daily Scrum.',
         isCorrect: false,
         rationale: 'This inverts the scopes. The Scrum Master works within team boundaries; the Agile Coach tackles multi-team systemic flow.',
       },
@@ -504,7 +504,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
         id: 'opt4',
         text: 'The Agile Coach takes over writing user stories for all 8 teams so they are standardized.',
         isCorrect: false,
-        rationale: 'Neither role writes user stories for the team; that is the Product Owner and development team responsibility.',
+        rationale: 'Neither role writes user stories for the team; that is the responsibility of the Product Owner and the Developers.',
       },
     ],
     coachingTakeaway:
@@ -518,7 +518,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
     relatedArticleTitle: 'Conflict & Team Facilitation',
     recommendedReadingHint: 'Section 2: Speed Leas 5 Levels of Conflict & Practical Example (PR review warfare)',
     scenario:
-      'In a sprint review, a QA engineer says: "The frontend devs don’t care about quality and never test their code before throwing it over the wall to us." A frontend dev snaps back: "QA just finds cosmetic nits to justify their existence."',
+      'In a Sprint Review, a QA engineer says: "The frontend devs don’t care about quality and never test their code before throwing it over the wall to us." A frontend dev snaps back: "QA just finds cosmetic nits to justify their existence."',
     question: 'What level of conflict (Speed Leas model) is this, and what is the best immediate coaching action?',
     options: [
       {
@@ -531,7 +531,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
         id: 'opt2',
         text: 'Level 3 (Contest): The focus has shifted from code bugs to winning and attacking character. Time-box the session, de-escalate, and hold 1-on-1 discovery conversations.',
         isCorrect: true,
-        rationale: 'Correct! Language has escalated to generalizations and personal motivations (Level 3). The coach must de-escalate public shaming and examine team silos.',
+        rationale: 'Correct! Language has escalated to attacks on the other group’s motives, with two sides forming (Level 3). The coach must de-escalate public shaming and examine team silos.',
       },
       {
         id: 'opt3',
@@ -597,7 +597,7 @@ export const LEARNING_MODULES = [
     title: 'The Agile Coach Identity',
     subtitle: 'Beyond the Scrum Master title',
     description: 'Understand the mandate of an Agile Coach: developing self-sufficient, high-performing teams through mindset transformation and systemic awareness.',
-    readTime: '4 min read',
+    readTime: '6 min read',
     keyPoints: [
       'Catalyst vs manager: why authority is absent by design',
       'Systemic perspective: seeing the forest beyond sprint burndowns',
@@ -623,7 +623,7 @@ export const LEARNING_MODULES = [
     title: 'The 4 Coaching Stances',
     subtitle: 'Lyssa Adkins framework',
     description: 'Learn when to instruct as a Teacher, guide as a Mentor, remain neutral as a Facilitator, or inquire as a Professional Coach.',
-    readTime: '5 min read',
+    readTime: '6 min read',
     keyPoints: [
       'Recognizing situational readiness of coachees',
       'Mastering powerful non-directive inquiries',
@@ -634,9 +634,9 @@ export const LEARNING_MODULES = [
     id: 'conflict-dynamics',
     number: '04',
     title: 'Conflict & Team Facilitation',
-    subtitle: 'Speed Leas 5 levels of conflict',
+    subtitle: 'Speed Leas’ 5 levels of conflict',
     description: 'Diagnose team tensions before they become toxic. Navigate disagreements with psychological safety and structured dialogue tools.',
-    readTime: '5 min read',
+    readTime: '7 min read',
     keyPoints: [
       'Classifying conflict: from problem-solving to factional war',
       'De-escalation mechanisms for each tier',

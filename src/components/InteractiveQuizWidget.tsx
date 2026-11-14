@@ -365,8 +365,7 @@ export const InteractiveQuizWidget: React.FC<InteractiveQuizWidgetProps> = ({
               Ready for the Full Agile Coach Knowledge Check?
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Explore the full curriculum: 20+ comprehensive scenarios covering team facilitation,
-              executive stakeholder coaching, and advanced retrospective dynamics.
+              See your results and the articles to review for any questions you missed.
             </p>
           </div>
 

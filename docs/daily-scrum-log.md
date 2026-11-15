@@ -61,7 +61,7 @@
 | Member | Done | Today | Blockers |
 |---|---|---|---|
 | Bator | CI fix (PR #49), US-04 conflict simulator (PR #52) | Simplify the website and navigation after teacher feedback (#58): 3-step learning path on the home page, new Practice page with separate Conflict Simulator and Quiz subpages (branch `feature/issue-58-simplify-ui-and-navigation`) | None |
-| Christian | Chatbot test runs 1–3 (PR #55), research fix for Q1/Q3 (PR #56) | BOTSchool.ai chatbot integration test set (#29) | None |
+| Christian | Chatbot test runs 1–3 (PR #55), research fix for Q1/Q3 (PR #56) | Chatbot test runs 4 and 5 (13/14, only Q1 left); outdated research file in the knowledge collection replaced (#29) | BOTSchool playground sends no replies from about 19:20, so run 6 could not be done |
 | Javed | Meeting minutes (PR #54), Daily Scrum log (PR #57) | Content check: proofreading the website (#60) | None |
 
 ## 14 Nov 2026
@@ -69,8 +69,16 @@
 | Member | Done | Today | Blockers |
 |---|---|---|---|
 | Bator | Simpler website and Practice page (#58) | Simpler website and Practice page merged into main (PR #64, fixes #58) | None |
-| Christian | Work on the BOTSchool.ai chatbot integration test set (#29) | Continue the chatbot integration test set (#29); review and merge of the website content check (PR #66) | None |
+| Christian | Chatbot test runs 4 and 5 (#29) | Find the cause of the playground outage on a test agent (#29); review and merge of the website content check (PR #66) | Playground outage: any guardrail blocks every reply, and the knowledge search fails |
 | Javed | Proofreading the website (#60) | Content check finished (PR #66, #60); meeting minutes and Daily Scrum log for 13 Nov (PR #65) | None |
+
+## 15 Nov 2026
+
+| Member | Done | Today | Blockers |
+|---|---|---|---|
+| Bator | Simpler website and Practice page (PR #64) | Review and merge of the 13–14 Nov minutes and log (PR #67) | None |
+| Christian | Playground outage investigated (#29) | Chatbot rebuilt as "Agile Coach assistant 2", run 6: 14/14 (PR #69); chatbot widget embedded on the site (PR #68, #61) | None |
+| Javed | Content check (PR #66), minutes and log for 13–14 Nov (PR #67) | Review and merge of the chatbot test results (PR #69) and the chatbot widget (PR #68); minutes and log for 15 Nov | None |
 
 ## ____ Nov 2026
 

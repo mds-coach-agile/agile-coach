@@ -246,11 +246,11 @@
 |---|---|---|
 | Simpler website UI and clearer navigation | Bator | Branch `feature/issue-58-simplify-ui-and-navigation` (fixes #58), merged on 14 Nov as PR #64: 3-step learning path on the home page, fewer main buttons, "next step" links at the end of each learning section, clearer quiz heading, fixed duplicate navigation, nested `<main>` tags and duplicate `id` |
 | Practice page for the simulator and quiz | Bator | Same branch: conflict simulator and quiz moved off the home page to `#/practice`, with subpages `#/practice/conflict` and `#/practice/quiz`, breadcrumbs and a "Practice & Quiz" tab in the navbar |
-| BOTSchool.ai chatbot integration test set (in progress) | Christian | Issue #29: work started on 13 Nov, no pull request yet |
+| Chatbot test runs 4 and 5 | Christian | Commit on 13 Nov, merged on 15 Nov as PR #69 (refs #29): both runs 13/14, Q3 now passes, only Q1 left. Cause: the knowledge collection held an older copy of the research without the #56 fix; replaced with the current `main` version. From about 19:20 the BOTSchool playground stopped replying, so run 6 could not be done |
 
 This answers teacher feedback 1 from the Sprint 1 Review (make the website simpler and easier to navigate).
 
-**Still open in the Sprint Backlog:** Netlify deployment and testing (Christian), content check (Javed), chatbot Q1 and Q3 (Christian), final presentation (everyone).
+**Still open in the Sprint Backlog:** Netlify deployment and testing (Christian), content check (Javed), chatbot Q1 and run 6 (Christian), final presentation (everyone).
 
 ## 9. 14 Nov 2026 — Sprint 2 Work Done
 
@@ -259,20 +259,36 @@ This answers teacher feedback 1 from the Sprint 1 Review (make the website simpl
 | Simpler website and Practice page merged | Bator | PR #64 (14 Nov, fixes #58): the 13 Nov work is now on main |
 | Meeting minutes and Daily Scrum log for 13 Nov | Javed | PR #65 (14 Nov, refs #53) |
 | Content check (proofreading) of the website | Javed; reviewed and merged by Christian | PR #66 (14 Nov, refs #60): fixed factual errors (Scrum Master scope, velocity as a success metric), false claims ("certification", "20+ scenarios"), Scrum Guide 2020 terms, missing references (Adkins & Blake 2009, Sinha 2019), a broken quiz hint and reading times; removed internal references from the articles |
-| BOTSchool.ai chatbot integration test set (in progress) | Christian | Issue #29: work continued on 14 Nov, no pull request yet |
+| BOTSchool playground outage investigated | Christian | Issue #29: on a separate test agent, any guardrail switched on blocks every reply, and with guardrails off the knowledge search fails, although AI Health reports "All checks passed" (recorded in PR #69) |
 
 **Still open in the Sprint Backlog:**
 - Netlify deployment and testing (Christian)
-- Chatbot integration test set and answers for Q1 and Q3 (Christian, #29, in progress)
+- Chatbot run 6 once the BOTSchool playground works again (Christian, #29, blocked by the outage)
 - Check the Adkins & Blake (2009) quotes and Adkins (2010) chapter 9 against the originals (content check follow-up)
 - Home page hero text: "Project Manager" and "practise" (content check follow-up)
 - Final presentation (everyone)
 
-## 10. 17 Nov 2026 — Sprint 2 Review (final presentation)
+## 10. 15 Nov 2026 — Sprint 2 Work Done
+
+| Work | By | Pull request / evidence |
+|---|---|---|
+| Meeting minutes and Daily Scrum log for 13 and 14 Nov | Javed; merged by Bator | PR #67 (15 Nov, refs #53) |
+| Chatbot rebuilt as "Agile Coach assistant 2" and test run 6 | Christian; merged by Javed | PR #69 (15 Nov, refs #29): same persona and instructions, the research document in the prompt instead of the search tool, guardrails off until BOTSchool fixes them, model Claude Sonnet 5. Run 6: **14/14** (Q1 now passes) |
+| Chatbot widget embedded on the site | Christian; merged by Javed | PR #68 (15 Nov, refs #61, #29): the web chat of the published agent "Agile Coach assistant 2" is loaded in `index.html`. The chat only opens on websites allowed in the BOTSchool channel settings |
+
+**Note:** the guardrails stay off while the BOTSchool platform bug lasts. They must be switched back on, with a new test run, once BOTSchool fixes them. The prompt must be updated by hand whenever the research document changes.
+
+**Still open in the Sprint Backlog:**
+- Netlify deployment and testing (Christian); add the Netlify address to the allowed websites of the chatbot channel, then test the widget on the live site (#61)
+- Check the Adkins & Blake (2009) quotes and Adkins (2010) chapter 9 against the originals (content check follow-up)
+- Home page hero text: "Project Manager" and "practise" (content check follow-up)
+- Final presentation (everyone)
+
+## 11. 17 Nov 2026 — Sprint 2 Review (final presentation)
 
 *To add.*
 
-## 11. 17 Nov 2026 — Sprint 2 Retrospective
+## 12. 17 Nov 2026 — Sprint 2 Retrospective
 
 *To add.*
 

@@ -3,12 +3,12 @@
 **Project:** Agile Coach Learning Hub  
 **Issue:** [#5 — Conduct a 60-minute Design Thinking session to map user paths](https://github.com/mds-coach-agile/agile-coach/issues/5)  
 **Session duration:** 60 minutes  
-**Participants:** Student project team (3 members)  
+**Participants:** Bator Eshizhamsoev, Christian Byemba, Javed Iqbal  
 **Facilitator:** Javed Iqbal — Scrum Master  
 **Product Owner:** Bator Eshizhamsoev  
 **Developers:** Bator Eshizhamsoev, Christian Byemba, Javed Iqbal  
 **Client / acceptance authority:** Course teacher  
-**Status:** Proposed session plan and working journey hypothesis; replace hypotheses with observations and team decisions recorded during the actual session.
+**Status:** Session held on 27 October 2026. Outcomes are recorded in section 13.
 
 ---
 
@@ -242,32 +242,15 @@ The Product Owner confirms backlog priority after the team has discussed learner
 | Learners may not know where to go next. | Observe whether they can continue or revisit a topic without help. |
 | The learning path may become too broad for the project timeline. | Prioritise the smallest complete learning journey for the first release. |
 
-## 13. Outputs to capture during the actual session
+## 13. Session record
 
-The facilitator or a nominated note-taker should complete this section during or immediately after the workshop.
+The session was held on **27 October 2026** in class at ISEC (Sprint 0 kick-off), with Bator Eshizhamsoev, Christian Byemba and Javed Iqbal.
 
-- **Date and time:** [Fill in]
-- **Participants present:** [Fill in]
-- **Learner assumptions confirmed:** [Fill in]
-- **New learner insights:** [Fill in]
-- **Final problem statement:** [Fill in]
-- **Final How Might We question:** [Fill in]
-- **Agreed primary user path:** [Fill in]
-- **Agreed secondary path(s):** [Fill in]
-- **Top usability risks:** [Fill in]
-- **Ideas selected for backlog refinement:** [Fill in]
-- **Decisions deferred:** [Fill in]
-- **Teacher/client feedback (if obtained):** [Fill in]
+The outcomes (users and their needs, user stories US-01 to US-06 with priorities, out-of-scope items and decisions) are recorded in the [meeting minutes, section 1](../meeting-minutes.md#1-27-oct-2026--sprint-0-kick-off).
 
-### Decisions and action log
-
-| Action / decision | Owner | Due date | Status |
-|---|---|---|---|
-| Consolidate workshop notes and final journey map | Scrum Master / facilitator | [Date] | To do |
-| Review and prioritise candidate stories | Product Owner | [Date] | To do |
-| Refine acceptance criteria for selected stories | Product Owner + Developers | [Date] | To do |
-| Review learning content and role distinctions | Team; seek teacher/client feedback | [Date] | To do |
-| Add agreed stories to the product backlog | Product Owner | [Date] | To do |
+**Follow-up:**
+- Workshop notes and journey map committed to the project documentation (PR #16), updated on 9 November 2026.
+- User stories added to GitHub by the Product Owner (issues #11–#14).
 
 ## 14. Definition of completion for this activity
 
@@ -280,4 +263,4 @@ This issue's work can be considered complete when:
 - Candidate user stories are handed to the Product Owner for prioritisation.
 - The workshop notes and journey map are committed to the project documentation.
 
-**Important:** The agenda and journey map in this document are prepared as workshop material. Complete the session record, validate the hypotheses, and replace placeholders with actual outcomes before marking the activity as conducted.
+**Note:** The session was conducted on 27 October 2026. Sections 2–12 keep the original workshop plan; section 13 records the outcome.

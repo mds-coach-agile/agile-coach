@@ -26,7 +26,10 @@
   background: #94a3b8;
 }
 
-/* Keep BOTSchool.ai chatbot launcher above the fixed "Powered by Netlify" badge */
+/* Keep BOTSchool.ai chatbot launcher above the fixed "Powered by Netlify" badge
+   and ensure the open chat panel renders on top of the badge and sticky navbar */
 bsc-chat {
+  position: relative !important;
+  z-index: 2147483646 !important;
   --bsc-offset-y: 76px !important;
 }

@@ -25,3 +25,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
+
+/* Keep BOTSchool.ai chatbot launcher above the fixed "Powered by Netlify" badge */
+bsc-chat {
+  --bsc-offset-y: 76px !important;
+}

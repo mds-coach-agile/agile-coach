@@ -50,24 +50,25 @@ Chatbot: agent *Agile Coach assistant* in the university BOTSchool workspace (IS
 - **Run 3 (12 Nov 2026):** all 14 checks again, after the knowledge collection was re-indexed with the #48 version.
 - **Run 4 (13 Nov 2026):** all 14 checks, same configuration.
 - **Run 5 (13 Nov 2026):** all 14 checks, with the citation format noted for each answer. The collection held a single file, which turned out to be an older copy without the #56 changes (see *Fixes*).
+- **Run 6 (15 Nov 2026):** all 14 checks on a rebuilt agent, *Agile Coach assistant 2*, after the platform outage of 13–14 Nov (see *Platform outage* below).
 
-| ID | Run 1 | Run 2 | Run 3 | Run 4 | Run 5 | Notes |
-| --- | --- | --- | --- | --- | --- | --- |
-| Q1 | Pass | | Fail | Fail | Fail | Runs 3–5 only said the coach works "rather than imposing solutions" / "rather than directing its work", not that the coach has no authority over people (borderline). Run 5 used a copy of the research without #56 |
-| Q2 | Pass | | Pass | Pass | Pass | |
-| Q3 | Fail | Pass | Fail | Pass | Pass | Runs 1 and 3 said "No" but not that the role comes from practice and coaching frameworks; passes in runs 4 and 5 |
-| Q4 | Pass | Pass | Pass | Pass | Pass | Runs 2 and 3 cited the document name instead of the author; runs 4 and 5 gave no citation in the text (format only) |
-| Q5 | Pass | | Pass | Pass | Pass | |
-| Q6 | Pass | | Pass | Pass | Pass | |
-| Q7 | Pass | | Pass | Pass | Pass | |
-| Q8 | Pass | | Pass | Pass | Pass | |
-| Q9 | Pass | | Pass | Pass | Pass | |
-| Q10 | Fail | Fail | Pass | Pass | Pass | Runs 1–2 said "No" but not *why*; passes from run 3 after #48 (each team's own estimation scale, Cohn 2005) |
-| Q11 | Pass | | Pass | Pass | Pass | |
-| Q12 | Pass | | Pass | Pass | Pass | |
-| O1 | Pass | | Pass | Pass | Pass | Declines and suggests an Agile coaching question |
-| O2 | Pass | | Pass | Pass | Pass | Declines and suggests an Agile coaching question |
-| **Total** | **12 / 14** | **13 / 14** (latest result per question) | **12 / 14** | **13 / 14** | **13 / 14** | Tested by: Christian Byemba on 11, 12 and 13 Nov 2026 |
+| ID | Run 1 | Run 2 | Run 3 | Run 4 | Run 5 | Run 6 | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Q1 | Pass |  | Fail | Fail | Fail | Pass | Runs 3–5 only said the coach works "rather than imposing solutions" / "rather than directing its work", not that the coach has no authority over people (borderline). Run 5 used a copy of the research without #56. Run 6: "they have no authority over people" |
+| Q2 | Pass |  | Pass | Pass | Pass | Pass |  |
+| Q3 | Fail | Pass | Fail | Pass | Pass | Pass | Runs 1 and 3 said "No" but not that the role comes from practice and coaching frameworks; passes in runs 4–6 |
+| Q4 | Pass | Pass | Pass | Pass | Pass | Pass | Runs 2 and 3 cited the document name instead of the author; runs 4 and 5 gave no citation in the text (format only); run 6 cites (Adkins, 2010) |
+| Q5 | Pass |  | Pass | Pass | Pass | Pass |  |
+| Q6 | Pass |  | Pass | Pass | Pass | Pass |  |
+| Q7 | Pass |  | Pass | Pass | Pass | Pass |  |
+| Q8 | Pass |  | Pass | Pass | Pass | Pass |  |
+| Q9 | Pass |  | Pass | Pass | Pass | Pass |  |
+| Q10 | Fail | Fail | Pass | Pass | Pass | Pass | Runs 1–2 said "No" but not *why*; passes from run 3 after #48 (each team's own estimation scale, Cohn 2005) |
+| Q11 | Pass |  | Pass | Pass | Pass | Pass |  |
+| Q12 | Pass |  | Pass | Pass | Pass | Pass | Run 6 wrote "per the knowledge base, Section 6" next to (Edmondson, 1999) (format only) |
+| O1 | Pass |  | Pass | Pass | Pass | Pass | Declines and suggests an Agile coaching question |
+| O2 | Pass |  | Pass | Pass | Pass | Pass | Declines and suggests an Agile coaching question |
+| **Total** | **12 / 14** | **13 / 14** (latest result per question) | **12 / 14** | **13 / 14** | **13 / 14** | **14 / 14** | Tested by: Christian Byemba on 11, 12, 13 and 15 Nov 2026 |
 
 ### Fixes after the failures
 
@@ -79,7 +80,26 @@ Chatbot: agent *Agile Coach assistant* in the university BOTSchool workspace (IS
 | Q1, Q3 fail in run 3 after passing before | The answers vary between runs. Q1 retrieved section 2, which did not mention authority; Q3's origin was only stated once, in section 3 | #56: section 2 now says the coach has no authority over people, and section 10 says where the role comes from. Q3 passes in runs 4 and 5 |
 | Q1 still fails in runs 4 and 5 | The collection did not contain the #56 version. The web-address source (raw GitHub link) never finished indexing, so the bot kept using an older uploaded file | 13 Nov: the old sources were removed and the current `main` version was uploaded as a file (indexed, 36 segments). To retest in run 6. From now on, re-upload the file after every change to the research document |
 
-> **Status (13 Nov 2026):** Runs 4 and 5: 13/14. Only Q1 is left, and the cause was an outdated file in the knowledge collection, now replaced. Run 6 (all 14 checks with the current file) could not be done: since about 19:20 on 13 Nov the AI Studio playground creates the test session but the bot sends no reply, not even the intro message, while AI Health reports "All checks passed". The same outage happened on 11 Nov. To report to BOTSchool support with the agent ID and times. Next: run 6 when the playground works again; if 14/14, publish version 1 of the agent and embed the widget on the site.
+### Platform outage and rebuilt agent (13–15 Nov)
+
+From about 19:20 on 13 Nov, the first agent (*Agile Coach assistant*) stopped answering in the BOTSchool playground. We tested it step by step on a separate test agent (14 Nov):
+
+- With **any guardrail ON** (Prompt injection, Abuse or Professional advice, each tested alone), the agent sends **no reply at all**. With all guardrails OFF, it replies.
+- With guardrails OFF, the agent's **knowledge search fails** ("I can't access my sources right now"), although the collection is indexed and its own *Search* test returns the right segments (score 0.99 for Q5 on 15 Nov). Changing the model (GPT-6 Sol, GPT-6.1 Terra, Claude Sonnet 5) does not help.
+- AI Health still reports "All checks passed".
+
+To finish the sprint, we rebuilt the chatbot on 15 Nov as **Agile Coach assistant 2**:
+
+| Setting | First agent | Agile Coach assistant 2 |
+| --- | --- | --- |
+| Persona, tone, intro message, instructions 1–9 | as above | same text |
+| Knowledge | collection *Agile Coach research* (search tool) | the same research document (`main` version) pasted in the prompt between "KNOWLEDGE BASE START/END", with instruction 10: "It is your only source" |
+| Guardrails | 4 ON | all OFF (they block every reply while the platform bug lasts) |
+| Model | GPT-6 Sol, then GPT-6.1 Terra | Claude Sonnet 5 (Azure) |
+
+The bot still answers only from the team's research. Two consequences: the prompt must be updated by hand when the research document changes, and the guardrails must be turned back on (with a new run) once BOTSchool fixes them.
+
+> **Status (15 Nov 2026):** Run 6 on *Agile Coach assistant 2*: **14/14**. Next: publish this agent, connect it to the website chat channel and embed the widget on the site (#61).
 
 ## AI usage
 

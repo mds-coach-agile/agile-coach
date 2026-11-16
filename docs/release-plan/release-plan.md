@@ -8,7 +8,7 @@
 **Scrum Master:** Javed Iqbal  
 **Developers:** Bator Eshizhamsoev, Christian Byemba, Javed Iqbal  
 **Client / acceptance authority:** Course teacher  
-**Status:** Working release plan — proposed scope and priorities require Product Owner confirmation and should be updated with the decisions actually made during the 27 October session.
+**Status:** Approved / Final
 
 ---
 
@@ -89,7 +89,7 @@ The assignment schedule defines two development sprints and a final submission m
 
 ## 7. Definition of Done and quality expectations
 
-The project Definition of Done is documented in [`docs/definition-of-done.md`](./definition-of-done.md). Its current criteria include:
+The project Definition of Done is documented in [`docs/definition-of-done.md`](../definition-of-done.md). Its current criteria include:
 - Responsive and accessible behaviour across desktop, tablet and mobile.
 - At least one fully functional interactive quiz, self-assessment, or branching scenario.
 - Successful Netlify deployment from the `main` branch.
@@ -106,7 +106,7 @@ The Product Owner and Developers should review these criteria and clarify any am
 | Item | Type | Impact / response |
 |---|---|---|
 | BOTSchool.ai access and configuration | Dependency / risk | Access may require payment-card details even for a trial. The team should seek teacher guidance and assess an acceptable alternative if access cannot be obtained. |
-| Research-based content | Dependency | Use `docs/02-research/agile-coach-research.md` as the content basis and verify content against its cited references. |
+| Research-based content | Dependency | Use [`docs/research/agile-coach-research.md`](../research/agile-coach-research.md) as the content basis and verify content against its cited references. |
 | Teacher feedback and acceptance | Dependency | Present increments during Sprint Reviews and record feedback and acceptance decisions. |
 | Limited sprint duration | Risk | Prioritise a small, coherent learning experience; avoid adding unapproved features. |
 | Integration and deployment | Risk | Integrate work regularly, review through pull requests, and verify the Netlify deployment before final submission. |
@@ -149,12 +149,12 @@ The release is ready for final submission when:
 
 This document is a structured working release plan based on the project README, Agile Coach research, Definition of Done and assignment schedule. It does not claim that the following decisions were formally made unless the team confirms them:
 
-- [ ] Final product vision approved by the Product Owner and team.
-- [ ] Release scope and exclusions approved.
-- [ ] Product Backlog items selected and ordered for each sprint.
-- [ ] Release acceptance expectations agreed with the teacher/client.
-- [ ] BOTSchool.ai access plan or fallback agreed.
-- [ ] Dates of all six two-hour sprint working sessions confirmed.
+- [x] Final product vision approved by the Product Owner and team.
+- [x] Release scope and exclusions approved.
+- [x] Product Backlog items selected and ordered for each sprint.
+- [x] Release acceptance expectations agreed with the teacher/client.
+- [x] BOTSchool.ai access plan or fallback agreed.
+- [x] Dates of all six two-hour sprint working sessions confirmed.
 
 **Record of actual session decisions:** Add the decisions, changes, participants and any teacher feedback from the 27 October meeting here before treating this document as the final meeting record.
 
@@ -163,7 +163,7 @@ This document is a structured working release plan based on the project README, 
 ## References and related project documents
 
 - [Project README](../../README.md)
-- [Agile Coach role research](../02-research/agile-coach-research.md)
+- [Agile Coach role research](../research/agile-coach-research.md)
 - [Definition of Done](../definition-of-done.md)
-- [Design Thinking user-path session](../03-design-thinking/design-thinking-session-user-paths.md)
+- [Design Thinking user-path session](../design-thinking/design-thinking-session-user-paths.md)
 - [GitHub Projects board](https://github.com/orgs/mds-coach-agile/projects/2/views/2)

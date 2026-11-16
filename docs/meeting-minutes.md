@@ -286,10 +286,12 @@ This answers teacher feedback 1 from the Sprint 1 Review (make the website simpl
 **Note:** the guardrails stay off while the BOTSchool platform bug lasts. They must be switched back on, with a new test run, once BOTSchool fixes them. The prompt must be updated by hand whenever the research document changes.
 
 **Still open in the Sprint Backlog:**
-- Netlify deployment and testing (Christian); add the Netlify address to the allowed websites of the chatbot channel, then test the widget on the live site (#61)Expand commentComment on line L287ResolvedAdd a comment on  line L287Add diff commentMarkdown input:  edit mode selected.WritePreviewHeadingBold(control b) control⌃ bBItalic(control i) control⌃ iIQuote(control shift right angle bracket) control⌃ shift⇧ right angle bracket>Code(control e) control⌃ eELink(control k) control⌃ kKUnordered list(control 8) control⌃ 88Numbered list(control shift ampersand) control⌃ shift⇧ ampersand&Task list(control shift l) control⌃ shift⇧ lLMentionReferenceSlash commandsMore itemsSaved repliesPaste, drop, or click to add filesCancelCommentStart a review
-- Check the Adkins & Blake (2009) quotes and Adkins (2010) chapter 9 against the originals (content check follow-up)
-- Home page hero text: "Project Manager" and "practise" (content check follow-up)
-- Final presentation (everyone)
+- Netlify deployment and testing (Christian); add the Netlify address to the allowed websites of the chatbot channel, then test the widget on the live site (#61) (Closed)
+- Check the Adkins & Blake (2009) quotes and Adkins (2010) chapter 9 against the originals (content check follow-up) (Closed)
+- Home page hero text: "Project Manager" and "practise" (content check follow-up) (Closed)
+
+- Final presentation slides and 15-minute live demo rehearsal (everyone, #63)
+- Final project report, AI usage statement and burndown metrics analysis (everyone, #62)
 
 ## 11. 16 Nov 2026 — Sprint 2 Work Done
 

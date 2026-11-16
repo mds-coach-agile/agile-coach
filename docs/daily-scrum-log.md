@@ -76,9 +76,17 @@
 
 | Member | Done | Today | Blockers |
 |---|---|---|---|
-| Bator | Simpler website and Practice page (PR #64) | Review and merge of the 13–14 Nov minutes and log (PR #67) | None |
+| Bator | Simpler website and Practice page (PR #64) | Review and merge of the 13–14 Nov minutes and log (PR #67); chatbot button above the Netlify badge (PR #71); documentation index (PR #72) | None |
 | Christian | Playground outage investigated (#29) | Chatbot rebuilt as "Agile Coach assistant 2", run 6: 14/14 (PR #69); chatbot widget embedded on the site (PR #68, #61) | None |
-| Javed | Content check (PR #66), minutes and log for 13–14 Nov (PR #67) | Review and merge of the chatbot test results (PR #69) and the chatbot widget (PR #68); minutes and log for 15 Nov | None |
+| Javed | Content check (PR #66), minutes and log for 13–14 Nov (PR #67) | Review and merge of the chatbot test results (PR #69), the chatbot widget (PR #68), the widget fix (PR #71) and the documentation index (PR #72); minutes and log for 15 Nov (PR #70); release plan update | None |
+
+## 16 Nov 2026
+
+| Member | Done | Today | Blockers |
+|---|---|---|---|
+| Bator | Merged the 13–14 Nov minutes and log (PR #67); chatbot button above the Netlify badge (PR #71); documentation index (PR #72) | Design Thinking record: chatbot story renumbered to US-08 and review comments answered (PR #77); review and merge of the release plan (PR #75), Design Thinking status (PR #76) and session record (PR #77) | None |
+| Christian | Chatbot rebuilt, run 6: 14/14 (PR #69); chatbot widget on the site (PR #68) | *To fill in* | *To fill in* |
+| Javed | Merged PRs #68, #69, #71 and #72; minutes and log for 15 Nov (PR #70); release plan marked final (PR #75) | Design Thinking session outputs and chatbot user story (PR #77); minutes and log for 16 Nov | None |
 
 ## ____ Nov 2026
 

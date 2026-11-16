@@ -84,9 +84,9 @@
 
 | Member | Done | Today | Blockers |
 |---|---|---|---|
-| Bator | Merged the 13–14 Nov minutes and log (PR #67); chatbot button above the Netlify badge (PR #71); documentation index (PR #72) | Design Thinking record: chatbot story renumbered to US-08 and review comments answered (PR #77); review and merge of the release plan (PR #75), Design Thinking status (PR #76) and session record (PR #77) | None |
-| Christian | Chatbot rebuilt, run 6: 14/14 (PR #69); chatbot widget on the site (PR #68) and updated | *To fill in* | None |
-| Javed | Merged PRs #68, #69, #71 and #72; minutes and log for 15 Nov (PR #70); release plan marked final (PR #75) | Design Thinking session outputs and chatbot user story (PR #77); minutes and log for 16 Nov | None |
+| Bator | Merged the 13–14 Nov minutes and log (PR #67); chatbot button above the Netlify badge (PR #71); documentation index (PR #72) | Design Thinking record: chatbot story renumbered to US-08 and review comments answered (PR #77); review and merge of the release plan (PR #75), Design Thinking status (PR #76) and session record (PR #77); final presentation slides and 15-minute live demo rehearsal (#63); final project report, AI usage statement and burndown metrics analysis (#62) | None |
+| Christian | — | Final presentation slides and 15-minute live demo rehearsal (#63); final project report, AI usage statement and burndown metrics analysis (#62) | None |
+| Javed | Merged PRs #68, #69, #71 and #72; minutes and log for 15 Nov (PR #70); release plan marked final (PR #75) | Design Thinking session outputs and chatbot user story (PR #77); minutes and log for 16 Nov; final presentation slides and 15-minute live demo rehearsal (#63); final project report, AI usage statement and burndown metrics analysis (#62) | None |
 
 ## ____ Nov 2026
 

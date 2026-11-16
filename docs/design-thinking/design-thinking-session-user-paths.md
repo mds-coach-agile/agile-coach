@@ -198,12 +198,13 @@ The workshop should help the team keep the product focused.
 - Practical examples and scenario-based learning.
 - Meaningful feedback that explains why an answer is useful.
 - Straightforward navigation and the ability to revisit content.
+- Quick answers to learner questions through an AI chatbot that uses the site's own learning content.
 
 **Do not assume the product needs**
 - User registration, accounts, or learner profiles.
 - A project-management dashboard or Scrum board.
 - Team collaboration or messaging.
-- An AI chatbot or autonomous AI agent.
+- An autonomous AI agent.
 - Administrative analytics or complex progress tracking.
 
 These may be future opportunities only if supported by user evidence and accepted project scope. The core deliverable remains an interactive educational website.
@@ -220,6 +221,7 @@ These are draft backlog candidates, not automatically approved or committed spri
 | US-04 | As a learner, I want to respond to a realistic team scenario so that I can practise applying coaching concepts. | Should | The learner can choose a response and receives an explanation of the outcome or reasoning. |
 | US-05 | As a learner, I want to complete a knowledge check so that I can assess my understanding. | Should | The learner receives clear feedback and can review the relevant learning content. |
 | US-06 | As a learner, I want to navigate between topics easily so that I can follow the learning path or revisit concepts. | Must | Topic navigation is visible, understandable, and works across the learning pages. |
+| US-07 | As a learner, I want to ask an Agile coaching chatbot a question so that I can get a quick answer without searching the pages. | Should | The chatbot answers questions from the site's knowledge base and says when a question is outside the Agile coaching topic. |
 
 ## 11. Prioritisation method
 
@@ -246,28 +248,25 @@ The Product Owner confirms backlog priority after the team has discussed learner
 
 The facilitator or a nominated note-taker should complete this section during or immediately after the workshop.
 
-- **Date and time:** [Fill in]
-- **Participants present:** [Fill in]
-- **Learner assumptions confirmed:** [Fill in]
-- **New learner insights:** [Fill in]
-- **Final problem statement:** [Fill in]
-- **Final How Might We question:** [Fill in]
-- **Agreed primary user path:** [Fill in]
-- **Agreed secondary path(s):** [Fill in]
-- **Top usability risks:** [Fill in]
-- **Ideas selected for backlog refinement:** [Fill in]
-- **Decisions deferred:** [Fill in]
-- **Teacher/client feedback (if obtained):** [Fill in]
-
+- **Date and time:** 27 October 2026 (60 minutes)
+- **Participants present:** Javed Iqbal (Scrum Master, facilitator), Bator Eshizhamsoev (Product Owner, Developer), Christian Byemba (Developer)
+- **Learner assumptions confirmed:** The primary learner is a student or beginner who has heard of Agile or Scrum but is unsure what an Agile Coach does. The learner benefits from short explanations, concrete scenarios, visual structure, and interactive knowledge checks. This remains a working hypothesis until tested with users.
+- **New learner insights:** Learners are likely to struggle with abstract terminology, long explanations, unclear examples, and confusing role boundaries between Agile Coach, Scrum Master, and manager. They need a visible starting point, a clear next step, and a way to revisit concepts without restarting the whole journey.
+- **Final problem statement:** A beginner learning Agile needs a clear and engaging way to understand the Agile Coach role and distinguish it from related roles, because theoretical definitions alone may not show how coaching works in real team situations.
+- **Final How Might We question:** How might we help a beginner understand the role of an Agile Coach and practise choosing helpful coaching behaviours through a simple interactive learning journey?
+- **Agreed primary user path:** Path A — `Landing page → Introduction → What an Agile Coach does → Key responsibilities → Practical example → Knowledge check → Next topic`
+- **Agreed secondary path(s):** Path B (compare related roles), Path C (practise a coaching response), Path D (revisit a difficult concept)
+- **Top usability risks:** Learners may not understand the term Agile Coach; role comparison may oversimplify overlapping responsibilities; too much text may discourage learners; scenarios may have more than one defensible response; learners may not know where to go next; the learning path may become too broad for the project timeline.
+- **Ideas selected for backlog refinement:** US-01 Agile coaching introduction (Must), US-02 role comparison (Must), US-06 topic navigation (Must), US-03 coaching stances (Should), US-04 team scenario with feedback (Should), US-05 knowledge check with explanations (Should), US-07 Agile coaching chatbot (Should)
 ### Decisions and action log
 
-| Action / decision | Owner | Due date | Status |
-|---|---|---|---|
-| Consolidate workshop notes and final journey map | Scrum Master / facilitator | [Date] | To do |
-| Review and prioritise candidate stories | Product Owner | [Date] | To do |
-| Refine acceptance criteria for selected stories | Product Owner + Developers | [Date] | To do |
-| Review learning content and role distinctions | Team; seek teacher/client feedback | [Date] | To do |
-| Add agreed stories to the product backlog | Product Owner | [Date] | To do |
+| Action / decision | Owner | Status |
+|---|---|---|
+| Consolidate workshop notes and final journey map | Scrum Master / facilitator | To do |
+| Review and prioritise candidate stories | Product Owner | To do |
+| Refine acceptance criteria for selected stories | Product Owner + Developers | To do |
+| Review learning content and role distinctions | Team; seek teacher/client feedback | To do |
+| Add agreed stories to the product backlog | Product Owner | To do |
 
 ## 14. Definition of completion for this activity
 

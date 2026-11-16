@@ -58,7 +58,7 @@ Defined in the [Release Plan](release-plan/release-plan.md), the product backlog
 - **Planning & Estimation:** Backlog items were tracked on [GitHub Projects #2](https://github.com/orgs/mds-coach-agile/projects/2/views/1) and estimated using Fibonacci Story Points (`2`, `3`, `5 SP`) for product items, while process/ceremony tasks remained unestimated (`0 SP`).
 - **Daily Scrum:** Short asynchronous/session-based syncs recorded in [daily-scrum-log.md](daily-scrum-log.md) tracking *Done*, *Today*, and *Blockers*.
 - **Meeting Minutes:** Formal records of Sprint 0 Kick-off, Sprint 1 Planning/Review/Retrospective, and Sprint 2 Planning/Review/Retrospective maintained in [meeting-minutes.md](meeting-minutes.md).
-- **Engineering Practices:** Feature branches, Pull Request peer reviews, and automated GitHub Actions CI (`npm test`, `tsc --noEmit`, `npm run build`).
+- **Engineering Practices:** Feature branches, **cross-review on Pull Requests** (every PR was reviewed and approved by a teammate other than the author before merging to `main`), and automated GitHub Actions CI (`npm test`, `tsc --noEmit`, `npm run build`).
 
 ### 3.3 Definition of Done (DoD)
 Per [definition-of-done.md](definition-of-done.md), every Product Backlog Item required:

@@ -198,12 +198,13 @@ The workshop should help the team keep the product focused.
 - Practical examples and scenario-based learning.
 - Meaningful feedback that explains why an answer is useful.
 - Straightforward navigation and the ability to revisit content.
+- Quick answers to learner questions through an AI chatbot that uses the project's Agile Coach research as its knowledge base.
 
 **Do not assume the product needs**
 - User registration, accounts, or learner profiles.
 - A project-management dashboard or Scrum board.
 - Team collaboration or messaging.
-- An AI chatbot or autonomous AI agent.
+- An autonomous AI agent.
 - Administrative analytics or complex progress tracking.
 
 These may be future opportunities only if supported by user evidence and accepted project scope. The core deliverable remains an interactive educational website.
@@ -220,6 +221,9 @@ These are draft backlog candidates, not automatically approved or committed spri
 | US-04 | As a learner, I want to respond to a realistic team scenario so that I can practise applying coaching concepts. | Should | The learner can choose a response and receives an explanation of the outcome or reasoning. |
 | US-05 | As a learner, I want to complete a knowledge check so that I can assess my understanding. | Should | The learner receives clear feedback and can review the relevant learning content. |
 | US-06 | As a learner, I want to navigate between topics easily so that I can follow the learning path or revisit concepts. | Must | Topic navigation is visible, understandable, and works across the learning pages. |
+| US-08 | As a learner, I want to ask an AI chatbot trained on the Agile Coach research questions about the role so that I can get a quick answer without searching the pages. | Could (subject to BOTSchool.ai access) | The chatbot uses `docs/research/agile-coach-research.md` as its knowledge base, correctly answers the sprint test set, and redirects out-of-scope questions back to Agile coaching topics. |
+
+These candidates were later tracked as GitHub issues: US-01 [#27](https://github.com/mds-coach-agile/agile-coach/issues/27), US-02 [#50](https://github.com/mds-coach-agile/agile-coach/issues/50), US-03 [#51](https://github.com/mds-coach-agile/agile-coach/issues/51), US-04 [#39](https://github.com/mds-coach-agile/agile-coach/issues/39), US-05 [#28](https://github.com/mds-coach-agile/agile-coach/issues/28), US-06 [#26](https://github.com/mds-coach-agile/agile-coach/issues/26), US-08 [#29](https://github.com/mds-coach-agile/agile-coach/issues/29). US-07 ([#58](https://github.com/mds-coach-agile/agile-coach/issues/58), UI simplification and navigation clarity) was added during Sprint 2 and is not an output of this session.
 
 ## 11. Prioritisation method
 
@@ -246,28 +250,28 @@ The Product Owner confirms backlog priority after the team has discussed learner
 
 The facilitator or a nominated note-taker should complete this section during or immediately after the workshop.
 
-- **Date and time:** [Fill in]
-- **Participants present:** [Fill in]
-- **Learner assumptions confirmed:** [Fill in]
-- **New learner insights:** [Fill in]
-- **Final problem statement:** [Fill in]
-- **Final How Might We question:** [Fill in]
-- **Agreed primary user path:** [Fill in]
-- **Agreed secondary path(s):** [Fill in]
-- **Top usability risks:** [Fill in]
-- **Ideas selected for backlog refinement:** [Fill in]
-- **Decisions deferred:** [Fill in]
-- **Teacher/client feedback (if obtained):** [Fill in]
+- **Date and time:** 27 October 2026 (60 minutes)
+- **Participants present:** Javed Iqbal (Scrum Master, facilitator), Bator Eshizhamsoev (Product Owner, Developer), Christian Byemba (Developer)
+- **Learner assumptions agreed:** The primary learner is a student or beginner who has heard of Agile or Scrum but is unsure what an Agile Coach does. The learner benefits from short explanations, concrete scenarios, visual structure, and interactive knowledge checks. This remains a working hypothesis until tested with users.
+- **New learner insights:** Learners are likely to struggle with abstract terminology, long explanations, unclear examples, and confusing role boundaries between Agile Coach, Scrum Master, and manager. They need a visible starting point, a clear next step, and a way to revisit concepts without restarting the whole journey.
+- **Final problem statement:** A beginner learning Agile needs a clear and engaging way to understand the Agile Coach role and distinguish it from related roles, because theoretical definitions alone may not show how coaching works in real team situations.
+- **Final How Might We question:** How might we help a beginner understand the role of an Agile Coach and practise choosing helpful coaching behaviours through a simple interactive learning journey?
+- **Agreed primary user path:** Path A — `Landing page → Introduction → What an Agile Coach does → Key responsibilities → Practical example → Knowledge check → Next topic`
+- **Agreed secondary path(s):** Path B (compare related roles), Path C (practise a coaching response), Path D (revisit a difficult concept)
+- **Top usability risks:** Learners may not understand the term Agile Coach; role comparison may oversimplify overlapping responsibilities; too much text may discourage learners; scenarios may have more than one defensible response; learners may not know where to go next; the learning path may become too broad for the project timeline.
+- **Ideas selected for backlog refinement:** US-01 Agile coaching introduction (Must), US-02 role comparison (Must), US-06 topic navigation (Must), US-03 coaching stances (Should), US-04 team scenario with feedback (Should), US-05 knowledge check with explanations (Should); AI chatbot noted as 'if possible' (later tracked as US-08, [#29](https://github.com/mds-coach-agile/agile-coach/issues/29), Could)
+- **Decisions deferred:** The chatbot was noted as 'if possible'; the decision to create a dedicated blocker issue for BOTSchool.ai access ([#9](https://github.com/mds-coach-agile/agile-coach/issues/9)) was taken later at the 3 Nov Sprint 0 Review. Validation of the learner hypotheses with real users was deferred to Sprint Reviews.
+- **Teacher/client feedback (if obtained):** Not obtained during the session.
 
 ### Decisions and action log
 
-| Action / decision | Owner | Due date | Status |
+| Action / decision | Owner | Date | Status |
 |---|---|---|---|
-| Consolidate workshop notes and final journey map | Scrum Master / facilitator | [Date] | To do |
-| Review and prioritise candidate stories | Product Owner | [Date] | To do |
-| Refine acceptance criteria for selected stories | Product Owner + Developers | [Date] | To do |
-| Review learning content and role distinctions | Team; seek teacher/client feedback | [Date] | To do |
-| Add agreed stories to the product backlog | Product Owner | [Date] | To do |
+| Consolidate workshop notes and final journey map | Scrum Master / facilitator | 3 Nov 2026 ([#5](https://github.com/mds-coach-agile/agile-coach/issues/5)) | Done |
+| Review and prioritise candidate stories | Product Owner | 9 Nov 2026 ([#20](https://github.com/mds-coach-agile/agile-coach/issues/20)) | Done |
+| Refine acceptance criteria for selected stories | Product Owner + Developers | 9–12 Nov 2026 | Done |
+| Review learning content and role distinctions | Team; seek teacher/client feedback | 14 Nov 2026 ([#58](https://github.com/mds-coach-agile/agile-coach/issues/58), [#60](https://github.com/mds-coach-agile/agile-coach/issues/60)) | Done |
+| Add agreed stories to the product backlog | Product Owner | 3–12 Nov 2026 | Done |
 
 ## 14. Definition of completion for this activity
 
@@ -280,4 +284,4 @@ This issue's work can be considered complete when:
 - Candidate user stories are handed to the Product Owner for prioritisation.
 - The workshop notes and journey map are committed to the project documentation.
 
-**Important:** The agenda and journey map in this document are prepared as workshop material. Complete the session record, validate the hypotheses, and replace placeholders with actual outcomes before marking the activity as conducted.
+**Note:** The session was conducted on 27 October 2026 and its outcomes are recorded in section 13. The learner assumptions remain working hypotheses until they are validated with real users.

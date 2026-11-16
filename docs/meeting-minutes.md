@@ -312,7 +312,42 @@ This answers teacher feedback 1 from the Sprint 1 Review (make the website simpl
 
 ## 13. 17 Nov 2026 — Sprint 2 Retrospective
 
-*To add.*
+| | |
+|---|---|
+| **Team** | P1 – Tuesday |
+| **Facilitator** | Javed Iqbal (Scrum Master) |
+| **Attendees** | Javed Iqbal (Scrum Master / Developer), Bator Eshizhamsoev (Product Owner / Developer), Christian Byemba (Developer) |
+
+**0. Review of Sprint 2 Action Items:**
+- **Action 1 (Small PRs linked to single issues):** Fully achieved. All Sprint 2 pull requests (`PR #49` through `PR #80`) were scoped to single issues and reviewed cleanly before merging.
+- **Action 2 (Fill Daily Scrum log during each session):** Fully achieved. `daily-scrum-log.md` was updated after each working session (12, 13, 14, 15, 16 Nov) rather than retrospectively at sprint end.
+
+**1. What went well? 👍**
+- **Sprint Goal & Definition of Done achieved:** Delivered the full interactive learning experience: US-04 Realistic Conflict Simulator (PR #52), dedicated Practice & Quiz subpages with breadcrumb navigation (PR #64), and embedded AI Chatbot (PR #68).
+- **Responsive to feedback:** Rapidly simplified UI and navigation based directly on teacher feedback from Sprint 1 Review (Issue #58, PR #64).
+- **Engineering quality & CI/CD:** GitHub Actions CI pipeline added (PR #49), automatically running lint, type checks, and 17 automated tests on every PR.
+- **AI Chatbot quality:** Solved access issue (#9), conducted 6 structured test runs, identified root causes of regressions, and achieved a 14/14 test score (PR #69) with Claude Sonnet 5.
+- **Fact-checking & academic rigour:** Thorough content check (PR #66) aligned articles with Scrum Guide 2020 terminology and academic citations (Adkins, Speed Leas, Tuckman).
+
+**2. What didn't go well? 👎**
+- **External SaaS platform instability:** BOTSchool.ai platform outage and bug (guardrails blocked all responses and knowledge search failed). Christian had to spend unexpected time diagnosing the platform bug and implementing a manual workaround (embedding the research text into the prompt).
+- **Widget layout clash on live site:** The floating chatbot widget conflicted with the Netlify badge and sticky navbar, requiring an extra fix (PR #71).
+- **Crunch of documentation updates near the deadline:** Finalizing Design Thinking outputs, Release Plan revisions, and minutes required significant coordination in the last 48 hours.
+
+**3. What should we improve? 💡**
+- **Plan fallbacks for third-party cloud services:** When relying on external AI/SaaS tools in an academic or production project, design a lightweight fallback early in case the vendor's service degrades.
+- **Introduce CI in Sprint 0:** Setting up GitHub Actions from the start saves time debugging broken tests across refactorings.
+- **Test third-party overlay widgets early:** Check layout and z-index across all screen sizes and fixed UI elements as soon as a widget is introduced.
+
+**4. Final action items (Project Handover & Presentation):**
+
+| # | Action | Responsible person |
+|---|---|---|
+| 1 | Complete demo rehearsal of the live website and chatbot for the final presentation | Everyone |
+| 2 | Document BOTSchool guardrail workaround and architecture in the final project report | Christian |
+| 3 | Final check of deployed Netlify site and repository links against Definition of Done | Bator & Javed |
+
+**5. Final team agreement:** The team successfully completed the project release scope, met the Definition of Done, and affirmed readiness for the final presentation on 17 Nov.
 
 ---
 

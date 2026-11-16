@@ -61,7 +61,7 @@
 | Member | Done | Today | Blockers |
 |---|---|---|---|
 | Bator | CI fix (PR #49), US-04 conflict simulator (PR #52) | Simplify the website and navigation after teacher feedback (#58): 3-step learning path on the home page, new Practice page with separate Conflict Simulator and Quiz subpages (branch `feature/issue-58-simplify-ui-and-navigation`) | None |
-| Christian | Chatbot test runs 1–3 (PR #55), research fix for Q1/Q3 (PR #56) | Chatbot test runs 4 and 5 (13/14, only Q1 left); outdated research file in the knowledge collection replaced (#29) | BOTSchool playground sends no replies from about 19:20, so run 6 could not be done |
+| Christian | Chatbot test runs 1–3 (PR #55), research fix for Q1/Q3 (PR #56) | Chatbot test runs 4 and 5 (13/14, only Q1 left); outdated research file in the knowledge collection replaced (#29) | BOTSchool playground sends no replies from about 19:20, so run 6 could not be done (resolved on 15 Nov: chatbot rebuilt, run 6: 14/14, PR #69) |
 | Javed | Meeting minutes (PR #54), Daily Scrum log (PR #57) | Content check: proofreading the website (#60) | None |
 
 ## 14 Nov 2026
@@ -69,7 +69,7 @@
 | Member | Done | Today | Blockers |
 |---|---|---|---|
 | Bator | Simpler website and Practice page (#58) | Simpler website and Practice page merged into main (PR #64, fixes #58) | None |
-| Christian | Chatbot test runs 4 and 5 (#29) | Find the cause of the playground outage on a test agent (#29); review and merge of the website content check (PR #66) | Playground outage: any guardrail blocks every reply, and the knowledge search fails |
+| Christian | Chatbot test runs 4 and 5 (#29) | Find the cause of the playground outage on a test agent (#29); review and merge of the website content check (PR #66) | Playground outage: any guardrail blocks every reply, and the knowledge search fails (resolved on 15 Nov: chatbot rebuilt, run 6: 14/14, PR #69) |
 | Javed | Proofreading the website (#60) | Content check finished (PR #66, #60); meeting minutes and Daily Scrum log for 13 Nov (PR #65) | None |
 
 ## 15 Nov 2026
@@ -77,7 +77,7 @@
 | Member | Done | Today | Blockers |
 |---|---|---|---|
 | Bator | Simpler website and Practice page (PR #64) | Review and merge of the 13–14 Nov minutes and log (PR #67); chatbot button above the Netlify badge (PR #71); documentation index (PR #72) | None |
-| Christian | Playground outage investigated (#29) | Chatbot rebuilt as "Agile Coach assistant 2", run 6: 14/14 (PR #69); chatbot widget embedded on the site (PR #68, #61) | None |
+| Christian | Playground outage investigated (#29) | Chatbot rebuilt as "Agile Coach assistant 2", run 6: 14/14 (PR #69); chatbot widget embedded on the site (PR #68, #61) and updated | None |
 | Javed | Content check (PR #66), minutes and log for 13–14 Nov (PR #67) | Review and merge of the chatbot test results (PR #69), the chatbot widget (PR #68), the widget fix (PR #71) and the documentation index (PR #72); minutes and log for 15 Nov (PR #70); release plan update | None |
 
 ## 16 Nov 2026
@@ -85,7 +85,7 @@
 | Member | Done | Today | Blockers |
 |---|---|---|---|
 | Bator | Merged the 13–14 Nov minutes and log (PR #67); chatbot button above the Netlify badge (PR #71); documentation index (PR #72) | Design Thinking record: chatbot story renumbered to US-08 and review comments answered (PR #77); review and merge of the release plan (PR #75), Design Thinking status (PR #76) and session record (PR #77) | None |
-| Christian | Chatbot rebuilt, run 6: 14/14 (PR #69); chatbot widget on the site (PR #68) | *To fill in* | *To fill in* |
+| Christian | Chatbot rebuilt, run 6: 14/14 (PR #69); chatbot widget on the site (PR #68) and updated | *To fill in* | None |
 | Javed | Merged PRs #68, #69, #71 and #72; minutes and log for 15 Nov (PR #70); release plan marked final (PR #75) | Design Thinking session outputs and chatbot user story (PR #77); minutes and log for 16 Nov | None |
 
 ## ____ Nov 2026

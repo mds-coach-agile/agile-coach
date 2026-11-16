@@ -250,7 +250,7 @@
 
 This answers teacher feedback 1 from the Sprint 1 Review (make the website simpler and easier to navigate).
 
-**Still open in the Sprint Backlog:** Netlify deployment and testing (Christian), content check (Javed), chatbot Q1 and run 6 (Christian), final presentation (everyone).
+**Still open in the Sprint Backlog:** Netlify deployment and testing (Christian), content check (Javed), chatbot Q1 and run 6 (Christian; resolved on 15 Nov, run 6: 14/14, PR #69), final presentation (everyone).
 
 ## 9. 14 Nov 2026 — Sprint 2 Work Done
 
@@ -263,7 +263,7 @@ This answers teacher feedback 1 from the Sprint 1 Review (make the website simpl
 
 **Still open in the Sprint Backlog:**
 - Netlify deployment and testing (Christian)
-- Chatbot run 6 once the BOTSchool playground works again (Christian, #29, blocked by the outage)
+- Chatbot run 6 once the BOTSchool playground works again (Christian, #29, blocked by the outage; resolved on 15 Nov, run 6: 14/14, PR #69)
 - Check the Adkins & Blake (2009) quotes and Adkins (2010) chapter 9 against the originals (content check follow-up)
 - Home page hero text: "Project Manager" and "practise" (content check follow-up)
 - Final presentation (everyone)
@@ -275,6 +275,7 @@ This answers teacher feedback 1 from the Sprint 1 Review (make the website simpl
 | Meeting minutes and Daily Scrum log for 13 and 14 Nov | Javed; merged by Bator | PR #67 (15 Nov, refs #53) |
 | Chatbot rebuilt as "Agile Coach assistant 2" and test run 6 | Christian; merged by Javed | PR #69 (15 Nov, refs #29): same persona and instructions, the research document in the prompt instead of the search tool, guardrails off until BOTSchool fixes them, model Claude Sonnet 5. Run 6: **14/14** (Q1 now passes) |
 | Chatbot widget embedded on the site | Christian; merged by Javed | PR #68 (15 Nov, refs #61, #29): the web chat of the published agent "Agile Coach assistant 2" is loaded in `index.html`. The chat only opens on websites allowed in the BOTSchool channel settings |
+| Chatbot widget on the site updated | Christian | 15 Nov (refs #61) |
 | Meeting minutes and Daily Scrum log for 15 Nov | Javed; merged by Bator | PR #70 (15 Nov, refs #53) |
 | Chatbot button and open chat panel placed above the "Powered by Netlify" badge and the sticky navbar | Bator; merged by Javed | PR #71 (15 Nov): CSS offset for the launcher and a higher `z-index` for the open chat panel in `src/index.css` |
 | Documentation index | Bator; merged by Javed | PR #72 (15 Nov): `docs/README.md` lists all project documents |

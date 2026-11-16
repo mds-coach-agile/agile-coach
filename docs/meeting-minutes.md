@@ -318,7 +318,7 @@ This answers teacher feedback 1 from the Sprint 1 Review (make the website simpl
 | **Facilitator** | Javed Iqbal (Scrum Master) |
 | **Attendees** | Javed Iqbal (Scrum Master / Developer), Bator Eshizhamsoev (Product Owner / Developer), Christian Byemba (Developer) |
 
-**0. Review of Sprint 1 Action Items:**
+**0. Review of Sprint 2 Action Items:**
 - **Action 1 (Small PRs linked to single issues):** Fully achieved. All Sprint 2 pull requests (`PR #49` through `PR #80`) were scoped to single issues and reviewed cleanly before merging.
 - **Action 2 (Fill Daily Scrum log during each session):** Fully achieved. `daily-scrum-log.md` was updated after each working session (12, 13, 14, 15, 16 Nov) rather than retrospectively at sprint end.
 

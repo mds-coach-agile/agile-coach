@@ -275,6 +275,10 @@ This answers teacher feedback 1 from the Sprint 1 Review (make the website simpl
 | Meeting minutes and Daily Scrum log for 13 and 14 Nov | Javed; merged by Bator | PR #67 (15 Nov, refs #53) |
 | Chatbot rebuilt as "Agile Coach assistant 2" and test run 6 | Christian; merged by Javed | PR #69 (15 Nov, refs #29): same persona and instructions, the research document in the prompt instead of the search tool, guardrails off until BOTSchool fixes them, model Claude Sonnet 5. Run 6: **14/14** (Q1 now passes) |
 | Chatbot widget embedded on the site | Christian; merged by Javed | PR #68 (15 Nov, refs #61, #29): the web chat of the published agent "Agile Coach assistant 2" is loaded in `index.html`. The chat only opens on websites allowed in the BOTSchool channel settings |
+| Meeting minutes and Daily Scrum log for 15 Nov | Javed; merged by Bator | PR #70 (15 Nov, refs #53) |
+| Chatbot button and open chat panel placed above the "Powered by Netlify" badge and the sticky navbar | Bator; merged by Javed | PR #71 (15 Nov): CSS offset for the launcher and a higher `z-index` for the open chat panel in `src/index.css` |
+| Documentation index | Bator; merged by Javed | PR #72 (15 Nov): `docs/README.md` lists all project documents |
+| Release plan update | Javed | Committed on 15 Nov, merged on 16 Nov as PR #75 (see 16 Nov) |
 
 **Note:** the guardrails stay off while the BOTSchool platform bug lasts. They must be switched back on, with a new test run, once BOTSchool fixes them. The prompt must be updated by hand whenever the research document changes.
 
@@ -284,11 +288,25 @@ This answers teacher feedback 1 from the Sprint 1 Review (make the website simpl
 - Home page hero text: "Project Manager" and "practise" (content check follow-up)
 - Final presentation (everyone)
 
-## 11. 17 Nov 2026 — Sprint 2 Review (final presentation)
+## 11. 16 Nov 2026 — Sprint 2 Work Done
+
+| Work | By | Pull request / evidence |
+|---|---|---|
+| Release plan marked as final | Javed; merged by Bator | PR #75 (16 Nov): status set to "Approved / Final", release checklist ticked, broken document links fixed |
+| Design Thinking session marked as completed | Javed; merged by Bator | PR #76 (16 Nov) |
+| Design Thinking session record completed | Javed, Bator; merged by Bator | PR #77 (16 Nov): section 13 filled in with the 27 Oct session outputs, action log dated and linked to issues, AI chatbot added as user story US-08 (#29, Could); Bator renumbered the story and answered the review comments |
+
+**Still open in the Sprint Backlog:**
+- Test the chatbot widget on the live site [mds-agile-coach.netlify.app](https://mds-agile-coach.netlify.app/) and check that the Netlify address is in the allowed websites of the chatbot channel (Christian, #61)
+- Check the Adkins & Blake (2009) quotes and Adkins (2010) chapter 9 against the originals (content check follow-up)
+- Home page hero text: "Project Manager" and "practise" (content check follow-up, `src/components/HeroSection.tsx`)
+- Final presentation and demo rehearsal (everyone)
+
+## 12. 17 Nov 2026 — Sprint 2 Review (final presentation)
 
 *To add.*
 
-## 12. 17 Nov 2026 — Sprint 2 Retrospective
+## 13. 17 Nov 2026 — Sprint 2 Retrospective
 
 *To add.*
 

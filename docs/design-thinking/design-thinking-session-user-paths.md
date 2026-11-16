@@ -252,15 +252,15 @@ The facilitator or a nominated note-taker should complete this section during or
 
 - **Date and time:** 27 October 2026 (60 minutes)
 - **Participants present:** Javed Iqbal (Scrum Master, facilitator), Bator Eshizhamsoev (Product Owner, Developer), Christian Byemba (Developer)
-- **Learner assumptions confirmed:** The primary learner is a student or beginner who has heard of Agile or Scrum but is unsure what an Agile Coach does. The learner benefits from short explanations, concrete scenarios, visual structure, and interactive knowledge checks. This remains a working hypothesis until tested with users.
+- **Learner assumptions agreed:** The primary learner is a student or beginner who has heard of Agile or Scrum but is unsure what an Agile Coach does. The learner benefits from short explanations, concrete scenarios, visual structure, and interactive knowledge checks. This remains a working hypothesis until tested with users.
 - **New learner insights:** Learners are likely to struggle with abstract terminology, long explanations, unclear examples, and confusing role boundaries between Agile Coach, Scrum Master, and manager. They need a visible starting point, a clear next step, and a way to revisit concepts without restarting the whole journey.
 - **Final problem statement:** A beginner learning Agile needs a clear and engaging way to understand the Agile Coach role and distinguish it from related roles, because theoretical definitions alone may not show how coaching works in real team situations.
 - **Final How Might We question:** How might we help a beginner understand the role of an Agile Coach and practise choosing helpful coaching behaviours through a simple interactive learning journey?
 - **Agreed primary user path:** Path A — `Landing page → Introduction → What an Agile Coach does → Key responsibilities → Practical example → Knowledge check → Next topic`
 - **Agreed secondary path(s):** Path B (compare related roles), Path C (practise a coaching response), Path D (revisit a difficult concept)
 - **Top usability risks:** Learners may not understand the term Agile Coach; role comparison may oversimplify overlapping responsibilities; too much text may discourage learners; scenarios may have more than one defensible response; learners may not know where to go next; the learning path may become too broad for the project timeline.
-- **Ideas selected for backlog refinement:** US-01 Agile coaching introduction (Must), US-02 role comparison (Must), US-06 topic navigation (Must), US-03 coaching stances (Should), US-04 team scenario with feedback (Should), US-05 knowledge check with explanations (Should), US-08 AI chatbot (Could, subject to BOTSchool.ai access)
-- **Decisions deferred:** The chatbot (US-08) was kept as Could until BOTSchool.ai web integration access was confirmed ([#9](https://github.com/mds-coach-agile/agile-coach/issues/9)). Validation of the learner hypotheses with real users was deferred to Sprint Reviews.
+- **Ideas selected for backlog refinement:** US-01 Agile coaching introduction (Must), US-02 role comparison (Must), US-06 topic navigation (Must), US-03 coaching stances (Should), US-04 team scenario with feedback (Should), US-05 knowledge check with explanations (Should); AI chatbot noted as 'if possible' (later tracked as US-08, [#29](https://github.com/mds-coach-agile/agile-coach/issues/29), Could)
+- **Decisions deferred:** The chatbot was noted as 'if possible'; the decision to create a dedicated blocker issue for BOTSchool.ai access ([#9](https://github.com/mds-coach-agile/agile-coach/issues/9)) was taken later at the 3 Nov Sprint 0 Review. Validation of the learner hypotheses with real users was deferred to Sprint Reviews.
 - **Teacher/client feedback (if obtained):** Not obtained during the session.
 
 ### Decisions and action log
@@ -270,8 +270,8 @@ The facilitator or a nominated note-taker should complete this section during or
 | Consolidate workshop notes and final journey map | Scrum Master / facilitator | 3 Nov 2026 ([#5](https://github.com/mds-coach-agile/agile-coach/issues/5)) | Done |
 | Review and prioritise candidate stories | Product Owner | 9 Nov 2026 ([#20](https://github.com/mds-coach-agile/agile-coach/issues/20)) | Done |
 | Refine acceptance criteria for selected stories | Product Owner + Developers | 9–12 Nov 2026 | Done |
-| Review learning content and role distinctions | Team; seek teacher/client feedback | 14 Nov 2026 ([#60](https://github.com/mds-coach-agile/agile-coach/issues/60)) | Done |
-| Add agreed stories to the product backlog | Product Owner | 9–12 Nov 2026 | Done |
+| Review learning content and role distinctions | Team; seek teacher/client feedback | 14 Nov 2026 ([#58](https://github.com/mds-coach-agile/agile-coach/issues/58), [#60](https://github.com/mds-coach-agile/agile-coach/issues/60)) | Done |
+| Add agreed stories to the product backlog | Product Owner | 3–12 Nov 2026 | Done |
 
 ## 14. Definition of completion for this activity
 

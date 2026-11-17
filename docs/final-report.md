@@ -248,14 +248,37 @@ Identifying these issues openly during the Sprint 1 Retrospective was the turnin
 
 ## 9. Process Evidence (Screenshots & Photos)
 
-### In-Class Planning & Scrum Roadmap (Whiteboard)
-- **Sprint 0 Kick-off (27 Oct 2026):** Design Thinking stages (*Empathize, Define, Ideate, Prototype, Test*), User Stories + Acceptance Criteria, Planning Poker estimation, and MoSCoW prioritisation across 2 sprints.  
+### In-Class Planning, Design Thinking & Handwritten Notes
+- **Sprint 0 Kick-off Whiteboard (27 Oct 2026):** Design Thinking stages (*Empathize, Define, Ideate, Prototype, Test*), User Stories + Acceptance Criteria, Planning Poker estimation, and MoSCoW prioritisation across 2 sprints.  
   ![Sprint 0 Design Thinking & Release Planning Whiteboard](assets/2026-10-27-sprint-0-design-thinking-whiteboard.jpeg)
+- **Design Thinking Session Notes (27 Oct 2026):** Handwritten workshop notes capturing the problem statement, learner persona, product goals, and initial user paths.  
+  ![Design Thinking Session Handwritten Notes](assets/2026-10-27-design-thinking-notes.jpeg)
+- **User Stories & Sprint Schedule Notes (27 Oct 2026):** Handwritten mapping of `US-01`–`US-08` and Sprint 0–2 dates.  
+  ![User Stories and Sprints Handwritten Notes](assets/2026-10-27-user-stories-and-sprints-notes.jpeg)
+- **Release Plan Notes (27 Oct 2026):** Handwritten product vision, target learners, product goals, and out-of-scope boundaries.  
+  ![Release Plan Handwritten Notes](assets/2026-10-27-release-plan-notes.jpeg)
 - **Sprint Timeline & Ceremonies Roadmap (10 Nov 2026):** In-class Scrum workflow mapping Sprint 0, Sprint 1 Review/Retrospective, Sprint 2 Planning, Sprint 2 Retrospective, and Final Presentation.  
   ![Scrum Sprints & Ceremonies Whiteboard Roadmap](assets/2026-11-10-sprint-roadmap-whiteboard.jpeg)
 
-### Digital Artefacts & Live Product
-*[TODO: Add screenshots of the GitHub Projects board, Burndown/PR history, live Netlify site, and BOTSchool.ai assistant evaluation.]*
+### GitHub Projects Backlog & Sprint Tracking
+- **Sprint 1 Board (`29 SP`, Done):** All Sprint 1 product stories and process tasks with linked Pull Requests.  
+  ![GitHub Projects Sprint 1 Board](assets/github-projects-sprint-1.jpg)
+- **Sprint 2 Board (`22 SP`) & Pre-Sprint Items:** Sprint 2 stories, CI/content/chatbot tasks, and final presentation/report tracking.  
+  ![GitHub Projects Sprint 2 Board](assets/github-projects-sprint-2.jpg)
+
+### Product Evolution & Live Netlify Deployment
+- **Sprint 1 Increment — Home Page:** Initial landing page with hero, role/stance/conflict overview, and Core Learning Modules.  
+  ![Sprint 1 Home Page](assets/01-sprint-1-home.jpg)
+- **Sprint 1 Increment — Articles Catalogue:** Four foundational learning modules with reading progress tracking (`0/4`).  
+  ![Sprint 1 Articles Catalogue](assets/02-sprint-1-articles-catalogue.jpg)
+- **UI Iteration — Learning Progress Bar:** Updated home page adding an explicit `0 of 4 modules` progress indicator.  
+  ![Home Page with Learning Progress Bar](assets/03-home-progress-bar.jpg)
+- **Live Production Site & Embedded Chatbot (`mds-agile-coach.netlify.app`):** Simplified Sprint 2 navigation (`Practice & Quiz`, `75%` progress) with the live **BOTSchool.ai** chat panel answering a domain question above the Netlify badge.  
+  ![Live Production Site and Chatbot Widget](assets/04-live-site-and-chatbot-widget.jpg)
+
+### BOTSchool.ai Assistant Configuration
+- **AI Studio — *Agile Coach assistant 2*:** Rebuilt agent with the verified research base embedded in the system prompt (`AI Health` passing).  
+  ![BOTSchool.ai Agile Coach assistant 2 Configuration](assets/botschool-agile-coach-assistant-2.jpg)
 
 ---
 

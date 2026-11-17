@@ -248,7 +248,7 @@ The chatbot taught me the most. I first treated it as a configuration task, but 
 
 What I would do differently: the BOTSchool access blocker (`#9`) kept the chatbot out of Sprint 1, and I waited for an answer instead of preparing a plan B early. When the platform stopped replying on 13 November, isolating the cause step by step on a separate test agent, instead of changing our real agent at random, was what allowed a working rebuild in one day. I also learned to announce changes to shared tools before making them: several of us edited the same agent and it was hard to know who changed what.
 
-Finally, I used AI tools a lot (see section 7). They saved time on drafting, browser testing and repetitive checks, but every fact, score and result still had to be verified by me against the sources and the real screens — the AI made mistakes that only that check revealed.
+Finally, I used AI tools (see section 7). They saved time on drafting, browser testing and repetitive checks, but every fact, score and result still had to be verified by me against the sources and the real screens — the AI made mistakes that only that check revealed.
 
 ---
 

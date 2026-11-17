@@ -242,7 +242,13 @@ Identifying these issues openly during the Sprint 1 Retrospective was the turnin
 *[TODO: Add personal reflection on Scrum Master facilitation, keeping Scrum artefacts updated in Sprint 2, content proofreading, and key takeaways.]*
 
 #### Christian Byemba (Developer)
-*[TODO: Add personal reflection on research rigour, BOTSchool.ai troubleshooting/outage resolution, testing/deployment, and key takeaways.]*
+My main contribution was the knowledge side of the product: the Agile Coach research document (`PR #8`), which became the single source for the website content and the chatbot, then the chatbot itself — training intents, the 14-question test set (`PR #41`), six evaluation runs (`PR #55`, `#69`) and the widget on the live site (`PR #68`). I also fixed the automated tests after the React import (`PR #38`).
+
+The chatbot taught me the most. I first treated it as a configuration task, but it behaved like a product that has to be tested: answers that were correct in one run failed in the next. Writing expected answers *before* testing, with required key points in bold, turned vague impressions ("it answers well") into a score we could track (12/14 → 13/14 → 14/14). It also showed that the bot only knows what its retrieval finds: Q10 kept failing until the reason ("each team's own estimation scale") was written in the sections the bot actually retrieved (`PR #48`, `#56`). A test set is not only a check; it improves the source content.
+
+What I would do differently: the BOTSchool access blocker (`#9`) kept the chatbot out of Sprint 1, and I waited for an answer instead of preparing a plan B early. When the platform stopped replying on 13 November, isolating the cause step by step on a separate test agent, instead of changing our real agent at random, was what allowed a working rebuild in one day. I also learned to announce changes to shared tools before making them: several of us edited the same agent and it was hard to know who changed what.
+
+Finally, I used AI tools a lot (see section 7). They saved time on drafting, browser testing and repetitive checks, but every fact, score and result still had to be verified by me against the sources and the real screens — the AI made mistakes that only that check revealed.
 
 ---
 
